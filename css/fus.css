@@ -375,6 +375,28 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-act__card .fus-link { color: var(--fus-red-text); }
 .fus-act__card:hover { border-color: var(--fus-line-strong); }
 
+/* ---------- Follow along (social links) ---------- */
+.fus-follow .fus-wrap { display: grid; grid-template-columns: ~"minmax(0, 5fr) minmax(0, 7fr)"; gap: 48px; align-items: start; }
+.fus-follow__intro { display: flex; flex-direction: column; gap: 18px; position: sticky; top: 120px; }
+.fus-follow__list { border-top: 1px solid var(--fus-line-strong); }
+.fus .fus-follow__item { display: grid; grid-template-columns: 28px 1fr auto; grid-template-areas: "icon name arrow" "icon handle arrow"; column-gap: 20px; row-gap: 2px; align-items: center; padding: 22px 4px; border-bottom: 1px solid var(--fus-line-strong); transition: background .2s, padding .2s; }
+.fus-follow__icon { grid-area: icon; width: 26px; height: 26px; color: var(--fus-fg); }
+.fus-follow__name { grid-area: name; font-size: ~"clamp(26px, 2.6vw, 34px)"; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; }
+.fus-follow__handle { grid-area: handle; font-size: 14px; color: var(--fus-muted); }
+.fus-follow__note { display: none; }
+.fus-follow__arrow { grid-area: arrow; font-size: 22px; color: var(--fus-muted); transition: transform .2s, color .2s; }
+.fus .fus-follow__item:hover { padding-left: 14px; background: #121212; color: var(--fus-fg); }
+.fus .fus-follow__item:hover .fus-follow__icon, .fus .fus-follow__item:hover .fus-follow__arrow { color: var(--fus-red-text); }
+.fus .fus-follow__item:hover .fus-follow__arrow { transform: translate(3px, -3px); }
+@media (min-width: 900px) {
+  .fus .fus-follow__item { grid-template-columns: 28px minmax(0, 1fr) minmax(0, 1.2fr) auto; grid-template-areas: "icon name note arrow" "icon handle note arrow"; }
+  .fus-follow__note { display: block; grid-area: note; font-size: 15px; color: var(--fus-soft); }
+}
+@media (max-width: 800px) {
+  .fus-follow .fus-wrap { grid-template-columns: 1fr; gap: 28px; }
+  .fus-follow__intro { position: static; }
+}
+
 @media (max-width: 640px) {
   :root { --fus-gutter: 16px; }
   .fus-section { padding: 52px 0; }
