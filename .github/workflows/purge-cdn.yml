@@ -2,14 +2,15 @@ name: Purge jsDelivr cache
 on:
   push:
     branches: [main]
-    paths: ['js/**', 'css/**', 'data/**']
+    paths: ['js/**', 'css/**', 'data/**', 'img/**']
   workflow_dispatch: {}
 jobs:
   purge:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Purge changed files so the site gets them right away
         run: |
-          for f in js/fus.js css/fus.css data/films.json data/press.json data/laurels.json data/youtube.json; do
+          for f in js/fus.js css/fus.css data/*.json img/*; do
             curl -s "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/$f" > /dev/null || true
           done
