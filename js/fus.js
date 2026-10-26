@@ -460,7 +460,14 @@
       var rank = { 'Winner': 0, 'Finalist': 1, 'Nominee': 2, 'Official Selection': 3 };
       var items = (r[0].items || []).filter(function (l) { return (!filmSlug || l.film === filmSlug) && (!only || only.split(',').indexOf(l.award) >= 0); })
         .sort(function (a, b) { var ra = a.award in rank ? rank[a.award] : 9, rb = b.award in rank ? rank[b.award] : 9; return ra - rb || String(b.year).localeCompare(String(a.year)); });
-      el.innerHTML = '<div class="fus-laurels">' + items.slice(0, limit).map(function (l) {
+      if (attr(el, 'style', '') === 'names') {
+        var seen = {}, names = items.filter(function (l) { var k = norm(l.festival); if (seen[k]) return false; seen[k] = 1; return true; }).map(function (l) { return esc(l.festival); });
+        el.innerHTML = '<p class="fus-laurel-names">' + names.join('<span aria-hidden="true"> · </span>') + '</p>';
+        return;
+      }
+      var plain = attr(el, 'style', '') === 'simple';
+      if (plain) { var once = {}; items = items.filter(function (l) { var k = l.award + norm(l.festival); if (once[k]) return false; once[k] = 1; return true; }); }
+      el.innerHTML = '<div class="fus-laurels' + (plain ? ' fus-laurels--simple' : '') + '">' + items.slice(0, limit).map(function (l) {
         var f = r[1].bySlug[l.film];
         return '<div class="fus-laurel' + (l.award === 'Winner' ? ' fus-laurel--win' : '') + '">' + LAUREL_BRANCH +
           '<div class="fus-laurel__text"><span class="fus-laurel__award">' + esc(l.award) + '</span><span class="fus-laurel__fest">' + esc(l.festival) + '</span>' +
