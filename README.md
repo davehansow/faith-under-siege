@@ -20,6 +20,15 @@ Custom code needs a Squarespace plan that allows it: **Core or higher** (the old
 | `blocks/*.html` | One snippet per Code Block, numbered in page order | Code Blocks on each page |
 | `preview/` | Local test pages (open with any static server) | Not uploaded |
 
+## Building beside the live site (staging)
+
+Nothing here replaces the current pages until you decide to launch. The header injection sets `stagingPrefix: '/new'`. While it's set:
+- Only pages whose URL starts with `/new` get the new look. Every other page, blog posts included, looks exactly as it does today.
+- Build the new pages at `/new` (home), `/new/watch`, `/new/watch/film`, `/new/watch/<slug>` and `/new/press`, in the Not Linked section so visitors don't see them.
+- Links inside the new blocks point at the `/new` pages automatically.
+
+**Launch day:** set `stagingPrefix: ''` in the header injection, remove `new/` from each new page's URL slug (rename or disable the old pages first so the slugs are free), set the new home page as the homepage, move the pages into the main navigation, and add the redirects below.
+
 ## Step 1 · Decide where the script and data live
 
 **Option A, recommended: a GitHub repo served by jsDelivr (free).** Put `js/` and `data/` in a public repo. Files are then at
@@ -35,8 +44,8 @@ Custom code needs a Squarespace plan that allows it: **Core or higher** (the old
 
 ## Step 3 · Paste the global code
 
-1. `css/fus.css` → Custom CSS (replace whatever is there; keep a copy of the old CSS first).
-2. `snippets/header-injection.html` → Code Injection › Header. Fill in `dataBase` (Option A) or the three `/s/` URLs (Option B), and `social.tiktok`.
+1. `css/fus.css` → Custom CSS. Paste it below any CSS you already have. While staging is on, its site-wide rules only touch `/new` pages; the component styles only touch the new blocks.
+2. `snippets/header-injection.html` → Code Injection › Header. `dataBase` already points at the GitHub repo. Fill in `social.tiktok`, and check `journalPath` matches your blog's URL (it's set to `/news-and-updates`).
 3. `snippets/footer-injection.html` → Code Injection › Footer, with the script URL (Option A) or the pasted script (Option B).
 
 ## Step 4 · YouTube (automatic)

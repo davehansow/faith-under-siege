@@ -33,7 +33,16 @@
     watchPath: '/watch',          /* the Watch page */
     filmTemplatePath: '/watch/film', /* page that plays any video by ?v=ID */
     pressPath: '/press',
-    journalPath: '/journal',      /* your blog's URL slug */
+    journalPath: '/news-and-updates', /* your blog's URL slug (change to '/journal' if you rename the blog) */
+
+    /* STAGING: while '/new' is set, only pages whose URL starts with /new get the new look,
+       and the rest of the site stays exactly as it is today. At launch, change this to ''. */
+    stagingPrefix: '/new',
     social: { instagram: 'faithundersiege', x: 'FaithUnderSiege', facebook: 'afaithundersiege', tiktok: '' /* add handle */ }
   };
+</script>
+<script>
+  /* Turns the new styles on for new pages only (before the page draws, so nothing flickers). */
+  (function () { var p = (window.FUS_CONFIG.stagingPrefix || '').replace(/\/$/, ''), l = location.pathname;
+    if (!p || l === p || l.indexOf(p + '/') === 0) document.documentElement.className += ' fus-on'; })();
 </script>

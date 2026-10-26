@@ -24,10 +24,25 @@
     filmTemplatePath: '/watch/film',
     pressPath: '/press',
     journalPath: '/journal',
+    stagingPrefix: '',                  // e.g. '/new' while the new pages are built beside the live site; '' at launch
     social: { instagram: 'faithundersiege', x: 'FaithUnderSiege', facebook: 'afaithundersiege', tiktok: '' }
   };
   var C = Object.assign({}, DEFAULTS, window.FUS_CONFIG || {});
   C.social = Object.assign({}, DEFAULTS.social, (window.FUS_CONFIG || {}).social || {});
+  /* Staging: new pages live under the prefix (/new, /new/watch, ...), and only those pages get the new look. */
+  var SP = String(C.stagingPrefix || '').replace(/\/$/, '');
+  if (SP) ['watchPath', 'filmTemplatePath', 'pressPath'].forEach(function (k) { if (C[k].charAt(0) === '/' && C[k].indexOf(SP + '/') !== 0) C[k] = SP + C[k]; });
+  function isNewPage() { return !SP || location.pathname === SP || location.pathname.indexOf(SP + '/') === 0; }
+  function stagingLinks(root) {
+    var J = String(C.journalPath || '/journal').replace(/\/$/, '');
+    if (J !== '/journal') [].forEach.call((root || document).querySelectorAll('.fus a[href^="/journal"]'), function (a) {
+      var h = a.getAttribute('href'); if (/^\/journal(\/|\?|$)/.test(h)) a.setAttribute('href', J + h.slice(8));
+    });
+    if (!SP) return;
+    [].forEach.call((root || document).querySelectorAll('.fus a[href^="/watch"], .fus a[href^="/press"], a.fus-panel[href^="/watch"]'), function (a) {
+      var h = a.getAttribute('href'); if (/^\/(watch|press)(\/|\?|$)/.test(h)) a.setAttribute('href', SP + h);
+    });
+  }
   function dataUrl(name, override) { return override || (C.dataBase ? C.dataBase.replace(/\/$/, '') + '/' + name : name); }
 
   /* ---------------- helpers ---------------- */
@@ -72,6 +87,7 @@
     cat.films.forEach(function (f) {
       if (!f.slug) f.slug = f.curated === false && f.youtubeId ? 'v-' + f.youtubeId : norm(f.title).replace(/ /g, '-');
       if (!f.page) f.page = f.curated === false && f.youtubeId ? C.filmTemplatePath + '?v=' + encodeURIComponent(f.youtubeId) : C.watchPath + '/' + f.slug;
+      else if (SP && /^\/(watch|press)(\/|\?|$)/.test(f.page)) f.page = SP + f.page;
       if (!f.runtime && f.seconds) f.runtime = fmtDuration(f.seconds);
       f.collectionLabel = (cat.collections[f.collection] || {}).label || '';
       f.topicLabels = (f.topics || []).map(function (t) { return cat.topics[t] || t; });
@@ -510,12 +526,14 @@
   /* ---------------- boot ---------------- */
   var COMPONENTS = { rail: rail, library: library, film: film, press: pressPage, 'press-headlines': pressHeadlines, 'press-logos': pressLogos, laurels: laurelsBlock, journal: journal, 'journal-filter': journalFilter, social: social };
   function boot(root) {
+    document.documentElement.classList.toggle('fus-on', isNewPage());
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {
       if (el.__fus) return; el.__fus = 1;
       el.classList.add('fus');
       var fn = COMPONENTS[el.getAttribute('data-fus')];
       if (fn) { try { fn(el); } catch (e) { failed(el, e); } }
     });
+    stagingLinks(root);
   }
   window.FUS = { boot: boot, loadCatalog: loadCatalog, config: C };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', function () { boot(); }); else boot();

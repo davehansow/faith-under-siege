@@ -26,37 +26,61 @@
 }
 
 /* ---------- 2. Squarespace site-wide overrides ---------- */
-body,
-h1, h2, h3, h4, h5, h6, p, li, blockquote,
-.sqs-block-button-element, .header-nav-item a, .header-title-text a,
-.blog-item-title, .blog-title, .summary-title, .site-footer, input, select, textarea, button {
+/* Applied only when <html> has class fus-on (set in the header injection), so the live
+   site keeps its current look while the new pages are staged under /new. */
+html.fus-on body,
+html.fus-on h1,
+html.fus-on h2,
+html.fus-on h3,
+html.fus-on h4,
+html.fus-on h5,
+html.fus-on h6,
+html.fus-on p,
+html.fus-on li,
+html.fus-on blockquote,
+html.fus-on .sqs-block-button-element,
+html.fus-on .header-nav-item a,
+html.fus-on .header-title-text a,
+html.fus-on .blog-item-title,
+html.fus-on .blog-title,
+html.fus-on .summary-title,
+html.fus-on .site-footer,
+html.fus-on input,
+html.fus-on select,
+html.fus-on textarea,
+html.fus-on button {
   font-family: var(--fus-font) !important;
 }
-h1, h2, h3, .blog-item-title h1, .blog-title {
+html.fus-on h1,
+html.fus-on h2,
+html.fus-on h3,
+html.fus-on .blog-item-title h1,
+html.fus-on .blog-title {
   font-weight: 500 !important;
   letter-spacing: -0.025em;
   text-transform: none;
 }
-h1 { line-height: 1.02; }
-h2, h3 { line-height: 1.12; }
-body { -webkit-font-smoothing: antialiased; }
-::selection { background: var(--fus-red); color: #fff; }
+html.fus-on h1 { line-height: 1.02; }
+html.fus-on h2,
+html.fus-on h3 { line-height: 1.12; }
+html.fus-on body { -webkit-font-smoothing: antialiased; }
+html.fus-on ::selection { background: var(--fus-red); color: #fff; }
 
 /* Header */
-.header .header-title-text a {
+html.fus-on .header .header-title-text a {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
-.header .header-nav-item a {
+html.fus-on .header .header-nav-item a {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.header .header-nav-item--active a { color: var(--fus-red-text) !important; background-image: none !important; }
-.header .header-actions-action--cta .btn,
-.header .header-actions-action--cta .sqs-button-element--primary {
+html.fus-on .header .header-nav-item--active a { color: var(--fus-red-text) !important; background-image: none !important; }
+html.fus-on .header .header-actions-action--cta .btn,
+html.fus-on .header .header-actions-action--cta .sqs-button-element--primary {
   background: var(--fus-red) !important;
   color: #fff !important;
   border-radius: 0 !important;
@@ -69,33 +93,38 @@ body { -webkit-font-smoothing: antialiased; }
 }
 
 /* Native buttons: flat, square, outlined (A24-style) */
-.sqs-block-button-element,
-.sqs-button-element--primary,
-.sqs-button-element--secondary,
-.sqs-button-element--tertiary {
+html.fus-on .sqs-block-button-element,
+html.fus-on .sqs-button-element--primary,
+html.fus-on .sqs-button-element--secondary,
+html.fus-on .sqs-button-element--tertiary {
   border-radius: 0 !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
 }
-.sqs-button-element--secondary,
-.sqs-button-element--tertiary {
+html.fus-on .sqs-button-element--secondary,
+html.fus-on .sqs-button-element--tertiary {
   background: transparent !important;
   border: 1px solid currentColor !important;
 }
 
 /* Blog list + post */
-.blog-item-category, .blog-meta-item--categories a, .blog-categories-list a {
+html.fus-on .blog-item-category,
+html.fus-on .blog-meta-item--categories a,
+html.fus-on .blog-categories-list a {
   color: var(--fus-red-text) !important;
   font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
 }
-.blog-basic-grid--text .blog-title a, .blog-list .blog-title a { text-decoration: none; }
-.blog-item-content p { font-size: 19px; line-height: 1.6; max-width: 720px; }
-.blog-basic-grid .image-wrapper img, .blog-list .image-wrapper img { filter: saturate(0.9); }
+html.fus-on .blog-basic-grid--text .blog-title a,
+html.fus-on .blog-list .blog-title a { text-decoration: none; }
+html.fus-on .blog-item-content p { font-size: 19px; line-height: 1.6; max-width: 720px; }
+html.fus-on .blog-basic-grid .image-wrapper img,
+html.fus-on .blog-list .image-wrapper img { filter: saturate(0.9); }
 
 /* Footer */
-.sections .page-section.fus-footer-rule, footer.sections { border-top: 1px solid var(--fus-line); }
+html.fus-on .sections .page-section.fus-footer-rule,
+html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 
 /* Let full-bleed code blocks run edge to edge inside sections */
 .fus-bleed .content-wrapper { max-width: none !important; padding-left: 0 !important; padding-right: 0 !important; }
