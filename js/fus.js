@@ -24,6 +24,7 @@
     filmTemplatePath: '/watch/film',
     pressPath: '/press',
     journalPath: '/journal',
+    screeningPath: '/general-screening', // every "Host a screening" button goes here
     stagingPrefix: '',                  // e.g. '/new' while the new pages are built beside the live site; '' at launch
     social: { instagram: 'faithundersiege', x: 'FaithUnderSiege', facebook: 'afaithundersiege', tiktok: '' }
   };
@@ -33,7 +34,10 @@
   var SP = String(C.stagingPrefix || '').replace(/\/$/, '');
   if (SP) ['watchPath', 'filmTemplatePath', 'pressPath'].forEach(function (k) { if (C[k].charAt(0) === '/' && C[k].indexOf(SP + '/') !== 0) C[k] = SP + C[k]; });
   function isNewPage() { return !SP || location.pathname === SP || location.pathname.indexOf(SP + '/') === 0; }
+  // Older pasted blocks pointed at /host-a-screening; send every screening link to the configured page
+  function screeningUrl(u) { return !u || /^\/host-a-screening\/?$/.test(u) ? C.screeningPath : u; }
   function stagingLinks(root) {
+    [].forEach.call((root || document).querySelectorAll('.fus a[href^="/host-a-screening"]'), function (a) { a.setAttribute('href', C.screeningPath); });
     var J = String(C.journalPath || '/journal').replace(/\/$/, '');
     if (J !== '/journal') [].forEach.call((root || document).querySelectorAll('.fus a[href^="/journal"]'), function (a) {
       var h = a.getAttribute('href'); if (/^\/journal(\/|\?|$)/.test(h)) a.setAttribute('href', J + h.slice(8));
@@ -361,7 +365,7 @@
         '</div></div></div>' +
         '<div class="fus-wrap fus-film__body"><div class="fus-film__synopsis">' +
         (f.synopsis && f.synopsis.length ? f.synopsis : [f.logline || '']).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') +
-        '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(attr(el, 'screening-url', '/general-screening')) + '">Host a screening of this film</a>' +
+        '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(screeningUrl(attr(el, 'screening-url', ''))) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +
         '<dl class="fus-dl">' + rows.map(function (x) { return '<dt>' + x[0] + '</dt><dd' + (x[2] ? ' class="fus-dl__stack"' : '') + '>' + x[1] + '</dd>'; }).join('') + '</dl></div>' +
         (related.length ? '<div class="fus-section"><div class="fus-wrap"><div class="fus-head"><h2 class="fus-h2">Keep watching</h2><a class="fus-link" href="' + esc(C.watchPath) + '">View all</a></div>' +
