@@ -500,7 +500,7 @@
   function loadScript(src) { if (document.querySelector('script[src="' + src + '"]')) return; var s = document.createElement('script'); s.async = true; s.src = src; document.body.appendChild(s); }
   function social(el) {
     var S = C.social, cards = [];
-    var sec = el.closest('.page-section, section') || document;
+    var sec = el.closest('.page-section') || el.closest('section') || document;
     var slot = el.querySelector('[data-fus-slot="instagram"]') || sec.querySelector('[class*="sqs-block-instagram"]');
     if (S.instagram) cards.push(['Instagram', '@' + S.instagram, 'https://www.instagram.com/' + S.instagram + '/', slot ? 'slot' : 'link']);
     if (S.x) cards.push(['X', '@' + S.x, 'https://x.com/' + S.x, 'x']);
