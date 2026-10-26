@@ -1,0 +1,372 @@
+{
+ "_readme": "Curated film catalog. youtubeId links an entry to its YouTube video. Leave youtubeId empty and set match to part of the YouTube title, and the site will find it automatically when live YouTube mode is on. Anything new on the channel that is not listed here still appears in the library, typed by its playlist. Fields in [brackets] are placeholders to fill in. hide lists YouTube IDs to keep off the site (duplicates, trailers shown on film pages).",
+ "collections": {
+  "feature": {
+   "label": "Feature documentary"
+  },
+  "fiw": {
+   "label": "Faith in War",
+   "description": "Five true stories of what faith looks like in the middle of war.",
+   "url": "https://www.faithinwar.com",
+   "trailerId": "j_quWGA1kDY"
+  },
+  "series": {
+   "label": "Faith Under Siege: The Series",
+   "description": "The story behind the film, told episode by episode.",
+   "url": "https://www.angel.com"
+  },
+  "deeper": {
+   "label": "Dive Deeper shorts"
+  },
+  "clips": {
+   "label": "Clips from the field"
+  }
+ },
+ "topics": {
+  "clergy": "Churches & clergy",
+  "children": "Stolen children",
+  "landmines": "Landmines",
+  "soldiers": "Soldiers & chaplains",
+  "jewish": "Jewish communities",
+  "front": "Front lines",
+  "bts": "Behind the scenes"
+ },
+ "films": [
+  {
+   "slug": "a-faith-under-siege",
+   "title": "A Faith Under Siege",
+   "subtitle": "Russia’s Hidden War on Ukraine’s Christians",
+   "youtubeId": "-E4gJWdsyAA",
+   "match": "Russia’s Hidden War",
+   "type": "feature",
+   "collection": "feature",
+   "topics": [
+    "clergy"
+   ],
+   "logline": "Believers hunted under Russian occupation, and the churches that refuse to close.",
+   "synopsis": [
+    "A Faith Under Siege goes inside occupied Ukraine, where pastors are hunted, churches are seized, and believers keep worshipping anyway."
+   ],
+   "featuring": "",
+   "director": "[Director]",
+   "year": "2025",
+   "runtime": "58 min",
+   "page": "/watch/a-faith-under-siege",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=-E4gJWdsyAA"
+    },
+    {
+     "label": "Newsmax",
+     "url": ""
+    },
+    {
+     "label": "TBN+",
+     "url": ""
+    }
+   ],
+   "order": 100
+  },
+  {
+   "slug": "the-stolen-children",
+   "title": "The Stolen Children",
+   "youtubeId": "5UzvcRUj-EI",
+   "match": "Stolen Children",
+   "type": "film",
+   "collection": "fiw",
+   "episode": 1,
+   "topics": [
+    "children"
+   ],
+   "logline": "Veteran Meaghan Mobbs searches for Ukrainian children abducted by Russia.",
+   "synopsis": [
+    "Veteran Meaghan Mobbs searches for the Ukrainian children Russia has abducted, and the families still waiting for them."
+   ],
+   "featuring": "Meaghan Mobbs",
+   "director": "[Director]",
+   "year": "2026",
+   "runtime": "39 min",
+   "page": "/watch/the-stolen-children",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=5UzvcRUj-EI"
+    },
+    {
+     "label": "faithinwar.com",
+     "url": "https://www.faithinwar.com/stolen-children"
+    },
+    {
+     "label": "TBN+",
+     "url": ""
+    }
+   ],
+   "order": 95,
+   "trailerId": "1uXKPOwao8I"
+  },
+  {
+   "slug": "even-in-the-ruins",
+   "title": "Even in the Ruins",
+   "youtubeId": "TL-UuhL9ays",
+   "match": "Even in the Ruins",
+   "type": "film",
+   "collection": "fiw",
+   "episode": 2,
+   "topics": [
+    "clergy"
+   ],
+   "logline": "Pastor Mark Sergeev keeps his flock together after his church is seized.",
+   "synopsis": [
+    "After Russian forces seize his church, Ukrainian pastor Mark Sergeev keeps his congregation together."
+   ],
+   "featuring": "Mark Sergeev",
+   "director": "[Director]",
+   "year": "2026",
+   "runtime": "31 min",
+   "page": "/watch/even-in-the-ruins",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=TL-UuhL9ays"
+    },
+    {
+     "label": "faithinwar.com",
+     "url": "https://www.faithinwar.com/ruins"
+    },
+    {
+     "label": "TBN+",
+     "url": ""
+    }
+   ],
+   "order": 94
+  },
+  {
+   "slug": "safe-ground",
+   "title": "Safe Ground",
+   "youtubeId": "BDmUPUTQ7ms",
+   "match": "Safe Ground",
+   "type": "film",
+   "collection": "fiw",
+   "episode": 3,
+   "topics": [
+    "landmines",
+    "soldiers"
+   ],
+   "logline": "Former Green Beret Ryan Hendrickson clears landmines from Ukrainian farmland.",
+   "synopsis": [
+    "Former Green Beret Ryan Hendrickson returns to Ukraine to clear landmines from farmland, so families can plant, harvest and live on their land again."
+   ],
+   "featuring": "Ryan Hendrickson",
+   "director": "[Director]",
+   "year": "2026",
+   "runtime": "28 min",
+   "page": "/watch/safe-ground",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=BDmUPUTQ7ms"
+    },
+    {
+     "label": "Prime Video",
+     "url": ""
+    },
+    {
+     "label": "faithinwar.com",
+     "url": "https://www.faithinwar.com/safe-ground"
+    }
+   ],
+   "pressMatch": [
+    "Safe Ground",
+    "landmine",
+    "Hendrickson"
+   ],
+   "order": 93
+  },
+  {
+   "slug": "soldiers-of-light",
+   "title": "Soldiers of Light",
+   "youtubeId": "W_qeZ_o9H-o",
+   "match": "Soldiers of Light",
+   "type": "film",
+   "collection": "fiw",
+   "episode": 4,
+   "topics": [
+    "soldiers"
+   ],
+   "logline": "Green Beret turned missionary Christian Hickey serves Ukraine’s soldiers.",
+   "synopsis": [
+    "Christian Hickey, a former Marine, deputy sheriff and Green Beret, moves his family to Ukraine to serve its soldiers as a missionary."
+   ],
+   "featuring": "Christian Hickey",
+   "director": "[Director]",
+   "year": "2026",
+   "runtime": "36 min",
+   "page": "/watch/soldiers-of-light",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=W_qeZ_o9H-o"
+    },
+    {
+     "label": "faithinwar.com",
+     "url": "https://www.faithinwar.com"
+    },
+    {
+     "label": "TBN+",
+     "url": ""
+    }
+   ],
+   "pressMatch": [
+    "Soldiers of Light",
+    "Hickey",
+    "Green Beret Reveals"
+   ],
+   "order": 92,
+   "trailerId": "-yqNfeeOBLM"
+  },
+  {
+   "slug": "no-surrender",
+   "title": "No Surrender",
+   "youtubeId": "rWy9TJwqR3A",
+   "match": "No Surrender",
+   "type": "film",
+   "collection": "fiw",
+   "episode": 5,
+   "topics": [
+    "clergy"
+   ],
+   "logline": "Kyiv pastor Yuri Babinets refuses to leave his city or his church.",
+   "synopsis": [
+    "Kyiv pastor Yuri Babinets refuses to leave his city or his church."
+   ],
+   "featuring": "Yuri Babinets",
+   "director": "[Director]",
+   "year": "2026",
+   "runtime": "18 min",
+   "page": "/watch/no-surrender",
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=rWy9TJwqR3A"
+    },
+    {
+     "label": "Українською (Ukrainian)",
+     "url": "https://www.youtube.com/watch?v=F53JiwEyEk0"
+    },
+    {
+     "label": "faithinwar.com",
+     "url": "https://www.faithinwar.com/no-surrender"
+    },
+    {
+     "label": "TBN+",
+     "url": ""
+    }
+   ],
+   "order": 91,
+   "trailerId": "amhkL54aB7E"
+  },
+  {
+   "slug": "no-priests-left",
+   "title": "No Priests Left",
+   "youtubeId": "R-j_SUu9NsY",
+   "match": "No Priests Left",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "clergy"
+   ],
+   "logline": "What happens to a parish when every priest is gone.",
+   "runtime": "16 min",
+   "page": "/watch/no-priests-left",
+   "pressMatch": [
+    "No Priests Left"
+   ],
+   "order": 80
+  },
+  {
+   "slug": "orthodox-under-fire",
+   "title": "Orthodox Under Fire",
+   "youtubeId": "nvDJBpK3gJk",
+   "match": "Orthodox",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "clergy"
+   ],
+   "logline": "Orthodox believers caught between Moscow and Kyiv.",
+   "runtime": "10 min",
+   "order": 79
+  },
+  {
+   "slug": "jewish-persecution",
+   "title": "Russia Targets Jewish Life in Ukraine",
+   "youtubeId": "5GghWokX0bc",
+   "match": "Jewish",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "jewish"
+   ],
+   "logline": "Ukraine’s Jewish communities under occupation.",
+   "runtime": "7 min",
+   "pressMatch": [
+    "Jewish",
+    "Jews"
+   ],
+   "order": 78
+  },
+  {
+   "slug": "behind-the-scenes",
+   "title": "Behind the Scenes",
+   "youtubeId": "g9vKyw6ADFU",
+   "match": "Behind the Scenes",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "bts"
+   ],
+   "logline": "How the team films safely inside a war zone.",
+   "runtime": "10 min",
+   "order": 77
+  },
+  {
+   "slug": "updates-from-the-front",
+   "title": "Updates from the Front",
+   "youtubeId": "FHjUc-035uI",
+   "match": "Updates from the Front",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "front"
+   ],
+   "logline": "Dispatches from the communities closest to the fighting.",
+   "runtime": "9 min",
+   "order": 75
+  },
+  {
+   "slug": "putin-and-christians",
+   "title": "Ukraine’s Christians vs. Putin’s Church",
+   "youtubeId": "wdOBA2G8BnM",
+   "match": "Putin",
+   "type": "short",
+   "collection": "deeper",
+   "topics": [
+    "clergy"
+   ],
+   "logline": "Explained: how the Kremlin uses its church against Ukraine’s believers.",
+   "runtime": "5 min",
+   "order": 74
+  }
+ ],
+ "hide": [
+  "MIX0MUm9ero",
+  "F53JiwEyEk0",
+  "xalyFFWZFqc",
+  "-yqNfeeOBLM",
+  "1uXKPOwao8I",
+  "amhkL54aB7E",
+  "j_quWGA1kDY",
+  "md5p36VEYkY"
+ ]
+}

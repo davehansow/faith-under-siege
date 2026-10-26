@@ -1,0 +1,39 @@
+<!-- =====================================================
+     A Faith Under Siege · Code Injection › HEADER
+     Squarespace: Website › Website Tools › Code Injection › Header
+     ===================================================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://i.ytimg.com">
+
+<script>
+  window.FUS_CONFIG = {
+    /* Where films.json, press.json and laurels.json live.
+       Option A (recommended): the GitHub + jsDelivr folder, e.g.
+         'https://cdn.jsdelivr.net/gh/<github-user>/<repo>@main/data'
+       Option B: upload each file to Squarespace and paste the three /s/ links below instead. */
+    dataBase: 'https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/data',
+    filmsUrl: '',      /* e.g. '/s/films.json'   (Option B only) */
+    pressUrl: '',      /* e.g. '/s/press.json'   (Option B only) */
+    laurelsUrl: '',    /* e.g. '/s/laurels.json' (Option B only) */
+
+    /* YouTube: the site reads data/youtube.json, which the GitHub Action refreshes daily.
+       Optional fallback if that file is ever missing: your referrer-restricted browser key. */
+    youtubeApiKey: '',
+    channelId: 'UCx-2kTPvk4Z505gS2ZEch-A',
+    /* Optional: tell the site what each playlist is, so new videos land in the right collection.
+       Get a playlist ID from its URL (…list=PLxxxx). */
+    playlists: {
+      'PLOkE5AsaHXxemW9C5q-x-db_3YSOpkjJY': { type: 'film', collection: 'fiw' },     /* Faith in War Series */
+      'PLOkE5AsaHXxcXQMc9tCD7s92pDQbYZ0D4': { type: 'short', collection: 'deeper' }  /* Short Films */
+      /* add the Angel series playlist here when it exists: 'PL…': { type: 'episode', collection: 'series' } */
+    },
+
+    watchPath: '/watch',          /* the Watch page */
+    filmTemplatePath: '/watch/film', /* page that plays any video by ?v=ID */
+    pressPath: '/press',
+    journalPath: '/journal',      /* your blog's URL slug */
+    social: { instagram: 'faithundersiege', x: 'FaithUnderSiege', facebook: 'afaithundersiege', tiktok: '' /* add handle */ }
+  };
+</script>

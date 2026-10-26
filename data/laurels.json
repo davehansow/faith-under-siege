@@ -1,0 +1,155 @@
+{
+ "_readme": "Festival laurels. film must match a slug in films.json.",
+ "items": [
+  {
+   "film": "a-faith-under-siege",
+   "award": "Winner",
+   "festival": "Christian Film Festival",
+   "year": "2025"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Winner",
+   "festival": "Religion Faith International Film Festival",
+   "year": "2025"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Finalist",
+   "festival": "Nieves International Christian Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Finalist",
+   "festival": "Hard Faith Fest NYC",
+   "year": "2025"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Nominee",
+   "festival": "Faith in Film International Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Nominee",
+   "festival": "Christian Faith, Hope & Love / Faith Film Fellowship Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Nominee",
+   "festival": "International Christian Film & Music Festival",
+   "year": "2026"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Official Selection",
+   "festival": "Christian Family Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "a-faith-under-siege",
+   "award": "Official Selection",
+   "festival": "Green Mountain Christian Film Festival",
+   "year": "2025"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Winner",
+   "festival": "Religion Faith International Film Festival",
+   "year": "2025"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Winner",
+   "festival": "Nieves International Christian Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Winner",
+   "festival": "III MYTH Social Impact Film Award",
+   "year": "2025"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Nominee",
+   "festival": "Faith in Film International Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Nominee",
+   "festival": "Christian Faith, Hope & Love / Faith Film Fellowship Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Nominee",
+   "festival": "International Christian Film & Music Festival",
+   "year": "2026"
+  },
+  {
+   "film": "no-priests-left",
+   "award": "Official Selection",
+   "festival": "Miracle Makers International Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Winner",
+   "festival": "Global Shorts",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Finalist",
+   "festival": "Christian Arts Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Finalist",
+   "festival": "Green Mountain Christian Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Nominee",
+   "festival": "Faith in Film International Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Official Selection",
+   "festival": "Religion Faith International Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Official Selection",
+   "festival": "Freedom Christian Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Official Selection",
+   "festival": "Star City Film & Theater Festival",
+   "year": "2026"
+  },
+  {
+   "film": "soldiers-of-light",
+   "award": "Official Selection",
+   "festival": "Christian Family Film Festival",
+   "year": "2026"
+  },
+  {
+   "film": "no-surrender",
+   "award": "Nominee",
+   "festival": "Faith Fest",
+   "year": "2026"
+  }
+ ]
+}

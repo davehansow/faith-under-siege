@@ -1,0 +1,28 @@
+name: Refresh YouTube catalog
+on:
+  schedule:
+    - cron: '17 9 * * *'   # daily, 09:17 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/refresh-youtube.mjs
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain data/youtube.json)" ]; then
+            git config user.name "fus-bot"
+            git config user.email "fus-bot@users.noreply.github.com"
+            git add data/youtube.json
+            git commit -m "Refresh YouTube catalog"
+            git push
+            curl -s "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/data/youtube.json" > /dev/null || true
+          fi
