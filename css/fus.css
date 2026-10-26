@@ -402,6 +402,48 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
   .fus-follow__intro { position: static; }
 }
 
+/* ---------- Host a screening page ---------- */
+.fus-sc-hero .fus-hero__media::after { background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.55) 45%, rgba(10,10,10,0.25) 100%); }
+.fus-sc-kit { display: grid; grid-template-columns: ~"minmax(0, 5fr) minmax(0, 7fr)"; gap: 56px; align-items: start; }
+.fus-sc-kit__intro { display: flex; flex-direction: column; gap: 24px; }
+.fus-sc-kit__img { width: 100%; max-width: 460px; height: auto; }
+.fus-sc-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--fus-line-strong); }
+.fus-sc-list li { display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 26px 0; border-bottom: 1px solid var(--fus-line-strong); }
+.fus-sc-list__n { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; color: var(--fus-red-text); padding-top: 6px; }
+.fus-sc-list h3, .fus-sc-step h3 { margin: 0 0 6px; font-size: 24px; font-weight: 500; letter-spacing: -0.015em; }
+.fus-sc-list p, .fus-sc-step p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--fus-soft); }
+.fus-sc-steps { display: grid; grid-template-columns: ~"repeat(auto-fit, minmax(min(100%, 260px), 1fr))"; gap: 20px; margin-top: 40px; }
+.fus-sc-step { border-top: 2px solid currentColor; padding-top: 22px; }
+.fus-sc-step__n { display: block; font-size: 56px; line-height: 1; font-weight: 500; letter-spacing: -0.03em; color: var(--fus-red-on-light); margin-bottom: 18px; }
+.fus-light .fus-sc-step p { color: var(--fus-light-muted); }
+.fus-sc-formhead { max-width: 720px; margin: 0 auto; padding: 96px var(--fus-gutter) 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 100px; }
+.fus-sc-faq { display: grid; grid-template-columns: ~"minmax(0, 4fr) minmax(0, 8fr)"; gap: 56px; }
+.fus-sc-faq__list { border-top: 1px solid var(--fus-line-strong); }
+.fus-sc-faq details { border-bottom: 1px solid var(--fus-line-strong); }
+.fus-sc-faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; font-size: 20px; font-weight: 500; }
+.fus-sc-faq summary::-webkit-details-marker { display: none; }
+.fus-sc-faq summary::after { content: "+"; color: var(--fus-red-text); font-size: 24px; line-height: 1; }
+.fus-sc-faq details[open] summary::after { content: "–"; }
+.fus-sc-faq details p { margin: 0 0 22px; max-width: 640px; font-size: 16px; line-height: 1.6; color: var(--fus-soft); }
+.fus-sc-faq a { text-decoration: underline !important; }
+@media (max-width: 800px) {
+  .fus-sc-kit, .fus-sc-faq { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* Native Squarespace form in the same section as .fus-sc-formhead: dark, square, A24-style */
+.page-section:has(.fus-sc-formhead) .form-wrapper, .page-section:has(.fus-sc-formhead) .form-block { max-width: 720px; margin: 0 auto 96px; padding: 0 var(--fus-gutter); color: var(--fus-fg); font-family: var(--fus-font); }
+.page-section:has(.fus-sc-formhead) label, .page-section:has(.fus-sc-formhead) legend, .page-section:has(.fus-sc-formhead) .title, .page-section:has(.fus-sc-formhead) .description { color: var(--fus-fg) !important; font-family: var(--fus-font) !important; }
+.page-section:has(.fus-sc-formhead) .title { font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+.page-section:has(.fus-sc-formhead) input:not([type=checkbox]):not([type=radio]):not([type=submit]),
+.page-section:has(.fus-sc-formhead) select,
+.page-section:has(.fus-sc-formhead) textarea { background: #121212 !important; color: var(--fus-fg) !important; border: 1px solid var(--fus-line-strong) !important; border-radius: 0 !important; padding: 14px 16px !important; font-family: var(--fus-font) !important; font-size: 16px !important; }
+.page-section:has(.fus-sc-formhead) input:focus, .page-section:has(.fus-sc-formhead) select:focus, .page-section:has(.fus-sc-formhead) textarea:focus { border-color: var(--fus-red-text) !important; outline: none; }
+.page-section:has(.fus-sc-formhead) button[type=submit], .page-section:has(.fus-sc-formhead) input[type=submit], .page-section:has(.fus-sc-formhead) .form-button-wrapper button { background: var(--fus-red) !important; color: #fff !important; border: 1px solid var(--fus-red) !important; border-radius: 0 !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; padding: 16px 28px !important; }
+.page-section:has(.fus-sc-formhead) .form-item { margin-bottom: 22px; }
+.page-section:has(.fus-sc-formhead) .form-item label.title, .page-section:has(.fus-sc-formhead) legend.title { display: block; margin-bottom: 8px; }
+.page-section:has(.fus-sc-formhead) input:not([type=checkbox]):not([type=radio]):not([type=submit]), .page-section:has(.fus-sc-formhead) select, .page-section:has(.fus-sc-formhead) textarea { width: 100% !important; box-sizing: border-box; }
+.page-section:has(.fus-sc-formhead) .form-submission-text { color: var(--fus-fg); font-size: 18px; }
+
 @media (max-width: 640px) {
   :root { --fus-gutter: 16px; }
   .fus-section { padding: 52px 0; }

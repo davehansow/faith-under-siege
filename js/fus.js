@@ -361,7 +361,7 @@
         '</div></div></div>' +
         '<div class="fus-wrap fus-film__body"><div class="fus-film__synopsis">' +
         (f.synopsis && f.synopsis.length ? f.synopsis : [f.logline || '']).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') +
-        '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(attr(el, 'screening-url', '/host-a-screening')) + '">Host a screening of this film</a>' +
+        '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(attr(el, 'screening-url', '/general-screening')) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +
         '<dl class="fus-dl">' + rows.map(function (x) { return '<dt>' + x[0] + '</dt><dd' + (x[2] ? ' class="fus-dl__stack"' : '') + '>' + x[1] + '</dd>'; }).join('') + '</dl></div>' +
         (related.length ? '<div class="fus-section"><div class="fus-wrap"><div class="fus-head"><h2 class="fus-h2">Keep watching</h2><a class="fus-link" href="' + esc(C.watchPath) + '">View all</a></div>' +
