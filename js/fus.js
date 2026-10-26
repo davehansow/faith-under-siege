@@ -441,10 +441,13 @@
   }
   function pressLogos(el) {
     getJSON(dataUrl('press.json', C.pressUrl)).then(function (data) {
-      var names = data.featuredOutlets || [];
+      var logos = data.featuredLogos || (data.featuredOutlets || []).map(function (x) { return { name: x }; });
       var n = (data.items || []).length;
       el.innerHTML = '<div class="fus-logos"><span class="fus-eyebrow">As featured in</span>' +
-        names.map(function (x) { return '<span class="fus-logos__name">' + esc(x) + '</span>'; }).join('') +
+        logos.map(function (x) {
+          return safeUrl(x.logo) ? '<img class="fus-logos__img" src="' + esc(x.logo) + '" alt="' + esc(x.name) + '" loading="lazy">'
+            : '<span class="fus-logos__name">' + esc(x.name) + '</span>';
+        }).join('') +
         '<a class="fus-link fus-logos__more" href="' + esc(C.pressPath) + '">' + (Math.floor(n / 10) * 10) + '+ features</a></div>';
     }).catch(function (e) { failed(el, e); });
   }
@@ -525,6 +528,12 @@
 
   /* ---------------- boot ---------------- */
   var COMPONENTS = { rail: rail, library: library, film: film, press: pressPage, 'press-headlines': pressHeadlines, 'press-logos': pressLogos, laurels: laurelsBlock, journal: journal, 'journal-filter': journalFilter, social: social };
+  // A logo or key-art image that fails to load falls back to text / plain panel instead of a broken icon
+  document.addEventListener('error', function (e) {
+    var t = e.target; if (!t || t.tagName !== 'IMG') return;
+    if (t.classList.contains('fus-logos__img')) { var s = document.createElement('span'); s.className = 'fus-logos__name'; s.textContent = t.alt; t.replaceWith(s); }
+    else if (t.closest && t.closest('.fus')) t.style.display = 'none';
+  }, true);
   function boot(root) {
     document.documentElement.classList.toggle('fus-on', isNewPage());
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {

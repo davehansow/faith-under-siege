@@ -204,6 +204,8 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-stream strong { color: var(--fus-fg); font-weight: 500; }
 
 /* ---------- 5. Press logos strip ---------- */
+.fus-logos__img { height: 26px; width: auto; max-width: 140px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.85; }
+.fus-light .fus-logos__img { filter: brightness(0); opacity: 0.8; }
 .fus-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 40px; padding: 28px 0; border-bottom: 1px solid var(--fus-line); }
 .fus-logos__name { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: var(--fus-soft); }
 .fus-logos__more { margin-left: auto; color: var(--fus-red-text); }
@@ -233,6 +235,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-split { display: grid; grid-template-columns: ~"repeat(auto-fit, minmax(min(100%, 520px), 1fr))"; gap: 20px; }
 .fus-panel { position: relative; min-height: 520px; display: flex; flex-direction: column; justify-content: flex-end; gap: 14px; padding: 40px; overflow: hidden; background: #1A1210; color: var(--fus-fg); }
 .fus-panel:nth-child(2) { background: #10141A; }
+.fus-panel__img[src^="REPLACE"] { display: none; }
 .fus-panel__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .fus-panel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 70%); }
 .fus-panel > *:not(.fus-panel__img) { position: relative; z-index: 1; }

@@ -1,2105 +1,2147 @@
 {
-"_readme": "Press coverage. Newest first is not required; the site sorts by date. type is one of Article, Op-ed, TV & video, Radio & podcast. Add featured: true to pin an item to the homepage.",
-"featuredOutlets": [
-"Politico",
-"Fox News",
-"CBN",
-"Christianity Today",
-"The Hill",
-"USA Today",
-"Newsmax",
-"National Post",
-"Daily Caller",
-"New York Times"
-],
-"items": [
-{
-"date": "2026-10-23",
-"outlet": "Military Times",
-"title": "Colby Barrett op-ed",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.militarytimes.com/veterans/2026/10/23/marine-sniper-veteran-visits-ukraine-to-meet-man-behind-2069-meter-shot/",
-"note": "Colby's op-ed"
-},
-{
-"date": "2026-10-12",
-"outlet": "Washington Watch",
-"title": "Steven on Washington Watch",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=PXdo8H0bTMA",
-"note": "Steven interview"
-},
-{
-"date": "2026-10-09",
-"outlet": "The Marc Cox Morning Show",
-"title": "Colby Barrett: Ukrainian child abduction documentary",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/no/podcast/colby-barrett-ukrainian-child-abduction-documentary/id1213933085?i=1000793882357",
-"note": "The Stolen Children"
-},
-{
-"date": "2026-10-01",
-"outlet": "Drew Mariani Show",
-"title": "Steven on Drew Mariani Show",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.iheart.com/podcast/256-the-drew-mariani-show-31041158/episode/therese-of-lisieux-russia-threatens-ukraine-and-tenesssees-botched-xecution-346684450",
-"note": "Steven Interview"
-},
-{
-"date": "2026-09-30",
-"outlet": "Washington Times",
-"title": "Steven Op-Ed - Time for Trump to confront Putin",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.washingtontimes.com/news/2026/sep/30/time-trump-confront-putin/",
-"note": "Steven Op-Ed"
-},
-{
-"date": "2026-09-28",
-"outlet": "Military Times",
-"title": "Green Beret who survived an IED now clears Ukraine’s landmines",
-"type": "Article",
-"language": "English",
-"url": "https://www.militarytimes.com/off-duty/military-culture/2026/09/28/green-beret-who-survived-an-ied-now-clears-ukraines-landmines/",
-"note": "Safe Ground; Colby quoted"
-},
-{
-"date": "2026-09-18",
-"outlet": "The Lars Larson Show",
-"title": "Colby Barrett: Will new Russia sanctions give Trump more leverage over Putin?",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://thelarslarsonshow.buzzsprout.com/2602482/episodes/19823177-colby-barrett-will-new-russia-sanctions-give-trump-more-leverage-over-putin",
-"note": "AFUS/Faith in War at 3:30"
-},
-{
-"date": "2026-09-03",
-"outlet": "Washington Watch",
-"title": "Steven on Washington Watch",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=PdOMIb9GE-g&t=1s",
-"note": "Steven Interview"
-},
-{
-"date": "2026-09-02",
-"outlet": "Rumble",
-"title": "Inside the war in Ukraine right now with Steven Moore",
-"type": "TV & video",
-"language": "English",
-"url": "https://rumble.com/v7ezlqq-inside-the-war-in-ukraine-right-now-with-steven-moore.html",
-"note": "Outlet to confirm"
-},
-{
-"date": "2026-08-28",
-"outlet": "Christianity Today",
-"title": "Ukraine prayer breakfast (Jill Nelson), features Colby and Karl",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianitytoday.com/2026/08/ukraine-prayer-breakfast-christians-state-leaders/",
-"note": "Plugs Faith in War; headline to confirm"
-},
-{
-"date": "2026-08-21",
-"outlet": "Intelligence Online",
-"title": "The influence network improving Kyiv's standing in Washington",
-"type": "Article",
-"language": "English",
-"url": "https://www.intelligenceonline.com/europe-russia/2026/08/21/the-influence-network-improving-kyiv-s-standing-in-washington,110862568-eve",
-"note": "Mentions Steven Moore"
-},
-{
-"date": "2026-08-18",
-"outlet": "The Baptist Paper",
-"title": "New documentary series brings Ukraine war stories to global audience",
-"type": "Article",
-"language": "English",
-"url": "https://thebaptistpaper.org/new-documentary-series-brings-ukraine-war-stories-to-global-audience/",
-"note": "Faith in War; reprint of CDI"
-},
-{
-"date": "2026-08-12",
-"outlet": "Scott Hennen Show",
-"title": "Steven on Scott Hennen Show",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podimo.com/dk/shows/whats-on-your-mind-10/episode/54749854-b825-590f-b9f8-87ea46e9036b",
-"note": "Steven Interiew"
-},
-{
-"date": "2026-08-12",
-"outlet": "Christian Daily International",
-"title": "New documentary series brings Ukraine war’s faith stories to global audience",
-"type": "Article",
-"language": "English",
-"url": "https://www.christiandaily.com/news/new-documentary-series-brings-ukraine-war-s-faith-stories-to-global-audience",
-"note": "Faith in War"
-},
-{
-"date": "2026-08-07",
-"outlet": "Stars and Stripes",
-"title": "Work of veterans in Ukraine highlighted in documentary",
-"type": "Article",
-"language": "English",
-"url": "https://www.stripes.com/veterans/2026-08-07/brain-injuries-disability-payouts-former-submariners-benefits-22475827.html",
-"note": "Safe Ground"
-},
-{
-"date": "2026-08-06",
-"outlet": "Slate",
-"title": "Ukraine’s Best Hope Is … a Right-Wing Troll?",
-"type": "Article",
-"language": "English",
-"url": "https://slate.com/news-and-politics/2026/08/ukraine-war-laura-loomer-twitter-trump-russia-drones.html",
-"note": "Mentioned Steven Moore"
-},
-{
-"date": "2026-08-04",
-"outlet": "Rumble",
-"title": "The latest from Iran and Ukraine with Steven Moore",
-"type": "TV & video",
-"language": "English",
-"url": "https://rumble.com/v7do1yc-the-latest-from-iran-and-ukraine-with-steven-moore.html",
-"note": "Faith in War at 5:50"
-},
-{
-"date": "2026-08-03",
-"outlet": "Baptist Press",
-"title": "Russia has stolen 1.6 million children from occupied Ukraine since 2014, advocates say",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/russia-has-stolen-1-6-million-children-from-occupied-ukraine-since-2014-advocates-say/",
-"note": "Mentions Steven Moore"
-},
-{
-"date": "2026-08-03",
-"outlet": "Steve Gruber w/Scott Bertram",
-"title": "Steven on with Scott Bertram",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://open.spotify.com/episode/0fCORhuO8giENyFCR6lpSv",
-"note": "Steven Interiew"
-},
-{
-"date": "2026-08-01",
-"outlet": "New York Times",
-"title": "How Ukraine is Making Inroads with MAGA and a Trump ALly",
-"type": "Article",
-"language": "English",
-"url": "https://www.nytimes.com/2026/08/01/us/politics/ukraine-maga-loomer-trump.html",
-"note": "Quotes Steven Moore"
-},
-{
-"date": "2026-07-30",
-"outlet": "PR Newswire",
-"title": "New Faith in War series premiering on YouTube and TBN spotlights spiritual strength and heroism in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.prnewswire.com/news-releases/new-faith-in-war-series-premiering-on-youtube-and-tbn-spotlights-spiritual-strength-and-heroism-in-ukraine-302838304.html",
-"note": "Press release (also Christian Newswire)"
-},
-{
-"date": "2026-07-29",
-"outlet": "Liga.net",
-"title": "Former Congressional Consultant: Blogger Laura Loomer Proved More Effective Than Any Ambassador",
-"type": "Article",
-"language": "English",
-"url": "https://news.liga.net/en/politics/news/former-congressional-consultant-blogger-laura-loomer-proved-more-effective-than-any-ambassador",
-"note": "Mentions Steven Moore"
-},
-{
-"date": "2026-07-27",
-"outlet": "The Times",
-"title": "Revealed, the mission to change Trump’s mind on Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.thetimes.com/us/american-politics/article/laura-loomer-ukraine-russia-zelensky-maga-08zmzm87c",
-"note": "Steven Interview"
-},
-{
-"date": "2026-07-24",
-"outlet": "Semafor",
-"title": "Loomer becomes Ukraine’s MAGA ally",
-"type": "Article",
-"language": "English",
-"url": "https://www.semafor.com/article/07/24/2026/loomer-becomes-ukraines-maga-ally",
-"note": "Mentions Steven Moore"
-},
-{
-"date": "2026-07-23",
-"outlet": "Kyiv Post",
-"title": "OPINION: Drones vs. Humans- Ukraine's Defense Reshuffle",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.kyivpost.com/opinion/80911",
-"note": "Authored by Steven Moore"
-},
-{
-"date": "2026-07-23",
-"outlet": "Politico",
-"title": "Asian allies fed up with Washington’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.politico.com/newsletters/national-security-daily/2026/07/23/asian-allies-fed-up-with-washingtons-war-01010390",
-"note": "Mentions Steven Moore"
-},
-{
-"date": "2026-07-21",
-"outlet": "Kyiv Post",
-"title": "ANALYSIS: Sanctioning Russia is Popular in America",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.kyivpost.com/analysis/80717",
-"note": "Authored by Steven Moore"
-},
-{
-"date": "2026-07-20",
-"outlet": "Armstrong Williams Show",
-"title": "Steven on Armstrong Williams Show",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=pLzjxanm8sQ",
-"note": "Steven Interview"
-},
-{
-"date": "2026-07-12",
-"outlet": "Forbes.UA",
-"title": "Trump's chief negotiator. Senator Lindsey Graham died suddenly in the US. What did he do for Ukraine? In memoriam",
-"type": "Article",
-"language": "Russian",
-"url": "https://forbes.ua/ru/svit/golovniy-peregovirnik-z-trampom-po-sanktsiyakh-u-ssha-raptovo-pomer-senator-lindsi-grem-shcho-vin-zrobiv-dlya-ukraini-in-memoriam-12072026-40348",
-"note": "Quotes Steven Moore & Ukraine Freedom Project"
-},
-{
-"date": "2026-07-10",
-"outlet": "Lars Larson Show",
-"title": "Steven Moore - Is Ukraine actually winning the war?",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://open.spotify.com/episode/5mnyQnULFN5KQrkCEZh5m8",
-"note": ""
-},
-{
-"date": "2026-07-07",
-"outlet": "Its Vitenam",
-"title": "Oreshnik's trump card and Russia's psychological warfare tactics to deter the West.",
-"type": "Article",
-"language": "French",
-"url": "https://www.vietnam.vn/fr/at-chu-bai-oreshnik-va-don-tam-ly-chien-cua-nga-nham-ran-de-phuong-tay",
-"note": "Quotes Steven Moore & Ukraine Freedom Project"
-},
-{
-"date": "2026-06-23",
-"outlet": "The Christian Post",
-"title": "Candace Owens is wrong about Russia",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/candace-owens-is-wrong-about-russia.html",
-"note": "Authored by Steven Moore & Colby Barrett"
-},
-{
-"date": "2026-06-22",
-"outlet": "apostrophe.UA",
-"title": "How the Russian Federation is distancing Republicans from Ukraine: a political strategist named two effective messages",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://apostrophe.ua/politics/jak-rf-viddaljaje-respublikantsiv-vid-ukrajini-polittekhnoloh-nazvav-dva-efektivni-mesedzhi.html",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-06-22",
-"outlet": "Kyiv Post",
-"title": "Ukrainian F-16 shoots down Russian fighter jet in air combat for the first time, says US general",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://www.kyivpost.com/uk/post/80804",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-06-22",
-"outlet": "apostrophe.UA",
-"title": "Pavel Unguryan: US support for Ukraine has gone through three stages and is growing again.",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://apostrophe.ua/ru/politics/pavel-unhurjan-podderzhka-ukrainy-v-ssha-proshla-tri-etapa-i-snova-usilivaetsja.html",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-06-18",
-"outlet": "Christian Daily International",
-"title": "Producer of film on Ukraine war targeted by Russian cyber attack",
-"type": "Article",
-"language": "English",
-"url": "https://www.christiandaily.com/news/producer-of-film-on-ukraine-war-targeted-by-russian-cyber-attack",
-"note": ""
-},
-{
-"date": "2026-06-18",
-"outlet": "Washington Examiner",
-"title": "Unpacking Laura Loomer’s mea culpa on Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.washingtonexaminer.com/news/washington-secrets/4614200/laura-loomer-ukraine-russia-propaganda/",
-"note": "Mentions Steven Moore & Ukraine Freedom Project"
-},
-{
-"date": "2026-06-18",
-"outlet": "Real Talk with Riggin",
-"title": "Colby Barrett on Ukraine",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.iheart.com/podcast/1323-real-talk-with-riggin-293384476/",
-"note": ""
-},
-{
-"date": "2026-06-16",
-"outlet": "EWTN News",
-"title": "Ukraine advocate says cathedral bombing reflects broader campaign against Christianity",
-"type": "Article",
-"language": "English",
-"url": "https://www.ewtnnews.com/world/us/ukraine-advocate-says-cathedral-bombing-reflects-broader-campaign-against-christianity",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-06-16",
-"outlet": "Newsmax",
-"title": "Newsmax Hit",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=XQ-3J2QUSu4",
-"note": ""
-},
-{
-"date": "2026-06-14",
-"outlet": "The Hill",
-"title": "‘Time is not on our side’: Ukraine presses Trump for help with children stolen by Russia",
-"type": "Article",
-"language": "English",
-"url": "https://thehill.com/policy/international/5922381-ukraine-urges-trump-help-children/",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-06-11",
-"outlet": "Washington Examiner",
-"title": "Poll shows Tucker Carlson losing his grip on GOP as conservative Ukraine supporters take on pro-Russia voices",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.washingtonexaminer.com/news/washington-secrets/4604415/tucker-carlson-republican-poll-ukraine-russia/",
-"note": "Quotes Steven Moore"
-},
-{
-"date": "2026-06-06",
-"outlet": "Forbes",
-"title": "Russia's Oreshnik Missile Matters More For Deterrence Than Destruction",
-"type": "Article",
-"language": "English",
-"url": "https://www.forbes.com/sites/davidkirichenko/2026/07/06/russias-oreshnik-missile-matters-more-for-deterrence-than-destruction/",
-"note": "Quotes Steven Moore"
-},
-{
-"date": "2026-06-01",
-"outlet": "Washington Stand",
-"title": "As Ukraine Begins to Turn Tide of War, Christians Remain Prime Russian Target",
-"type": "Article",
-"language": "English",
-"url": "https://washingtonstand.com/article/as-ukraine-begins-to-turn-tide-of-war-christians-remain-prime-russian-target",
-"note": ""
-},
-{
-"date": "2026-05-31",
-"outlet": "Newsmax",
-"title": "Alex Salvi reporting with Steven Moore",
-"type": "TV & video",
-"language": "English",
-"url": "https://x.com/newsmax/status/2061094186560974940",
-"note": "X post"
-},
-{
-"date": "2026-05-29",
-"outlet": "Washington Watch with Tony Perkins",
-"title": "Colby Barrett Goes Behind the Scenes of the Ukraine-Russia War to Share Its Impact on Christians",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=W2YcYageXpA",
-"note": ""
-},
-{
-"date": "2026-05-20",
-"outlet": "Steve Gruber Show`",
-"title": "Live From Kiev: Ukraine Turns the Tide | with Steven Moore",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=DMKDyUG-QWs",
-"note": ""
-},
-{
-"date": "2026-05-15",
-"outlet": "Christianity Today",
-"title": "As Russia Strikes Ukrainian Churches, Worship Goes On",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianitytoday.com/2026/05/russia-ukraine-church-bombing-attack-religious/",
-"note": "Mentions Colby Barrett"
-},
-{
-"date": "2026-05-12",
-"outlet": "Kyiv Post",
-"title": "OPINION: Putin Is a Loser",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.kyivpost.com/opinion/75980",
-"note": "Written by Steven Moore"
-},
-{
-"date": "2026-05-08",
-"outlet": "Forbes",
-"title": "Putin’s Victory Day Parade Relies On A U.S.-Brokered Ukraine Truce",
-"type": "Article",
-"language": "English",
-"url": "https://www.forbes.com/sites/davidkirichenko/2026/05/08/putins-victory-day-parade-relies-on-a-us-brokered-ukraine-truce/",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-05-04",
-"outlet": "Christian Daily International",
-"title": "Russia damages church building in Ukraine with second bombing",
-"type": "Article",
-"language": "English",
-"url": "https://www.christiandaily.com/news/russia-damages-church-building-in-ukraine-with-second-bombing",
-"note": ""
-},
-{
-"date": "2026-04-28",
-"outlet": "Evangeliques Info",
-"title": "Ukraine: Un verset biblique sur une église baptiste récemment bombardée, signe de résilience",
-"type": "Article",
-"language": "English",
-"url": "https://www.evangeliques.info/2026/04/28/ukraine-eglise-baptiste-zaporijia-verset-biblique/",
-"note": "None"
-},
-{
-"date": "2026-04-28",
-"outlet": "FOX News",
-"title": "White House Correspondents’ Dinner Chaos",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://radio.foxnews.com/2026/04/28/white-house-correspondents-dinner-chaos/",
-"note": "None"
-},
-{
-"date": "2026-04-28",
-"outlet": "NTD",
-"title": "Ukrainian Christians Under Siege by Russia, Filmmakers Say",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=uwmg-wzzmXc",
-"note": "None"
-},
-{
-"date": "2026-04-27",
-"outlet": "WLS 890 AM",
-"title": "Military Monday: Marine turned filmmaker talks new documentary, 'A Faith Under Siege'",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/za/podcast/military-monday-marine-turned-filmmaker-talks-new-documentary/id1755797866?i=1000763844769",
-"note": "None"
-},
-{
-"date": "2026-04-27",
-"outlet": "The Marc Cox Morning Show",
-"title": "Colby Barrett on “Faith Under Siege,” Ukraine Church Attacks, and Targeting of Christian Communities",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/za/podcast/colby-barrett-on-faith-under-siege-ukraine-church-attacks/id1213933085?i=1000763821150",
-"note": "None"
-},
-{
-"date": "2026-04-27",
-"outlet": "Ray Stevens Show",
-"title": "Colby Barrett on Ukraine",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/us/podcast/the-ray-stevens-show-monday-april-27th-2026/id1755797866?i=1000763826280&l=ar",
-"note": ""
-},
-{
-"date": "2026-04-27",
-"outlet": "Marc Cox Morning Show",
-"title": "Colby Barrett on Ukraine",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.audacy.com/podcasts/b963b06e6f86c63ce7e55c1be452ccd3/episodes/colby_barrett_on_faith_under_s-8337011",
-"note": ""
-},
-{
-"date": "2026-04-24",
-"outlet": "Daily Caller",
-"title": "New Bill Brings Light To All But One Church Under Russian Persecution",
-"type": "Article",
-"language": "English",
-"url": "https://dailycaller.com/2026/04/24/christian-persecution-russia-war-joe-wilson-orthodox/",
-"note": "None"
-},
-{
-"date": "2026-04-22",
-"outlet": "Roys Report",
-"title": "Russia’s deadly strike on Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
-"type": "Article",
-"language": "English",
-"url": "https://roysreport.com/russias-strike-on-ukraine-church-wasnt-an-accident-advocates-say/",
-"note": ""
-},
-{
-"date": "2026-04-22",
-"outlet": "Crosswalk",
-"title": "Embassy of Ukraine in U.S. Declares Russian Attack on Ukrainian Church ‘Deliberate’",
-"type": "Article",
-"language": "English",
-"url": "https://www.crosswalk.com/headlines/contributors/elizabeth-delaney/embassy-of-ukraine-in-us-declares-russian-attack-on-ukrainian-church-deliberate.html",
-"note": ""
-},
-{
-"date": "2026-04-22",
-"outlet": "The Raid Revolution",
-"title": "[title needed]",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.facebook.com/watch/?v=1551261163342606",
-"note": ""
-},
-{
-"date": "2026-04-21",
-"outlet": "The Pathway",
-"title": "Russia’s deadly strike on busy Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
-"type": "Article",
-"language": "English",
-"url": "https://mbcpathway.com/2026/04/21/russias-deadly-strike-on-busy-ukraine-baptist-church-wasnt-an-accident-advocates-say/",
-"note": "None"
-},
-{
-"date": "2026-04-21",
-"outlet": "10 Years Evangelical Focus",
-"title": "Russian attack on Baptist church in Ukraine kills pastor",
-"type": "Article",
-"language": "English",
-"url": "https://evangelicalfocus.com/europe/34498/russian-attack-on-baptist-church-kills-pastor",
-"note": "None"
-},
-{
-"date": "2026-04-19",
-"outlet": "The Reid Revolution with John Reid",
-"title": "Colby Barrett",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/za/podcast/colby-barrett/id1866683797?i=1000756236553",
-"note": "None"
-},
-{
-"date": "2026-04-18",
-"outlet": "The Christian Post",
-"title": "Russia strikes Baptist church in Ukraine, killing pastor at prayer meeting",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianpost.com/news/russia-strikes-baptist-church-in-ukraine-during-worship-service.html",
-"note": ""
-},
-{
-"date": "2026-04-17",
-"outlet": "BaptistPress",
-"title": "Russia’s deadly strike on busy Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/russias-deadly-strike-on-busy-ukraine-baptist-church-no-accident-advocates-say/",
-"note": "None"
-},
-{
-"date": "2026-04-16",
-"outlet": "WMBS590AM",
-"title": "The Afternoon Drive Show with Doug Saltzman 4/15/26",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=0kSat4Nn18c&t=1433s",
-"note": "None"
-},
-{
-"date": "2026-04-15",
-"outlet": "Ukraine Freedom Project",
-"title": "Defeat of Viktor Orbán: What It Means for the Russia–Ukraine War?",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=p8SSA8feca4",
-"note": "None"
-},
-{
-"date": "2026-04-06",
-"outlet": "Kyiv Post",
-"title": "OPINION: Is Trump Here to Stay?",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.kyivpost.com/opinion/73357",
-"note": "Written by Steven Moore"
-},
-{
-"date": "2026-04-02",
-"outlet": "The Lars Larson Show",
-"title": "Colby Barrett - Are We Headed For Ground Invasion In Iran?",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/za/podcast/colby-barrett-are-we-headed-for-ground-invasion-in-iran/id1890300009?i=1000758922194",
-"note": "None"
-},
-{
-"date": "2026-03-31",
-"outlet": "The Christian Post",
-"title": "US launches $25M effort to free abducted Ukrainian children",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianpost.com/news/us-launches-25-million-effort-free-abducted-ukrainian-children.html",
-"note": "None"
-},
-{
-"date": "2026-03-31",
-"outlet": "Niezalezna",
-"title": "Nawrocki's blow to the Russian narrative in the U.S. Senior official: Those were extremely important words",
-"type": "Article",
-"language": "Polish",
-"url": "https://niezalezna.pl/swiat/cios-nawrockiego-w-rosyjska-narracje-w-usa-wysoki-urzednik-to-byly-niezwykle-wazne-slowa/567116",
-"note": "Mentions Ukraine Freedom Project"
-},
-{
-"date": "2026-03-28",
-"outlet": "IGospel",
-"title": "Ukraine : Un verset biblique sur une église baptiste récemment bombardée, signe de résilience",
-"type": "Article",
-"language": "English",
-"url": "https://igospelmagazine.com/2026/ukraine-un-verset-biblique-sur-une-eglise-baptiste-recemment-bombardee-signe-de-resilience/",
-"note": ""
-},
-{
-"date": "2026-03-26",
-"outlet": "ETWN News",
-"title": "Ukraine monastery hit in Russian missile strike, ‘most historic church’ targeted so far",
-"type": "Article",
-"language": "English",
-"url": "https://www.ewtnnews.com/world/europe/ukraine-monastery-hit-in-russian-missile-strike-most-historic-church-targeted-so-far",
-"note": "None"
-},
-{
-"date": "2026-03-10",
-"outlet": "Tampa Bay Times",
-"title": "Russian weapons are killing Americans. Why doesn’t Rep. Luna call it out? | Column",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.tampabay.com/viewpoints/2026/03/10/iran-isreal-trump-war-shahed-kometa-congress-putin-dmitriev/",
-"note": "Op-ed written by Colby Barrett and Steve Moore"
-},
-{
-"date": "2026-03-04",
-"outlet": "My Faith Radio",
-"title": "Ukrainian Christians suffering at the hands of Russia - Colby Barrett | Cultivating authentic connection with others at church - Tom Bennardo",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.myfaithradio.com/programs/reconnect-with-carmen-laberge/ukrainian-christians-suffering-at-the-hands-of-russia-colby-barrett-cultivating-authentic-connection-with-others-at-church-tom-bennardo-1756732500/",
-"note": "None"
-},
-{
-"date": "2026-02-28",
-"outlet": "For God's Glory Alone Ministries",
-"title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.fggam.org/2026/02/enough-is-enough-putin-must-be-stopped-450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
-"note": "None"
-},
-{
-"date": "2026-02-27",
-"outlet": "Baptist Press",
-"title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
-"note": ""
-},
-{
-"date": "2026-02-27",
-"outlet": "The Pathway",
-"title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://mbcpathway.com/2026/03/01/450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "OSV News",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.osvnews.com/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
-"note": ""
-},
-{
-"date": "2026-02-24",
-"outlet": "Christianity Today",
-"title": "Four Years into the War, Life Goes on for Ukrainians",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianitytoday.com/2026/02/ukraine-war-christian-church-winter-normal/",
-"note": ""
-},
-{
-"date": "2026-02-24",
-"outlet": "Baptist Press",
-"title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
-"note": ""
-},
-{
-"date": "2026-02-24",
-"outlet": "For God's Glory Alone Ministries",
-"title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.fggam.org/2026/02/baptist-press-at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
-"note": ""
-},
-{
-"date": "2026-02-24",
-"outlet": "Biblical Recorder",
-"title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.brnow.org/news/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
-"note": ""
-},
-{
-"date": "2026-02-24",
-"outlet": "The Pathway",
-"title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
-"type": "Article",
-"language": "English",
-"url": "https://mbcpathway.com/2026/02/24/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "Faith on View",
-"title": "Four Years into the War, Life Goes on for Ukrainians",
-"type": "Article",
-"language": "English",
-"url": "https://www.faithonview.com/life-under-russian-drones-ukrainians-refuse-to-stop-living/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "The Christian Citizen",
-"title": "Four Years into the War, Life Goes on for Ukrainians",
-"type": "Article",
-"language": "English",
-"url": "https://www.christiancitizen.us/articles/weekly-religion-news-roundup-february-20-26-2026",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "Catholic Star Herald",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://catholicstarherald.org/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "Catholic Review",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://catholicreview.org/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "The Catholic Weekly",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://catholicweekly.com.au/no-priests-left-documentary/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "Christian Rising",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://christian7401.rssing.com/chan-77559393/latest-article1.php",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "WN",
-"title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://article.wn.com/view/2026/02/24/Russia_s_war_on_Ukraine_means_No_Priests_Left_documentary_sh/",
-"note": "None"
-},
-{
-"date": "2026-02-24",
-"outlet": "Catholic Archdioces of Melbourne",
-"title": "Civilian deaths and persecution of Catholics as Ukraine marks four years of invasion",
-"type": "Article",
-"language": "English",
-"url": "https://melbournecatholic.org/news/civilian-deaths-and-catholic-persecution-as-ukraine-marks-four-years-of-invasion",
-"note": ""
-},
-{
-"date": "2026-02-20",
-"outlet": "Daily Caller",
-"title": "Ukrainian Christians Allege Soviet-Era Persecution By Russia, Bombings Of Churches",
-"type": "Article",
-"language": "English",
-"url": "https://dailycaller.com/2026/02/20/ukrainian-christian-soviet-era-persecution-russia-bombing-churches/",
-"note": ""
-},
-{
-"date": "2026-02-16",
-"outlet": "Lara Trump",
-"title": "Fighting for Ukrainian Christians!",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.facebook.com/watch/?v=1555502822413746",
-"note": ""
-},
-{
-"date": "2026-02-09",
-"outlet": "Politico",
-"title": "Ukraine’s Christianity pitch wins MAGA traction",
-"type": "Article",
-"language": "English",
-"url": "https://www.politico.com/newsletters/national-security-daily/2026/02/09/ukraines-christianity-pitch-wins-maga-traction-00771758",
-"note": "UFP"
-},
-{
-"date": "2026-02-05",
-"outlet": "Armenian Weekly",
-"title": "Faith under siege: Arrests and military purge mark new low in Church-state crisis",
-"type": "Article",
-"language": "English",
-"url": "https://armenianweekly.com/2026/02/05/faith-under-siege-arrests-and-military-purge-mark-new-low-in-church-state-crisis/",
-"note": ""
-},
-{
-"date": "2026-02-04",
-"outlet": "Politico Playbook",
-"title": "Event highlighted",
-"type": "Article",
-"language": "English",
-"url": "https://www.politico.com/newsletters/playbook-pm/2026/02/04/the-decimation-of-the-washington-post-00764750",
-"note": "Forward Global"
-},
-{
-"date": "2026-02-01",
-"outlet": "Kulturni Marksizem",
-"title": "Steven Moore: Many conservatives have never heard anything good about Ukrainians. They've only known lies.",
-"type": "Article",
-"language": "Slovenian",
-"url": "https://kulturnimarksizem.si/nekategorizirano/steven-moore-mnogi-konservativci-niso-nikoli-slisali-nicesar-dobrega-o-ukrajincih-poznali-so-samo-lazi/",
-"note": "Organic"
-},
-{
-"date": "2026-01-29",
-"outlet": "EWTN",
-"title": "Steven Moore on Russian Strikes on Civilians as Peace Talks Near | EWTN News Nightly",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=Nsv9-oFqOCg",
-"note": "FG"
-},
-{
-"date": "2026-01-26",
-"outlet": "National Catholic Register",
-"title": "Russian Forces are Liquidating the Catholic Church in Occupied Ukraine",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.ncregister.com/commentaries/barrett-moore-catholic-church-in-ukraine",
-"note": "FG"
-},
-{
-"date": "2026-01-26",
-"outlet": "EWTN Great Britain",
-"title": "Russian Forces are Liquidating the Catholic Church in Occupied Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://ewtn.co.uk/article-russian-forces-are-liquidating-the-catholic-church-in-occupied-ukraine/",
-"note": "Repost of National Catholic Register"
-},
-{
-"date": "2026-01-26",
-"outlet": "Aid to the Church in Need",
-"title": "ACN and Faith & Reason Institute launch “Faith Under Siege” podcast",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.churchinneed.org/acn-and-faith-reason-institute-launch-faith-under-siege-podcast/",
-"note": ""
-},
-{
-"date": "2026-01-22",
-"outlet": "Providence Magazine",
-"title": "Drawing \"New Borders\" in Ukraine Means Choosing Which Pastors to Condemn",
-"type": "Article",
-"language": "English",
-"url": "https://providencemag.com/2026/01/drawing-new-borders-in-ukraine-means-choosing-which-pastors-to-condemn/",
-"note": "FG"
-},
-{
-"date": "2026-01-19",
-"outlet": "ekai",
-"title": "\"Wiara pod oblężeniem\" – film o rosyjskich zbrodniach i prześladowaniu chrześcijan",
-"type": "Article",
-"language": "Polish",
-"url": "https://www.ekai.pl/wiara-pod-oblezeniem-film-o-rosyjskich-zbrodniach-i-przesladowaniu-chrzescijan/",
-"note": "FG"
-},
-{
-"date": "2026-01-18",
-"outlet": "Christian Post",
-"title": "Putin’s attempt to murder 20 Evangelical pastors backfired",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/putins-attempt-to-murder-20-evangelical-pastors-backfired.html",
-"note": "FG"
-},
-{
-"date": "2026-01-17",
-"outlet": "Kyiv Post",
-"title": "Why the Russian Orthodox Church is Lobbying in Washington",
-"type": "Article",
-"language": "English",
-"url": "https://www.kyivpost.com/post/68182",
-"note": "UFP"
-},
-{
-"date": "2026-01-16",
-"outlet": "The Right View with Lara Trump",
-"title": "Lara Trump",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://open.spotify.com/episode/39MzJi4YpgcMrmr9E6eV3i?si=48HjHmW9RSqpJhrjH9uZpA&nd=1&dlsi=8cf2d3fb2de14aca",
-"note": "FG"
-},
-{
-"date": "2026-01-14",
-"outlet": "CFN Live",
-"title": "Steven Moore & Colby Barrett",
-"type": "TV & video",
-"language": "English",
-"url": "https://vimeo.com/1155083433/b99ad587bb?share=copy&amp;fl=sv&amp;fe=ci",
-"note": "FG"
-},
-{
-"date": "2026-01-14",
-"outlet": "The Mountaineer",
-"title": "A day of prayer for Ukraine, featuring an American POW captured by Russia",
-"type": "Article",
-"language": "English",
-"url": "https://www.themountaineer.com/life/a-day-of-prayer-for-ukraine-featuring-an-american-pow-captured-by-russia/article_095158b2-2c07-42c4-81cb-1e02cc2de744.html",
-"note": "Organic"
-},
-{
-"date": "2026-01-12",
-"outlet": "SLAWA TV",
-"title": "Steven Moore on Russian Orthodox Church Disinformation About Ukraine",
-"type": "TV & video",
-"language": "Ukrainian",
-"url": "https://www.youtube.com/watch?v=n2o7OyjX-N8",
-"note": "UFP"
-},
-{
-"date": "2025-12-23",
-"outlet": "EWTN News",
-"title": "Christian Persecution in Ukraine Rises Since the Start of the Russia-Ukraine War | EWTN News Nightly",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=osGgMzr5ncY",
-"note": "UFP"
-},
-{
-"date": "2025-12-21",
-"outlet": "Fox News",
-"title": "Steven Moore: Putin's Peace Plan is a Trap & Russian Orthodox Church is a Kremlin Tool",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=pMQF6wQ-EUc",
-"note": "UFP"
-},
-{
-"date": "2025-12-20",
-"outlet": "The Hill",
-"title": "GOP divided by Capitol Hill visit from Orthodox Christian advocacy group",
-"type": "Article",
-"language": "English",
-"url": "https://thehill.com/homenews/house/5657677-orthodox-christian-delegation-capitol-hill-russia-ukraine/",
-"note": "UFP/FG"
-},
-{
-"date": "2025-12-18",
-"outlet": "NewsMax2",
-"title": "Capital Hill Alert: Steven Moore Discusses Russian Orthodox Church Lobbying",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=e5Xo6GxK1Lk",
-"note": "UFP"
-},
-{
-"date": "2025-12-17",
-"outlet": "Crosswalk.com",
-"title": "Zelenskyy Pushes Back on Trump Regarding Holding Elections During Wartime",
-"type": "Article",
-"language": "English",
-"url": "https://www.crosswalk.com/headlines/contributors/elizabeth-delaney/zelenskyy-pushes-back-on-trump-regarding-holding-elections-during-wartime.html",
-"note": "SO"
-},
-{
-"date": "2025-12-16",
-"outlet": "Chuck Grassley",
-"title": "Grassley Sets The Record Straight on Russia's Persecution of Christians In Occupied Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.grassley.senate.gov/news/remarks/grassley-sets-the-record-straight-on-russias-persecution-of-christians-in-occupied-ukraine",
-"note": "UFP"
-},
-{
-"date": "2025-12-03",
-"outlet": "Fox News",
-"title": "Steven Moore Live on Fox News: Latest Developments in Peace Talks",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=qhcZxovqK4Q",
-"note": "FG"
-},
-{
-"date": "2025-11-29",
-"outlet": "Kyiv Post",
-"title": "Opinion: Are the Russians Running an Influence Operation in Congress?",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.kyivpost.com/opinion/64438",
-"note": "UFP"
-},
-{
-"date": "2025-11-20",
-"outlet": "John Fredericks Media",
-"title": "Steven Moore, Live in Kyiv, Ukraine with Panel Debate Proposed Peace Deal",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=puOOGF1HLes",
-"note": "None"
-},
-{
-"date": "2025-11-17",
-"outlet": "United24 Media",
-"title": "Ukrainian-Americans Were Divided by Faith and Identity - Until Russia Went to War",
-"type": "Article",
-"language": "English",
-"url": "https://united24media.com/culture/ukrainian-americans-were-divided-by-faith-and-identity-until-russia-went-to-war-13370",
-"note": "UFP"
-},
-{
-"date": "2025-11-04",
-"outlet": "Biblical Recorder",
-"title": "Republicans favor long-range missiles for Ukraine, see Putin as threat, poll finds",
-"type": "Article",
-"language": "English",
-"url": "https://www.brnow.org/news/republicans-favor-long-range-missiles-for-ukraine-see-putin-as-threat-poll-finds/",
-"note": "Forward Global"
-},
-{
-"date": "2025-11-03",
-"outlet": "Mission Network News",
-"title": "Russian forces target churches in occupied Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.mnnonline.org/news/russian-forces-target-churches-in-occupied-ukraine/",
-"note": "Organic"
-},
-{
-"date": "2025-10-29",
-"outlet": "CPAC",
-"title": "Sarah Makin to Join Christian Persecution Summit",
-"type": "Article",
-"language": "English",
-"url": "https://www.cpac.org/post/sarah-makin-to-join-christian-persecution-summit",
-"note": "SM"
-},
-{
-"date": "2025-10-27",
-"outlet": "All Israel News",
-"title": "Faith under siege: New film exposes Putin’s crackdown on Ukrainian Jews",
-"type": "Article",
-"language": "English",
-"url": "https://allisraelnews.com/faith-under-siege-new-film-exposes-putins-crackdown-on-ukrainian-jews",
-"note": "Forward Global"
-},
-{
-"date": "2025-10-22",
-"outlet": "Team Never Quit Podcast",
-"title": "Christian Hickey on Team Never Quit",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://teamneverquit.com/podcast/christian-hickey/",
-"note": "Forwrd Global"
-},
-{
-"date": "2025-10-20",
-"outlet": "OSV",
-"title": "Filmmakers tell story of Ukraine’s Christians ‘hunted’ by Russia - OSV News",
-"type": "Article",
-"language": "English",
-"url": "https://www.osvnews.com/filmmakers-tell-story-of-ukraines-christians-hunted-by-russia/",
-"note": "Angel Reprint"
-},
-{
-"date": "2025-10-20",
-"outlet": "Catholic Standard",
-"title": "Filmmakers tell story of Ukraine’s persecuted Christians ‘hunted’ by Russia",
-"type": "Article",
-"language": "English",
-"url": "https://www.cathstan.org/us-world/filmmakers-tell-story-of-ukraines-persecuted-christians-hunted-by-russia",
-"note": "Reprint"
-},
-{
-"date": "2025-10-12",
-"outlet": "Rapzilla",
-"title": "‘A Faith Under Siege’ Reminds us to Pray for the Persecuted",
-"type": "Article",
-"language": "English",
-"url": "https://rapzilla.com/2025-10-a-faith-under-siege-pray-persecuted/",
-"note": "Organic"
-},
-{
-"date": "2025-10-10",
-"outlet": "FGGAM",
-"title": "Digging In — Pastor Continues to Serve in Ukraine After Losing Church and Second Home in Russia’s War",
-"type": "Article",
-"language": "English",
-"url": "https://www.fggam.org/2025/10/digging-in-pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
-"note": "FG - Baptist Press Reprint"
-},
-{
-"date": "2025-10-10",
-"outlet": "Biblical Recorder",
-"title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.brnow.org/news/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
-"note": "FG - Baptist Press Reprint"
-},
-{
-"date": "2025-10-09",
-"outlet": "Baptist Press",
-"title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-28",
-"outlet": "Newsmax",
-"title": "Filmmakers Seek to Expose Plight of Ukrainian Christians",
-"type": "Article",
-"language": "English",
-"url": "https://www.newsmax.com/platinum/film-plight-ukraine/2025/09/19/id/1227115/",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-26",
-"outlet": "The Christian Broadcasting Network",
-"title": "Why Trump Made a Sharp Turn on Ukraine War, Criticizing Putin and Praising Zelenskyy",
-"type": "Article",
-"language": "English",
-"url": "https://cbn.com/news/world/why-trump-made-sharp-turn-ukraine-war-criticizing-putin-and-praising-zelenskyy",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-25",
-"outlet": "The Washington Times",
-"title": "Ukraine’s church decision is about security, not faith",
-"type": "Article",
-"language": "English",
-"url": "https://www.washingtontimes.com/news/2025/sep/25/ukraines-church-decision-security-faith/",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-24",
-"outlet": "Just Love Movies",
-"title": "Defiant Story of Ukraine’s Christians: Docu-series A FAITH UNDER SIEGE Launches Tomorrow",
-"type": "Article",
-"language": "English",
-"url": "https://justlovemovies.com/2025/09/24/defiant-story-of-ukraines-christians-docu-series-a-faith-under-siege-launches-tomorrow/",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-16",
-"outlet": "Christian Post",
-"title": "Why Christians must stand with Ukraine’s Jewish community",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/why-christians-must-stand-with-ukraines-jewish-community.html",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-14",
-"outlet": "The Christian Broadcasting Network",
-"title": "Murder, Torture, and Chaos: How Russia Reportedly Targets Evangelicals",
-"type": "Article",
-"language": "English",
-"url": "https://cbn.com/news/world/murder-torture-and-chaos-how-russia-reportedly-targets-evangelicals",
-"note": "Forward Global"
-},
-{
-"date": "2025-09-01",
-"outlet": "The Christian Broadcasting Network",
-"title": "WATCH 'A Faith Under Siege': New Doc Exposes Severe Persecution of Evangelical Christians by Russia",
-"type": "Article",
-"language": "English",
-"url": "https://cbn.com/news/world/watch-faith-under-siege-new-doc-exposes-severe-persecution-evangelical-christians-russia",
-"note": "UFP"
-},
-{
-"date": "2025-08-28",
-"outlet": "The Hill",
-"title": "What’s at stake in Russia’s bid for Ukraine’s Donetsk territory?",
-"type": "Article",
-"language": "English",
-"url": "https://thehill.com/policy/international/5474178-ukraine-russia-donetsk-territory/",
-"note": "UFP"
-},
-{
-"date": "2025-08-26",
-"outlet": "USA Today",
-"title": "Op-Ed: Deal to end Russia-Ukraine war must include returning abducted Ukrainian kids",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.usatoday.com/story/opinion/2025/08/26/russia-return-kidnapped-ukrainian-kids/85780669007/",
-"note": "UFP"
-},
-{
-"date": "2025-08-24",
-"outlet": "Fox 23",
-"title": "Tulsa Ukrainian Community celebrates Ukraine's 34th Independence Day",
-"type": "Article",
-"language": "English",
-"url": "https://www.fox23.com/news/tulsa-ukrainian-community-celebrates-ukraines-34th-independence-day/article_5bfb47d9-cd4d-4fe4-9d8f-c71102ce023a.html",
-"note": "KA"
-},
-{
-"date": "2025-08-23",
-"outlet": "KTUL",
-"title": "Tulsans spreading hope in Ukraine, documentary highlights attack on faith",
-"type": "Article",
-"language": "English",
-"url": "https://ktul.com/news/local/tulsans-spreading-hope-in-ukraine-documentary-highlights-attack-on-faith",
-"note": "KA"
-},
-{
-"date": "2025-08-19",
-"outlet": "Word and Way",
-"title": "Three New Documentary Projects Warn About Abusive, Nationalistic Faith",
-"type": "Article",
-"language": "English",
-"url": "https://wordandway.org/2025/08/19/three-new-documentary-projects-warn-about-abusive-nationalistic-faith/",
-"note": ""
-},
-{
-"date": "2025-08-14",
-"outlet": "World Magazine",
-"title": "Steal, kill, destroy Inside the Russian campaign to purge Christians from occupied Ukrainian territory",
-"type": "Article",
-"language": "English",
-"url": "https://wng.org/articles/steal-kill-destroy-1754445679",
-"note": "UFP"
-},
-{
-"date": "2025-08-02",
-"outlet": "Spirit Radio",
-"title": "A Faith Under Siege",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.spiritradio.ie/podcast/a-faith-under-siege-the-documentary/",
-"note": "Forward Global"
-},
-{
-"date": "2025-08-02",
-"outlet": "Christian Daily International",
-"title": "Film shows effect of Russian invasion on Ukraine evangelicals",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.christiandaily.com/news/film-shows-effect-of-russian-invasion-on-ukraine-evangelicals",
-"note": "Forward Global"
-},
-{
-"date": "2025-08-01",
-"outlet": "Shaken Podcast",
-"title": "A Faith Under Siege with Karl Alhgren",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://purposely.com/podcasts/shaken-with-steve-sunshine/?ppplayer=e6aa26037dde8bfc02dc40251ce36262&ppepisode=024ae06ef53ca96fdf461d0710db072f",
-"note": "KA"
-},
-{
-"date": "2025-07-30",
-"outlet": "First Person with Wayne Shepherd",
-"title": "Colby Barrett on the First Person Show",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://open.spotify.com/show/0bk5xwuiLe1OCyqu5VKLP9",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-30",
-"outlet": "Euromaidan Press",
-"title": "Seven Ukrainian war documentaries Russia doesn’t want you to see",
-"type": "Article",
-"language": "English",
-"url": "https://euromaidanpress.com/2025/07/30/ukrainian-war-documentaries-russia-doesnt-want-you-to-see/",
-"note": "UFP"
-},
-{
-"date": "2025-07-28",
-"outlet": "TBN UK",
-"title": "Sheila Walsh hosts Colby Barrett - A Faith Under Siege",
-"type": "TV & video",
-"language": "English",
-"url": "https://watch.tbn.uk/watch/replay/19286340/sheila-walsh-hosts-colby-barrett-a-faith-under-siege",
-"note": "TBN"
-},
-{
-"date": "2025-07-25",
-"outlet": "Alex McFarland Show",
-"title": "Alex MacFarland Is Joined By Colby Barrett To Discuss A New Movie \"A Faith Under Siege\"",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://afr.net/podcasts/real-truth-for-today/2025/july/alex-macfarland-is-joined-by-colby-barrett-to-discuss-a-new-movie-a-faith-under-siege/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-23",
-"outlet": "Evangelicals Now",
-"title": "Ukraine film highlights Russian oppression of Christians",
-"type": "Article",
-"language": "English",
-"url": "https://www.e-n.org.uk/world-news/2025-08-ukraine-film-highlights-russian-oppression-of-christians/",
-"note": "CBN reprint"
-},
-{
-"date": "2025-07-23",
-"outlet": "Steve Gruber Show",
-"title": "Steven Moore | Exposing the Persecution of Ukrainian Christians",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://stevegruber.podbean.com/e/steven-moore-exposing-the-persecution-of-ukrainian-christians/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-21",
-"outlet": "Yahoo News",
-"title": "Two Rivers Church in Johnson City to host documentary screening",
-"type": "Article",
-"language": "English",
-"url": "https://www.yahoo.com/news/two-rivers-church-johnson-city-165630864.html",
-"note": "TBC"
-},
-{
-"date": "2025-07-21",
-"outlet": "WIVT/WBGH",
-"title": "Two Rivers Church in Johnson City to host documentary screening",
-"type": "Article",
-"language": "English",
-"url": "https://www.binghamtonhomepage.com/news/two-rivers-church-in-johnson-city-to-host-documentary-screening/",
-"note": "TBC"
-},
-{
-"date": "2025-07-20",
-"outlet": "Fox News Radio",
-"title": "Extra: Putin’s Persecution of Ukrainian Christians",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://radio.foxnews.com/2025/07/20/extra-putins-persecution-of-ukrainian-christians/",
-"note": "UFP"
-},
-{
-"date": "2025-07-11",
-"outlet": "Quad City Times",
-"title": "Ukrainian filmmaker, former GOP staffer to screen 'Faith Under Siege' documentary in DeWitt",
-"type": "Article",
-"language": "English",
-"url": "https://qctimes.com/life-entertainment/local/events/article_f78d3ffe-4ec6-4d86-9433-6876d64f7471.html",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-11",
-"outlet": "Dispatch Argus",
-"title": "Ukrainian filmmaker, former GOP staffer to screen 'Faith Under Siege' documentary in DeWitt",
-"type": "Article",
-"language": "English",
-"url": "https://qconline.com/life-entertainment/local/events/article_c00501d8-1030-5838-badb-779e824aa14e.html",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-11",
-"outlet": "Quad City Business Journal",
-"title": "IA NICE hosts ‘A Faith Under Siege’ film about Russia’s war with Ukraine Film’s producers to stop in for local screening, Q&A",
-"type": "Article",
-"language": "English",
-"url": "https://quadcitiesbusiness.com/ia-nice-hosts-a-faith-under-siege-film-about-russias-war-with-ukraine-films-producers-to-stop-in-for-local-screening-qa/",
-"note": "UFP"
-},
-{
-"date": "2025-07-09",
-"outlet": "Info Chretienne",
-"title": "Des documentaristes chrétiens veulent aider l’Ukraine",
-"type": "Article",
-"language": "French",
-"url": "https://www.infochretienne.com/articles/des-documentaristes-chretiens-veulent-aider-lukraine/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-09",
-"outlet": "Christianity Today",
-"title": "Des documentaristes chrétiens veulent aider l’Ukraine",
-"type": "Article",
-"language": "French",
-"url": "https://fr.christianitytoday.com/2025/07/documentaristes-chretiens-ukraine-persecution-eglise-fr/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-09",
-"outlet": "Faith on View",
-"title": "Ukraine’s persecuted Christians: New film exposes hidden religious war",
-"type": "Article",
-"language": "English",
-"url": "https://www.faithonview.com/ukraines-persecuted-christians-new-film-exposes-hidden-religious-war/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-08",
-"outlet": "Baptist News Global",
-"title": "The Christian Documentarians Trying to Help Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://baptistnews.com/article/the-christian-documentarians-trying-to-help-ukraine/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-08",
-"outlet": "The Dispatch",
-"title": "Mornigng Dispatch - Includes Christianity Today Article",
-"type": "Article",
-"language": "English",
-"url": "https://thedispatch.com/newsletter/morning/texas-flooding-death-toll-rises/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-07",
-"outlet": "Faith and Leadership",
-"title": "Christian documentarians in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://faithandleadership.com/news-ideas/mondays-news-ideas-772025",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-07",
-"outlet": "Christianity Today",
-"title": "The Christian Documentarians Trying to Help Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianitytoday.com/2025/07/christian-documentarians-help-ukraine-evangelicals/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-07",
-"outlet": "Christianity Today",
-"title": "CT Daily Briefing",
-"type": "Article",
-"language": "English",
-"url": "https://www.christianitytoday.com/newsletter/archive/ct-daily-briefing-07-08-2025/",
-"note": "Forward Global"
-},
-{
-"date": "2025-07-07",
-"outlet": "Ukrainetoday.org",
-"title": "Why isn’t anything Ukraine doing working with Trump?",
-"type": "Article",
-"language": "English",
-"url": "https://ukrainetoday.org/why-isnt-anything-ukraine-doing-working-with-trump/",
-"note": "UFP"
-},
-{
-"date": "2025-07-01",
-"outlet": "60 Plus",
-"title": "A Special Message from Pat Boone",
-"type": "Article",
-"language": "English",
-"url": "https://www.60plus.org/democrats-move-farther-left-putin-continues-his-murderous-escapades/",
-"note": "Steve Okin"
-},
-{
-"date": "2025-07-01",
-"outlet": "Idaho State Journal",
-"title": "What to do this week in East Idaho",
-"type": "Article",
-"language": "English",
-"url": "https://www.newsbreak.com/idaho-state-journal-1591702/4084196788734-what-to-do-this-week-in-east-idaho",
-"note": "UFP"
-},
-{
-"date": "2025-06-30",
-"outlet": "Federal News Wire",
-"title": "WEEKEND INTERVIEW: Colby Barrett and Steven Moore on ‘A Faith Under Siege’ in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://thefederalnewswire.com/stories/673658650-weekend-interview-colby-barrett-and-steven-moore-on-a-faith-under-siege-in-ukraine",
-"note": "SM/Forward Global"
-},
-{
-"date": "2025-06-29",
-"outlet": "Business Ukraine Magazine",
-"title": "New documentary exposes Russian oppression of Ukraine’s Christian minorities",
-"type": "Article",
-"language": "English",
-"url": "https://businessukraine.ua/new-documentary-exposes-russian-oppression-of-ukraines-christian-minorities/",
-"note": "UFP"
-},
-{
-"date": "2025-06-29",
-"outlet": "East Idaho News",
-"title": "Bengal Theater to host free showings of Ukraine war documentary ‘A Faith Under Siege’",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.eastidahonews.com/2025/06/bengal-theater-to-host-free-showings-of-ukraine-war-documentary-a-faith-under-siege/",
-"note": "UFP"
-},
-{
-"date": "2025-06-26",
-"outlet": "Peace Power Ukraine - Federal Newswire",
-"title": "Inside “Faith Under Siege”: Ukraine’s Evangelical Frontline Against Russian Repression",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/us/podcast/inside-faith-under-siege-ukraines-evangelical-frontline/id1798878241?i=1000714657588",
-"note": "SM/Forward Global"
-},
-{
-"date": "2025-06-25",
-"outlet": "Mid South Viewpoint - Bott Radio Network",
-"title": "Interview on Fatih Under Siege",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://open.spotify.com/episode/1S75v4UMseYKSt6WzDmuNN?si=dea04a5001074b5e&nd=1&dlsi=679b1e87e05c4dbd",
-"note": "JB/Forward Global"
-},
-{
-"date": "2025-06-25",
-"outlet": "National Interest",
-"title": "Ukraine’s Fight for Religious Liberty",
-"type": "Article",
-"language": "English",
-"url": "https://nationalinterest.org/feature/ukraines-fight-for-religious-liberty",
-"note": "Melinda Haring"
-},
-{
-"date": "2025-06-23",
-"outlet": "Faith Radio - The Reconnect",
-"title": "Interview on Faith Under Siege",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.myfaithradio.com/programs/reconnect-with-carmen-laberge/americas-long-conflict-with-iran-elizabeth-neumann-russias-attacks-on-ukrainian-christians-colby-barrett-1750684800/",
-"note": "JB/Forward Global"
-},
-{
-"date": "2025-06-23",
-"outlet": "Forbes Ukraine",
-"title": "Forbes Ukraine Interview with Steven Moore",
-"type": "Article",
-"language": "English",
-"url": "https://ukrainetoday.org/forbes-ukraine-interview-with-steven-moore/",
-"note": "UFP"
-},
-{
-"date": "2025-06-19",
-"outlet": "Newsmax - Todd Starnes Show",
-"title": "\"A Faith Under Siege\" shows plight of Ukraine's Chirstians",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=md5p36VEYkY&t=11s",
-"note": "JB/Forward Global"
-},
-{
-"date": "2025-06-15",
-"outlet": "National Post",
-"title": "Adam Zivo: Russia is systematically persecuting Ukrainian Christians",
-"type": "Op-ed",
-"language": "English",
-"url": "https://nationalpost.com/opinion/adam-zivo-russia-is-systematically-persecuting-ukrainian-christians",
-"note": "Forward Global"
-},
-{
-"date": "2025-06-10",
-"outlet": "Bristol Press (CT)",
-"title": "Ukraine-Russia negotiations are about freedom",
-"type": "Article",
-"language": "English",
-"url": "https://bristolpress.pressreader.com/the-bristol-press/20250610",
-"note": "Forward Global Repost"
-},
-{
-"date": "2025-06-08",
-"outlet": "Cirtus County Chronicle",
-"title": "Ukraine-Russia negotiations are about freedom",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.chronicleonline.com/opinion/columnists/ukraine-russia-negotiations-are-about-freedom/article_64b15091-6ca9-5f96-acab-b050b7f6f15c.html",
-"note": "Forward Global Repost"
-},
-{
-"date": "2025-06-07",
-"outlet": "Latrobe Bulletin",
-"title": "Ukraine-Russia negotiations are about freedom",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.latrobebulletinnews.com/opinion/editorials/commentary-ukraine-russia-negotiations-are-about-freedom/article_a875710e-aee9-4fd1-84e3-4bea0983fb3d.html",
-"note": "Forward Global Repost"
-},
-{
-"date": "2025-06-05",
-"outlet": "DC Journal",
-"title": "Ukraine-Russia Negotiations Are About Freedom",
-"type": "Article",
-"language": "English",
-"url": "https://dcjournal.com/ukraine-russia-negotiations-are-about-freedom/",
-"note": "Forward Global"
-},
-{
-"date": "2025-06-05",
-"outlet": "TimesLeader",
-"title": "Ukraine-Russia negotiations are about freedom",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.timesleader.com/opinion/op-ed/1701281/ukraine-russia-negotiations-are-about-freedom",
-"note": "Forward Global Repost"
-},
-{
-"date": "2025-05-31",
-"outlet": "NewsMax",
-"title": "\"A Faith Under Siege\" shows plight of Ukraine's Chirstians",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://www.dropbox.com/scl/fi/6iuws6n3ft13ts0vmvts7/Colby-Barrett-Steven-Moore.mp4?rlkey=1833lodh4fg8ki6ns2iu4w8x2&e=1&st=8fxqppt2&dl=0",
-"note": "Forward Global"
-},
-{
-"date": "2025-05-22",
-"outlet": "Christian Post",
-"title": "How bad is Putin, really?",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/how-bad-is-putin-really.html",
-"note": "Forward Global"
-},
-{
-"date": "2025-05-18",
-"outlet": "About the Word",
-"title": "A film about the persecution of evangelical Christians in Ukraine is published on the YouTube channel A Faith Under Siege",
-"type": "TV & video",
-"language": "English/Ukrainian",
-"url": "https://slovoproslovo.info/en/a-film-about-the-persecution-of-evangelical-christians-in-ukraine-is-published-on-the-youtube-channel-a-faith-under-siege/",
-"note": "Forward Global (repost)"
-},
-{
-"date": "2025-05-17",
-"outlet": "USA Today",
-"title": "Russia abducts Ukrainian kids and treats them like prisoners of war. Save them.",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.usatoday.com/story/opinion/2025/05/09/ukraine-russia-agreement-return-abducted-children/83486614007/",
-"note": "UFP"
-},
-{
-"date": "2025-05-10",
-"outlet": "CBN News",
-"title": "Green Beret Reveals How He Became Missionary to Ukraine Soldiers",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=73zeEIHF-pI",
-"note": "CBN interview"
-},
-{
-"date": "2025-05-09",
-"outlet": "Fox News Radio",
-"title": "Brian Kilmeade Show Interview",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=ZmR88ZpL6Fs",
-"note": "UFP"
-},
-{
-"date": "2025-05-07",
-"outlet": "CBN news",
-"title": "Faith Under Siege: New Doc Released, Exposing Severe Persecution of Evangelical Christians by Russia",
-"type": "Article",
-"language": "English",
-"url": "https://cbn.com/news/world/faith-under-siege-new-doc-released-exposing-severe-persecution-evangelical-christians",
-"note": "CBN Article"
-},
-{
-"date": "2025-05-07",
-"outlet": "Religion Unplugged",
-"title": "Faith Under Siege’ Documents Russia’s Persecution Of Christians In Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://religionunplugged.com/news/2025/5/7/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine",
-"note": "FG - Repost of Baptist Press"
-},
-{
-"date": "2025-05-07",
-"outlet": "Roys Report",
-"title": "New Documentary Chronicles Russia’s Persecution of Christians in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://julieroys.com/documentary-chronicles-russias-persecution-christians-in-ukraine/",
-"note": "FG - Repost of Baptist Press"
-},
-{
-"date": "2025-05-07",
-"outlet": "The Alabama Baptist",
-"title": "‘A Faith Under Seige’: Documentary spotlights Russia’s persecution of Ukrainian Christians",
-"type": "Article",
-"language": "English",
-"url": "https://thealabamabaptist.org/a-faith-under-seige-documentary-spotlights-russias-persecution-of-ukrainian-christians/",
-"note": "FG - Repost of Baptist Press"
-},
-{
-"date": "2025-05-07",
-"outlet": "Baptist Record",
-"title": "‘A Faith Under Siege’ documents Russia’s persecution of Christians in Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://thebaptistrecord.org/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
-"note": "FG - Repost of Baptist Press"
-},
-{
-"date": "2025-05-07",
-"outlet": "Baptist News Global",
-"title": "‘A Faith Under Siege’ Documents Russia’s Persecution Of Christians In Ukraine",
-"type": "Article",
-"language": "English",
-"url": "https://baptistnews.com/article/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
-"note": "FG - Repost of Religion Unplugged"
-},
-{
-"date": "2025-05-07",
-"outlet": "In Defense of the Cross",
-"title": "Christian Persecution News Across the World",
-"type": "Article",
-"language": "English",
-"url": "https://indefenseofthecross.com/news-links/",
-"note": "Link to CBN"
-},
-{
-"date": "2025-05-06",
-"outlet": "BaptistPress",
-"title": "‘A Faith Under Siege’ documents Russia’s persecution of Christians in",
-"type": "Article",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
-"note": "Forward Global"
-},
-{
-"date": "2025-05-05",
-"outlet": "Slug Mag",
-"title": "A Faith Under Siege (2025) Documentary Screening",
-"type": "Article",
-"language": "English",
-"url": "https://www.slugmag.com/event/screening-a-faith-under-siege-2025-documentary-screening/",
-"note": ""
-},
-{
-"date": "2025-04-22",
-"outlet": "bushcenter.org",
-"title": "Faith in the face of Russian repression: Ukrainian pastor Mykhailo Brytsyn",
-"type": "Article",
-"language": "English",
-"url": "https://www.bushcenter.org/publications/faith-in-the-face-of-russian-repression-ukrainian-pastor-mykhailo-brytsyn",
-"note": "UFP, result of the visit to Bush Center in Feb 2025"
-},
-{
-"date": "2025-04-19",
-"outlet": "The Spectator",
-"title": "Inside Russia’s repression of Ukraine’s churches",
-"type": "Article",
-"language": "English",
-"url": "https://thespectator.com/topic/what-believers-in-ukraine-are-putting-up-with/",
-"note": "UFP"
-},
-{
-"date": "2025-04-18",
-"outlet": "Salem News TV Stacy Washington",
-"title": "Interview",
-"type": "TV & video",
-"language": "English",
-"url": "https://icnk.io/u/0cgYc-JIUgaq/",
-"note": "Eden Gordon Hill Media"
-},
-{
-"date": "2025-04-18",
-"outlet": "Salem News TV Wilkow",
-"title": "Interview",
-"type": "TV & video",
-"language": "English",
-"url": "https://icnk.io/u/KbkUZOeWQPwv/",
-"note": "Eden Gordon Hill Media"
-},
-{
-"date": "2025-04-14",
-"outlet": "CityWatch LA",
-"title": "A Faith Under Siege: Ukraine’s Fight for Freedom, Faith, and the Future",
-"type": "Article",
-"language": "English",
-"url": "https://www.citywatchla.com/world-watch/30713-a-faith-under-siege-ukraines-fight-for-freedom-faith-and-the-future",
-"note": "UFP"
-},
-{
-"date": "2025-04-04",
-"outlet": "Christian Post",
-"title": "Why is nobody talking about the nearly 20,000 abducted Ukrainian children?",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/why-is-nobody-talking-about-the-20k-abducted-ukrainian-children.html#cp-talk",
-"note": "Eden's team Op-ed 2"
-},
-{
-"date": "2025-03-31",
-"outlet": "Polskie Radio",
-"title": "Interview with Lodygin for Polish Radio",
-"type": "Radio & podcast",
-"language": "Ukrainian",
-"url": "https://podcasty.polskieradio.pl/podcast/polske-radio-dlia-ukrainy,410/odcinek/ranok-vira-v-oblozi-film-pro-peresliduvannia-virian-na-okupovanykh-rosiieiu-terytoriiakh,c24d5538-f14d-480b-b6b7-eee0950f46d4",
-"note": "Yaroslav in the news"
-},
-{
-"date": "2025-03-29",
-"outlet": "The All-American Book Club",
-"title": "March 29: A Faith Under Siege: Russia’s Hidden War on Ukraine’s Christians faithundersiege.com",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=vo7-3cJ45kQ",
-"note": "Eden Gordon Hill Media"
-},
-{
-"date": "2025-03-26",
-"outlet": "KXEL",
-"title": "Colby Barrett and Steven E. Moore on \"A Faith Under Siege\"",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://soundcloud.com/newstalk1540kxel/colby-barrett-and-steven-e-moore-on-a-faith-under-siege-wed-mar-26-2025",
-"note": "Eden Gordon Hill Media"
-},
-{
-"date": "2025-03-25",
-"outlet": "TVP World",
-"title": "Steven Moore - A key GOP operative on why the US shouldn't abandon Ukraine",
-"type": "Radio & podcast",
-"language": "English",
-"url": "https://podcasts.apple.com/us/podcast/steven-moore-a-key-gop-operative-on-why-the-us/id1774794515?i=1000700475043",
-"note": "Steven in the News"
-},
-{
-"date": "2025-03-25",
-"outlet": "The Hill",
-"title": "Putin is just playing Trump for time",
-"type": "Op-ed",
-"language": "English",
-"url": "https://thehill.com/opinion/national-security/5212684-russian-attack-ukrainian-civilians/",
-"note": "Steven's frriend Mark Toth article"
-},
-{
-"date": "2025-03-11",
-"outlet": "TVP World",
-"title": "Ukraine agrees to U.S.-led ceasefire plan if Russia accepts | Steven Moore",
-"type": "TV & video",
-"language": "English",
-"url": "https://youtu.be/KSs41pf4R8Y?feature=shared&t=257",
-"note": "Steven in the News"
-},
-{
-"date": "2025-02-26",
-"outlet": "Christian Post",
-"title": "A hidden war: Russia is targeting Ukraine’s Christians",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.christianpost.com/voices/a-hidden-war-russia-is-targeting-ukraines-christians.html",
-"note": "Eden's team Op-ed 1 (derivative)"
-},
-{
-"date": "2025-02-25",
-"outlet": "RealClear | Religion",
-"title": "The Hidden War: How Russia is Targeting Ukraine’s Christians – A Must-Read Article on the Crisis and Our Film",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.realclearreligion.org/articles/2025/02/25/the_hidden_war_how_russia_is_targeting_ukraines_christians_1093777.html",
-"note": "Eden's team Op-ed 1"
-},
-{
-"date": "2025-02-18",
-"outlet": "EWTN",
-"title": "Ukraine, Russia, and the Fight for Peace | EWTN News Nightly",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=mvlt1129Glw&t=226s",
-"note": "Steven on News"
-},
-{
-"date": "2025-02-11",
-"outlet": "Vsi Razom",
-"title": "«Віра під облогою»: фільм для американців, який розповідає про переслідування християн Росією",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://vsirazom.ua/news/vira-pid-oblogoyu-film-dlya-amerykancziv-yakyj-rozpovidaye-pro-peresliduvannya-hrystyyan-rosiyeyu",
-"note": "PB derivatives"
-},
-{
-"date": "2025-02-10",
-"outlet": "Right Side Broadcasting TV",
-"title": "Interview",
-"type": "TV & video",
-"language": "English",
-"url": "https://drive.google.com/file/d/168knFKwVFaH34xozxZI5qYXLgpBt8rxb/view?usp=drivesdk",
-"note": "Eden Gordon Hill Media"
-},
-{
-"date": "2025-02-09",
-"outlet": "Christians For Ukraine",
-"title": "У США покажуть документальний фільм про переслідування росіянами євангельських християн",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://c4u.org.ua/en/media/news/2859",
-"note": "PB derivatives"
-},
-{
-"date": "2025-02-09",
-"outlet": "Christian News",
-"title": "\"Віра в облозі\". Вийшов фільм про переслідування євангельських християн окупаційною владою РФ",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://www.christian-news.com.ua/kultura-ukr/7373-vira-v-oblozi-vyishov-film-pro-peresliduvannia-ievanhelskykh-khrystyian-okupatsiinoiu-vladoiu-rf.html",
-"note": "PB derivatives"
-},
-{
-"date": "2025-02-08",
-"outlet": "SlovoProSlovo",
-"title": "“Віра під облогою”: новий документальний фільм викриває переслідування євангельських християн з боку Росії",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://slovoproslovo.info/faith-under-siege-documentary/",
-"note": "PB derivatives"
-},
-{
-"date": "2025-02-07",
-"outlet": "The 700 Club",
-"title": "Persecution Of Christians You Haven't Heard About",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=QYQSBjcdXqM",
-"note": "Prayer Breakfast coverage (CBN)"
-},
-{
-"date": "2025-02-06",
-"outlet": "CBN News",
-"title": "New Film Exposes Extreme Christian Persecution of Ukrainians by Russian Forces",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=RLG379jiC5c",
-"note": "Prayer Breakfast coverage"
-},
-{
-"date": "2025-01-22",
-"outlet": "Sobor.com.ua",
-"title": "Жахливі факти переслідування християн на окупованих територіях України обговорили на панелі в Давосі",
-"type": "Article",
-"language": "Ukrainian",
-"url": "https://sobor.com.ua/news/peresliduvannya-23",
-"note": "UFP Ukraine House of Davos"
-},
-{
-"date": "2025-01-21",
-"outlet": "Ukraine House of Davos",
-"title": "Faith Under Siege | Ukraine House Davos 2025 - YouTube",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=PkSe2XqaONM",
-"note": "UFP Ukraine House of Davos"
-},
-{
-"date": "2025-01-21",
-"outlet": "Politico",
-"title": "Reality bites as Trump takes power",
-"type": "Article",
-"language": "English",
-"url": "https://www.politico.com/newsletters/global-playbook/2025/01/21/reality-bites-as-trump-takes-power-00197354",
-"note": "UFP Ukraine House of Davos"
-},
-{
-"date": "2024-11-12",
-"outlet": "The Catholic Channel",
-"title": "Conversation with Cardinal Dolan",
-"type": "TV & video",
-"language": "English",
-"url": "https://www.youtube.com/watch?v=dieMmSBfs6k",
-"note": "SM"
-},
-{
-"date": "2024-11-05",
-"outlet": "telluridenews.com",
-"title": "Sharing the voices of Ukraine Telluride local helps document stories of resilience in the Russo-Ukrainian War",
-"type": "Article",
-"language": "English",
-"url": "https://www.telluridenews.com/news/article_2cfd364e-9bd3-11ef-8fa5-7ff28a7ded5e.html",
-"note": "Colby's local newspaper"
-},
-{
-"date": "",
-"outlet": "The Pathway",
-"title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
-"type": "Article",
-"language": "English",
-"url": "https://mbcpathway.com/2025/10/10/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
-"note": "FG - Baptist Press Reprint"
-},
-{
-"date": "",
-"outlet": "Baptist Press",
-"title": "Colby Barrett op-ed",
-"type": "Op-ed",
-"language": "English",
-"url": "https://www.baptistpress.com/resource-library/news/ukraine-church-destroyed-in-russian-missile-strike-seeks-to-endure/",
-"note": "Colby's op-ed for Karl"
-},
-{
-"date": "",
-"outlet": "Tulsa World",
-"title": "Colby Barrett op-ed",
-"type": "Op-ed",
-"language": "English",
-"url": "https://tulsaworld.com/opinion/column/article_d700ecde-a7db-47de-98b4-2ed4239452c3.html",
-"note": "Colby's op-ed for Karl"
-}
-]
+ "_readme": "Press coverage. Newest first is not required; the site sorts by date. type is one of Article, Op-ed, TV & video, Radio & podcast. Add featured: true to pin an item to the homepage.",
+ "featuredOutlets": [
+  "Politico",
+  "Fox News",
+  "CBN",
+  "Christianity Today",
+  "The Hill",
+  "USA Today",
+  "Newsmax",
+  "National Post",
+  "Daily Caller",
+  "New York Times"
+ ],
+ "items": [
+  {
+   "date": "2026-10-23",
+   "outlet": "Military Times",
+   "title": "Colby Barrett op-ed",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.militarytimes.com/veterans/2026/10/23/marine-sniper-veteran-visits-ukraine-to-meet-man-behind-2069-meter-shot/",
+   "note": "Colby's op-ed"
+  },
+  {
+   "date": "2026-10-12",
+   "outlet": "Washington Watch",
+   "title": "Steven on Washington Watch",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=PXdo8H0bTMA",
+   "note": "Steven interview"
+  },
+  {
+   "date": "2026-10-09",
+   "outlet": "The Marc Cox Morning Show",
+   "title": "Colby Barrett: Ukrainian child abduction documentary",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/no/podcast/colby-barrett-ukrainian-child-abduction-documentary/id1213933085?i=1000793882357",
+   "note": "The Stolen Children"
+  },
+  {
+   "date": "2026-10-01",
+   "outlet": "Drew Mariani Show",
+   "title": "Steven on Drew Mariani Show",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.iheart.com/podcast/256-the-drew-mariani-show-31041158/episode/therese-of-lisieux-russia-threatens-ukraine-and-tenesssees-botched-xecution-346684450",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-09-30",
+   "outlet": "Washington Times",
+   "title": "Steven Op-Ed - Time for Trump to confront Putin",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.washingtontimes.com/news/2026/sep/30/time-trump-confront-putin/",
+   "note": "Steven Op-Ed"
+  },
+  {
+   "date": "2026-09-28",
+   "outlet": "Military Times",
+   "title": "Green Beret who survived an IED now clears Ukraine’s landmines",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.militarytimes.com/off-duty/military-culture/2026/09/28/green-beret-who-survived-an-ied-now-clears-ukraines-landmines/",
+   "note": "Safe Ground; Colby quoted"
+  },
+  {
+   "date": "2026-09-18",
+   "outlet": "The Lars Larson Show",
+   "title": "Colby Barrett: Will new Russia sanctions give Trump more leverage over Putin?",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://thelarslarsonshow.buzzsprout.com/2602482/episodes/19823177-colby-barrett-will-new-russia-sanctions-give-trump-more-leverage-over-putin",
+   "note": "AFUS/Faith in War at 3:30"
+  },
+  {
+   "date": "2026-09-03",
+   "outlet": "Washington Watch",
+   "title": "Steven on Washington Watch",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=PdOMIb9GE-g&t=1s",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-09-02",
+   "outlet": "Rumble",
+   "title": "Inside the war in Ukraine right now with Steven Moore",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://rumble.com/v7ezlqq-inside-the-war-in-ukraine-right-now-with-steven-moore.html",
+   "note": "Outlet to confirm"
+  },
+  {
+   "date": "2026-08-28",
+   "outlet": "Christianity Today",
+   "title": "Ukraine prayer breakfast (Jill Nelson), features Colby and Karl",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianitytoday.com/2026/08/ukraine-prayer-breakfast-christians-state-leaders/",
+   "note": "Plugs Faith in War; headline to confirm"
+  },
+  {
+   "date": "2026-08-21",
+   "outlet": "Intelligence Online",
+   "title": "The influence network improving Kyiv's standing in Washington",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.intelligenceonline.com/europe-russia/2026/08/21/the-influence-network-improving-kyiv-s-standing-in-washington,110862568-eve",
+   "note": "Mentions Steven Moore"
+  },
+  {
+   "date": "2026-08-18",
+   "outlet": "The Baptist Paper",
+   "title": "New documentary series brings Ukraine war stories to global audience",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thebaptistpaper.org/new-documentary-series-brings-ukraine-war-stories-to-global-audience/",
+   "note": "Faith in War; reprint of CDI"
+  },
+  {
+   "date": "2026-08-12",
+   "outlet": "Scott Hennen Show",
+   "title": "Steven on Scott Hennen Show",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podimo.com/dk/shows/whats-on-your-mind-10/episode/54749854-b825-590f-b9f8-87ea46e9036b",
+   "note": "Steven Interiew"
+  },
+  {
+   "date": "2026-08-12",
+   "outlet": "Christian Daily International",
+   "title": "New documentary series brings Ukraine war’s faith stories to global audience",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christiandaily.com/news/new-documentary-series-brings-ukraine-war-s-faith-stories-to-global-audience",
+   "note": "Faith in War"
+  },
+  {
+   "date": "2026-08-07",
+   "outlet": "Stars and Stripes",
+   "title": "Work of veterans in Ukraine highlighted in documentary",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.stripes.com/veterans/2026-08-07/brain-injuries-disability-payouts-former-submariners-benefits-22475827.html",
+   "note": "Safe Ground"
+  },
+  {
+   "date": "2026-08-06",
+   "outlet": "Slate",
+   "title": "Ukraine’s Best Hope Is … a Right-Wing Troll?",
+   "type": "Article",
+   "language": "English",
+   "url": "https://slate.com/news-and-politics/2026/08/ukraine-war-laura-loomer-twitter-trump-russia-drones.html",
+   "note": "Mentioned Steven Moore"
+  },
+  {
+   "date": "2026-08-04",
+   "outlet": "Rumble",
+   "title": "The latest from Iran and Ukraine with Steven Moore",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://rumble.com/v7do1yc-the-latest-from-iran-and-ukraine-with-steven-moore.html",
+   "note": "Faith in War at 5:50"
+  },
+  {
+   "date": "2026-08-03",
+   "outlet": "Baptist Press",
+   "title": "Russia has stolen 1.6 million children from occupied Ukraine since 2014, advocates say",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/russia-has-stolen-1-6-million-children-from-occupied-ukraine-since-2014-advocates-say/",
+   "note": "Mentions Steven Moore"
+  },
+  {
+   "date": "2026-08-03",
+   "outlet": "Steve Gruber w/Scott Bertram",
+   "title": "Steven on with Scott Bertram",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://open.spotify.com/episode/0fCORhuO8giENyFCR6lpSv",
+   "note": "Steven Interiew"
+  },
+  {
+   "date": "2026-08-01",
+   "outlet": "New York Times",
+   "title": "How Ukraine is Making Inroads with MAGA and a Trump ALly",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.nytimes.com/2026/08/01/us/politics/ukraine-maga-loomer-trump.html",
+   "note": "Quotes Steven Moore"
+  },
+  {
+   "date": "2026-07-30",
+   "outlet": "PR Newswire",
+   "title": "New Faith in War series premiering on YouTube and TBN spotlights spiritual strength and heroism in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.prnewswire.com/news-releases/new-faith-in-war-series-premiering-on-youtube-and-tbn-spotlights-spiritual-strength-and-heroism-in-ukraine-302838304.html",
+   "note": "Press release (also Christian Newswire)"
+  },
+  {
+   "date": "2026-07-29",
+   "outlet": "Liga.net",
+   "title": "Former Congressional Consultant: Blogger Laura Loomer Proved More Effective Than Any Ambassador",
+   "type": "Article",
+   "language": "English",
+   "url": "https://news.liga.net/en/politics/news/former-congressional-consultant-blogger-laura-loomer-proved-more-effective-than-any-ambassador",
+   "note": "Mentions Steven Moore"
+  },
+  {
+   "date": "2026-07-27",
+   "outlet": "The Times",
+   "title": "Revealed, the mission to change Trump’s mind on Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.thetimes.com/us/american-politics/article/laura-loomer-ukraine-russia-zelensky-maga-08zmzm87c",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-07-24",
+   "outlet": "Semafor",
+   "title": "Loomer becomes Ukraine’s MAGA ally",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.semafor.com/article/07/24/2026/loomer-becomes-ukraines-maga-ally",
+   "note": "Mentions Steven Moore"
+  },
+  {
+   "date": "2026-07-23",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Drones vs. Humans- Ukraine's Defense Reshuffle",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/80911",
+   "note": "Authored by Steven Moore"
+  },
+  {
+   "date": "2026-07-23",
+   "outlet": "Politico",
+   "title": "Asian allies fed up with Washington’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.politico.com/newsletters/national-security-daily/2026/07/23/asian-allies-fed-up-with-washingtons-war-01010390",
+   "note": "Mentions Steven Moore"
+  },
+  {
+   "date": "2026-07-21",
+   "outlet": "Kyiv Post",
+   "title": "ANALYSIS: Sanctioning Russia is Popular in America",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/analysis/80717",
+   "note": "Authored by Steven Moore"
+  },
+  {
+   "date": "2026-07-20",
+   "outlet": "Armstrong Williams Show",
+   "title": "Steven on Armstrong Williams Show",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=pLzjxanm8sQ",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-07-12",
+   "outlet": "Forbes.UA",
+   "title": "Trump's chief negotiator. Senator Lindsey Graham died suddenly in the US. What did he do for Ukraine? In memoriam",
+   "type": "Article",
+   "language": "Russian",
+   "url": "https://forbes.ua/ru/svit/golovniy-peregovirnik-z-trampom-po-sanktsiyakh-u-ssha-raptovo-pomer-senator-lindsi-grem-shcho-vin-zrobiv-dlya-ukraini-in-memoriam-12072026-40348",
+   "note": "Quotes Steven Moore & Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-07-10",
+   "outlet": "Lars Larson Show",
+   "title": "Steven Moore - Is Ukraine actually winning the war?",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://open.spotify.com/episode/5mnyQnULFN5KQrkCEZh5m8",
+   "note": ""
+  },
+  {
+   "date": "2026-07-07",
+   "outlet": "Its Vitenam",
+   "title": "Oreshnik's trump card and Russia's psychological warfare tactics to deter the West.",
+   "type": "Article",
+   "language": "French",
+   "url": "https://www.vietnam.vn/fr/at-chu-bai-oreshnik-va-don-tam-ly-chien-cua-nga-nham-ran-de-phuong-tay",
+   "note": "Quotes Steven Moore & Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-23",
+   "outlet": "The Christian Post",
+   "title": "Candace Owens is wrong about Russia",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/candace-owens-is-wrong-about-russia.html",
+   "note": "Authored by Steven Moore & Colby Barrett"
+  },
+  {
+   "date": "2026-06-22",
+   "outlet": "apostrophe.UA",
+   "title": "How the Russian Federation is distancing Republicans from Ukraine: a political strategist named two effective messages",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://apostrophe.ua/politics/jak-rf-viddaljaje-respublikantsiv-vid-ukrajini-polittekhnoloh-nazvav-dva-efektivni-mesedzhi.html",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-22",
+   "outlet": "Kyiv Post",
+   "title": "Ukrainian F-16 shoots down Russian fighter jet in air combat for the first time, says US general",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://www.kyivpost.com/uk/post/80804",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-22",
+   "outlet": "apostrophe.UA",
+   "title": "Pavel Unguryan: US support for Ukraine has gone through three stages and is growing again.",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://apostrophe.ua/ru/politics/pavel-unhurjan-podderzhka-ukrainy-v-ssha-proshla-tri-etapa-i-snova-usilivaetsja.html",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-18",
+   "outlet": "Christian Daily International",
+   "title": "Producer of film on Ukraine war targeted by Russian cyber attack",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christiandaily.com/news/producer-of-film-on-ukraine-war-targeted-by-russian-cyber-attack",
+   "note": ""
+  },
+  {
+   "date": "2026-06-18",
+   "outlet": "Washington Examiner",
+   "title": "Unpacking Laura Loomer’s mea culpa on Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.washingtonexaminer.com/news/washington-secrets/4614200/laura-loomer-ukraine-russia-propaganda/",
+   "note": "Mentions Steven Moore & Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-18",
+   "outlet": "Real Talk with Riggin",
+   "title": "Colby Barrett on Ukraine",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.iheart.com/podcast/1323-real-talk-with-riggin-293384476/",
+   "note": ""
+  },
+  {
+   "date": "2026-06-16",
+   "outlet": "EWTN News",
+   "title": "Ukraine advocate says cathedral bombing reflects broader campaign against Christianity",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.ewtnnews.com/world/us/ukraine-advocate-says-cathedral-bombing-reflects-broader-campaign-against-christianity",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-16",
+   "outlet": "Newsmax",
+   "title": "Newsmax Hit",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=XQ-3J2QUSu4",
+   "note": ""
+  },
+  {
+   "date": "2026-06-14",
+   "outlet": "The Hill",
+   "title": "‘Time is not on our side’: Ukraine presses Trump for help with children stolen by Russia",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thehill.com/policy/international/5922381-ukraine-urges-trump-help-children/",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-06-11",
+   "outlet": "Washington Examiner",
+   "title": "Poll shows Tucker Carlson losing his grip on GOP as conservative Ukraine supporters take on pro-Russia voices",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.washingtonexaminer.com/news/washington-secrets/4604415/tucker-carlson-republican-poll-ukraine-russia/",
+   "note": "Quotes Steven Moore"
+  },
+  {
+   "date": "2026-06-06",
+   "outlet": "Forbes",
+   "title": "Russia's Oreshnik Missile Matters More For Deterrence Than Destruction",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.forbes.com/sites/davidkirichenko/2026/07/06/russias-oreshnik-missile-matters-more-for-deterrence-than-destruction/",
+   "note": "Quotes Steven Moore"
+  },
+  {
+   "date": "2026-06-01",
+   "outlet": "Washington Stand",
+   "title": "As Ukraine Begins to Turn Tide of War, Christians Remain Prime Russian Target",
+   "type": "Article",
+   "language": "English",
+   "url": "https://washingtonstand.com/article/as-ukraine-begins-to-turn-tide-of-war-christians-remain-prime-russian-target",
+   "note": ""
+  },
+  {
+   "date": "2026-05-31",
+   "outlet": "Newsmax",
+   "title": "Alex Salvi reporting with Steven Moore",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://x.com/newsmax/status/2061094186560974940",
+   "note": "X post"
+  },
+  {
+   "date": "2026-05-29",
+   "outlet": "Washington Watch with Tony Perkins",
+   "title": "Colby Barrett Goes Behind the Scenes of the Ukraine-Russia War to Share Its Impact on Christians",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=W2YcYageXpA",
+   "note": ""
+  },
+  {
+   "date": "2026-05-20",
+   "outlet": "Steve Gruber Show`",
+   "title": "Live From Kiev: Ukraine Turns the Tide | with Steven Moore",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=DMKDyUG-QWs",
+   "note": ""
+  },
+  {
+   "date": "2026-05-15",
+   "outlet": "Christianity Today",
+   "title": "As Russia Strikes Ukrainian Churches, Worship Goes On",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianitytoday.com/2026/05/russia-ukraine-church-bombing-attack-religious/",
+   "note": "Mentions Colby Barrett"
+  },
+  {
+   "date": "2026-05-12",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Putin Is a Loser",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/75980",
+   "note": "Written by Steven Moore"
+  },
+  {
+   "date": "2026-05-08",
+   "outlet": "Forbes",
+   "title": "Putin’s Victory Day Parade Relies On A U.S.-Brokered Ukraine Truce",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.forbes.com/sites/davidkirichenko/2026/05/08/putins-victory-day-parade-relies-on-a-us-brokered-ukraine-truce/",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-05-04",
+   "outlet": "Christian Daily International",
+   "title": "Russia damages church building in Ukraine with second bombing",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christiandaily.com/news/russia-damages-church-building-in-ukraine-with-second-bombing",
+   "note": ""
+  },
+  {
+   "date": "2026-04-28",
+   "outlet": "Evangeliques Info",
+   "title": "Ukraine: Un verset biblique sur une église baptiste récemment bombardée, signe de résilience",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.evangeliques.info/2026/04/28/ukraine-eglise-baptiste-zaporijia-verset-biblique/",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-28",
+   "outlet": "FOX News",
+   "title": "White House Correspondents’ Dinner Chaos",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://radio.foxnews.com/2026/04/28/white-house-correspondents-dinner-chaos/",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-28",
+   "outlet": "NTD",
+   "title": "Ukrainian Christians Under Siege by Russia, Filmmakers Say",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=uwmg-wzzmXc",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-27",
+   "outlet": "WLS 890 AM",
+   "title": "Military Monday: Marine turned filmmaker talks new documentary, 'A Faith Under Siege'",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/za/podcast/military-monday-marine-turned-filmmaker-talks-new-documentary/id1755797866?i=1000763844769",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-27",
+   "outlet": "The Marc Cox Morning Show",
+   "title": "Colby Barrett on “Faith Under Siege,” Ukraine Church Attacks, and Targeting of Christian Communities",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/za/podcast/colby-barrett-on-faith-under-siege-ukraine-church-attacks/id1213933085?i=1000763821150",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-27",
+   "outlet": "Ray Stevens Show",
+   "title": "Colby Barrett on Ukraine",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/us/podcast/the-ray-stevens-show-monday-april-27th-2026/id1755797866?i=1000763826280&l=ar",
+   "note": ""
+  },
+  {
+   "date": "2026-04-27",
+   "outlet": "Marc Cox Morning Show",
+   "title": "Colby Barrett on Ukraine",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.audacy.com/podcasts/b963b06e6f86c63ce7e55c1be452ccd3/episodes/colby_barrett_on_faith_under_s-8337011",
+   "note": ""
+  },
+  {
+   "date": "2026-04-24",
+   "outlet": "Daily Caller",
+   "title": "New Bill Brings Light To All But One Church Under Russian Persecution",
+   "type": "Article",
+   "language": "English",
+   "url": "https://dailycaller.com/2026/04/24/christian-persecution-russia-war-joe-wilson-orthodox/",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-22",
+   "outlet": "Roys Report",
+   "title": "Russia’s deadly strike on Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
+   "type": "Article",
+   "language": "English",
+   "url": "https://roysreport.com/russias-strike-on-ukraine-church-wasnt-an-accident-advocates-say/",
+   "note": ""
+  },
+  {
+   "date": "2026-04-22",
+   "outlet": "Crosswalk",
+   "title": "Embassy of Ukraine in U.S. Declares Russian Attack on Ukrainian Church ‘Deliberate’",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.crosswalk.com/headlines/contributors/elizabeth-delaney/embassy-of-ukraine-in-us-declares-russian-attack-on-ukrainian-church-deliberate.html",
+   "note": ""
+  },
+  {
+   "date": "2026-04-22",
+   "outlet": "The Raid Revolution",
+   "title": "[title needed]",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.facebook.com/watch/?v=1551261163342606",
+   "note": ""
+  },
+  {
+   "date": "2026-04-21",
+   "outlet": "The Pathway",
+   "title": "Russia’s deadly strike on busy Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
+   "type": "Article",
+   "language": "English",
+   "url": "https://mbcpathway.com/2026/04/21/russias-deadly-strike-on-busy-ukraine-baptist-church-wasnt-an-accident-advocates-say/",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-21",
+   "outlet": "10 Years Evangelical Focus",
+   "title": "Russian attack on Baptist church in Ukraine kills pastor",
+   "type": "Article",
+   "language": "English",
+   "url": "https://evangelicalfocus.com/europe/34498/russian-attack-on-baptist-church-kills-pastor",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-19",
+   "outlet": "The Reid Revolution with John Reid",
+   "title": "Colby Barrett",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/za/podcast/colby-barrett/id1866683797?i=1000756236553",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-18",
+   "outlet": "The Christian Post",
+   "title": "Russia strikes Baptist church in Ukraine, killing pastor at prayer meeting",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianpost.com/news/russia-strikes-baptist-church-in-ukraine-during-worship-service.html",
+   "note": ""
+  },
+  {
+   "date": "2026-04-17",
+   "outlet": "BaptistPress",
+   "title": "Russia’s deadly strike on busy Ukraine Baptist church ‘wasn’t an accident,’ advocates say",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/russias-deadly-strike-on-busy-ukraine-baptist-church-no-accident-advocates-say/",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-16",
+   "outlet": "WMBS590AM",
+   "title": "The Afternoon Drive Show with Doug Saltzman 4/15/26",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=0kSat4Nn18c&t=1433s",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-15",
+   "outlet": "Ukraine Freedom Project",
+   "title": "Defeat of Viktor Orbán: What It Means for the Russia–Ukraine War?",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=p8SSA8feca4",
+   "note": "None"
+  },
+  {
+   "date": "2026-04-06",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Is Trump Here to Stay?",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/73357",
+   "note": "Written by Steven Moore"
+  },
+  {
+   "date": "2026-04-02",
+   "outlet": "The Lars Larson Show",
+   "title": "Colby Barrett - Are We Headed For Ground Invasion In Iran?",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/za/podcast/colby-barrett-are-we-headed-for-ground-invasion-in-iran/id1890300009?i=1000758922194",
+   "note": "None"
+  },
+  {
+   "date": "2026-03-31",
+   "outlet": "The Christian Post",
+   "title": "US launches $25M effort to free abducted Ukrainian children",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianpost.com/news/us-launches-25-million-effort-free-abducted-ukrainian-children.html",
+   "note": "None"
+  },
+  {
+   "date": "2026-03-31",
+   "outlet": "Niezalezna",
+   "title": "Nawrocki's blow to the Russian narrative in the U.S. Senior official: Those were extremely important words",
+   "type": "Article",
+   "language": "Polish",
+   "url": "https://niezalezna.pl/swiat/cios-nawrockiego-w-rosyjska-narracje-w-usa-wysoki-urzednik-to-byly-niezwykle-wazne-slowa/567116",
+   "note": "Mentions Ukraine Freedom Project"
+  },
+  {
+   "date": "2026-03-28",
+   "outlet": "IGospel",
+   "title": "Ukraine : Un verset biblique sur une église baptiste récemment bombardée, signe de résilience",
+   "type": "Article",
+   "language": "English",
+   "url": "https://igospelmagazine.com/2026/ukraine-un-verset-biblique-sur-une-eglise-baptiste-recemment-bombardee-signe-de-resilience/",
+   "note": ""
+  },
+  {
+   "date": "2026-03-26",
+   "outlet": "ETWN News",
+   "title": "Ukraine monastery hit in Russian missile strike, ‘most historic church’ targeted so far",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.ewtnnews.com/world/europe/ukraine-monastery-hit-in-russian-missile-strike-most-historic-church-targeted-so-far",
+   "note": "None"
+  },
+  {
+   "date": "2026-03-10",
+   "outlet": "Tampa Bay Times",
+   "title": "Russian weapons are killing Americans. Why doesn’t Rep. Luna call it out? | Column",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.tampabay.com/viewpoints/2026/03/10/iran-isreal-trump-war-shahed-kometa-congress-putin-dmitriev/",
+   "note": "Op-ed written by Colby Barrett and Steve Moore"
+  },
+  {
+   "date": "2026-03-04",
+   "outlet": "My Faith Radio",
+   "title": "Ukrainian Christians suffering at the hands of Russia - Colby Barrett | Cultivating authentic connection with others at church - Tom Bennardo",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.myfaithradio.com/programs/reconnect-with-carmen-laberge/ukrainian-christians-suffering-at-the-hands-of-russia-colby-barrett-cultivating-authentic-connection-with-others-at-church-tom-bennardo-1756732500/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-28",
+   "outlet": "For God's Glory Alone Ministries",
+   "title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.fggam.org/2026/02/enough-is-enough-putin-must-be-stopped-450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-27",
+   "outlet": "Baptist Press",
+   "title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-27",
+   "outlet": "The Pathway",
+   "title": "450 Baptist churches among 737 houses of worship Russia has attacked in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://mbcpathway.com/2026/03/01/450-baptist-churches-among-737-houses-of-worship-russia-has-attacked-in-ukraine/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "OSV News",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.osvnews.com/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Christianity Today",
+   "title": "Four Years into the War, Life Goes on for Ukrainians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianitytoday.com/2026/02/ukraine-war-christian-church-winter-normal/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Baptist Press",
+   "title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "For God's Glory Alone Ministries",
+   "title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.fggam.org/2026/02/baptist-press-at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Biblical Recorder",
+   "title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.brnow.org/news/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "The Pathway",
+   "title": "At 4 years, ‘pure miracle’ Ukraine still standing against Putin’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://mbcpathway.com/2026/02/24/at-4-years-pure-miracle-ukraine-still-standing-against-putins-war/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Faith on View",
+   "title": "Four Years into the War, Life Goes on for Ukrainians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.faithonview.com/life-under-russian-drones-ukrainians-refuse-to-stop-living/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "The Christian Citizen",
+   "title": "Four Years into the War, Life Goes on for Ukrainians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christiancitizen.us/articles/weekly-religion-news-roundup-february-20-26-2026",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Catholic Star Herald",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://catholicstarherald.org/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Catholic Review",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://catholicreview.org/russias-war-on-ukraine-means-no-priests-left-documentary-shows/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "The Catholic Weekly",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://catholicweekly.com.au/no-priests-left-documentary/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Christian Rising",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://christian7401.rssing.com/chan-77559393/latest-article1.php",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "WN",
+   "title": "Russia’s war on Ukraine means ‘No Priests Left,’ documentary shows",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://article.wn.com/view/2026/02/24/Russia_s_war_on_Ukraine_means_No_Priests_Left_documentary_sh/",
+   "note": "None"
+  },
+  {
+   "date": "2026-02-24",
+   "outlet": "Catholic Archdioces of Melbourne",
+   "title": "Civilian deaths and persecution of Catholics as Ukraine marks four years of invasion",
+   "type": "Article",
+   "language": "English",
+   "url": "https://melbournecatholic.org/news/civilian-deaths-and-catholic-persecution-as-ukraine-marks-four-years-of-invasion",
+   "note": ""
+  },
+  {
+   "date": "2026-02-20",
+   "outlet": "Daily Caller",
+   "title": "Ukrainian Christians Allege Soviet-Era Persecution By Russia, Bombings Of Churches",
+   "type": "Article",
+   "language": "English",
+   "url": "https://dailycaller.com/2026/02/20/ukrainian-christian-soviet-era-persecution-russia-bombing-churches/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-16",
+   "outlet": "Lara Trump",
+   "title": "Fighting for Ukrainian Christians!",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.facebook.com/watch/?v=1555502822413746",
+   "note": ""
+  },
+  {
+   "date": "2026-02-09",
+   "outlet": "Politico",
+   "title": "Ukraine’s Christianity pitch wins MAGA traction",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.politico.com/newsletters/national-security-daily/2026/02/09/ukraines-christianity-pitch-wins-maga-traction-00771758",
+   "note": "UFP"
+  },
+  {
+   "date": "2026-02-05",
+   "outlet": "Armenian Weekly",
+   "title": "Faith under siege: Arrests and military purge mark new low in Church-state crisis",
+   "type": "Article",
+   "language": "English",
+   "url": "https://armenianweekly.com/2026/02/05/faith-under-siege-arrests-and-military-purge-mark-new-low-in-church-state-crisis/",
+   "note": ""
+  },
+  {
+   "date": "2026-02-04",
+   "outlet": "Politico Playbook",
+   "title": "Event highlighted",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.politico.com/newsletters/playbook-pm/2026/02/04/the-decimation-of-the-washington-post-00764750",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2026-02-01",
+   "outlet": "Kulturni Marksizem",
+   "title": "Steven Moore: Many conservatives have never heard anything good about Ukrainians. They've only known lies.",
+   "type": "Article",
+   "language": "Slovenian",
+   "url": "https://kulturnimarksizem.si/nekategorizirano/steven-moore-mnogi-konservativci-niso-nikoli-slisali-nicesar-dobrega-o-ukrajincih-poznali-so-samo-lazi/",
+   "note": "Organic"
+  },
+  {
+   "date": "2026-01-29",
+   "outlet": "EWTN",
+   "title": "Steven Moore on Russian Strikes on Civilians as Peace Talks Near | EWTN News Nightly",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=Nsv9-oFqOCg",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-26",
+   "outlet": "National Catholic Register",
+   "title": "Russian Forces are Liquidating the Catholic Church in Occupied Ukraine",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.ncregister.com/commentaries/barrett-moore-catholic-church-in-ukraine",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-26",
+   "outlet": "EWTN Great Britain",
+   "title": "Russian Forces are Liquidating the Catholic Church in Occupied Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://ewtn.co.uk/article-russian-forces-are-liquidating-the-catholic-church-in-occupied-ukraine/",
+   "note": "Repost of National Catholic Register"
+  },
+  {
+   "date": "2026-01-26",
+   "outlet": "Aid to the Church in Need",
+   "title": "ACN and Faith & Reason Institute launch “Faith Under Siege” podcast",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.churchinneed.org/acn-and-faith-reason-institute-launch-faith-under-siege-podcast/",
+   "note": ""
+  },
+  {
+   "date": "2026-01-22",
+   "outlet": "Providence Magazine",
+   "title": "Drawing \"New Borders\" in Ukraine Means Choosing Which Pastors to Condemn",
+   "type": "Article",
+   "language": "English",
+   "url": "https://providencemag.com/2026/01/drawing-new-borders-in-ukraine-means-choosing-which-pastors-to-condemn/",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-19",
+   "outlet": "ekai",
+   "title": "\"Wiara pod oblężeniem\" – film o rosyjskich zbrodniach i prześladowaniu chrześcijan",
+   "type": "Article",
+   "language": "Polish",
+   "url": "https://www.ekai.pl/wiara-pod-oblezeniem-film-o-rosyjskich-zbrodniach-i-przesladowaniu-chrzescijan/",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-18",
+   "outlet": "Christian Post",
+   "title": "Putin’s attempt to murder 20 Evangelical pastors backfired",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/putins-attempt-to-murder-20-evangelical-pastors-backfired.html",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-17",
+   "outlet": "Kyiv Post",
+   "title": "Why the Russian Orthodox Church is Lobbying in Washington",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kyivpost.com/post/68182",
+   "note": "UFP"
+  },
+  {
+   "date": "2026-01-16",
+   "outlet": "The Right View with Lara Trump",
+   "title": "Lara Trump",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://open.spotify.com/episode/39MzJi4YpgcMrmr9E6eV3i?si=48HjHmW9RSqpJhrjH9uZpA&nd=1&dlsi=8cf2d3fb2de14aca",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-14",
+   "outlet": "CFN Live",
+   "title": "Steven Moore & Colby Barrett",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://vimeo.com/1155083433/b99ad587bb?share=copy&amp;fl=sv&amp;fe=ci",
+   "note": "FG"
+  },
+  {
+   "date": "2026-01-14",
+   "outlet": "The Mountaineer",
+   "title": "A day of prayer for Ukraine, featuring an American POW captured by Russia",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.themountaineer.com/life/a-day-of-prayer-for-ukraine-featuring-an-american-pow-captured-by-russia/article_095158b2-2c07-42c4-81cb-1e02cc2de744.html",
+   "note": "Organic"
+  },
+  {
+   "date": "2026-01-12",
+   "outlet": "SLAWA TV",
+   "title": "Steven Moore on Russian Orthodox Church Disinformation About Ukraine",
+   "type": "TV & video",
+   "language": "Ukrainian",
+   "url": "https://www.youtube.com/watch?v=n2o7OyjX-N8",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-12-23",
+   "outlet": "EWTN News",
+   "title": "Christian Persecution in Ukraine Rises Since the Start of the Russia-Ukraine War | EWTN News Nightly",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=osGgMzr5ncY",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-12-21",
+   "outlet": "Fox News",
+   "title": "Steven Moore: Putin's Peace Plan is a Trap & Russian Orthodox Church is a Kremlin Tool",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=pMQF6wQ-EUc",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-12-20",
+   "outlet": "The Hill",
+   "title": "GOP divided by Capitol Hill visit from Orthodox Christian advocacy group",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thehill.com/homenews/house/5657677-orthodox-christian-delegation-capitol-hill-russia-ukraine/",
+   "note": "UFP/FG"
+  },
+  {
+   "date": "2025-12-18",
+   "outlet": "NewsMax2",
+   "title": "Capital Hill Alert: Steven Moore Discusses Russian Orthodox Church Lobbying",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=e5Xo6GxK1Lk",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-12-17",
+   "outlet": "Crosswalk.com",
+   "title": "Zelenskyy Pushes Back on Trump Regarding Holding Elections During Wartime",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.crosswalk.com/headlines/contributors/elizabeth-delaney/zelenskyy-pushes-back-on-trump-regarding-holding-elections-during-wartime.html",
+   "note": "SO"
+  },
+  {
+   "date": "2025-12-16",
+   "outlet": "Chuck Grassley",
+   "title": "Grassley Sets The Record Straight on Russia's Persecution of Christians In Occupied Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.grassley.senate.gov/news/remarks/grassley-sets-the-record-straight-on-russias-persecution-of-christians-in-occupied-ukraine",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-12-03",
+   "outlet": "Fox News",
+   "title": "Steven Moore Live on Fox News: Latest Developments in Peace Talks",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=qhcZxovqK4Q",
+   "note": "FG"
+  },
+  {
+   "date": "2025-11-29",
+   "outlet": "Kyiv Post",
+   "title": "Opinion: Are the Russians Running an Influence Operation in Congress?",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/64438",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-11-20",
+   "outlet": "John Fredericks Media",
+   "title": "Steven Moore, Live in Kyiv, Ukraine with Panel Debate Proposed Peace Deal",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=puOOGF1HLes",
+   "note": "None"
+  },
+  {
+   "date": "2025-11-17",
+   "outlet": "United24 Media",
+   "title": "Ukrainian-Americans Were Divided by Faith and Identity - Until Russia Went to War",
+   "type": "Article",
+   "language": "English",
+   "url": "https://united24media.com/culture/ukrainian-americans-were-divided-by-faith-and-identity-until-russia-went-to-war-13370",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-11-04",
+   "outlet": "Biblical Recorder",
+   "title": "Republicans favor long-range missiles for Ukraine, see Putin as threat, poll finds",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.brnow.org/news/republicans-favor-long-range-missiles-for-ukraine-see-putin-as-threat-poll-finds/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-11-03",
+   "outlet": "Mission Network News",
+   "title": "Russian forces target churches in occupied Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.mnnonline.org/news/russian-forces-target-churches-in-occupied-ukraine/",
+   "note": "Organic"
+  },
+  {
+   "date": "2025-10-29",
+   "outlet": "CPAC",
+   "title": "Sarah Makin to Join Christian Persecution Summit",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.cpac.org/post/sarah-makin-to-join-christian-persecution-summit",
+   "note": "SM"
+  },
+  {
+   "date": "2025-10-27",
+   "outlet": "All Israel News",
+   "title": "Faith under siege: New film exposes Putin’s crackdown on Ukrainian Jews",
+   "type": "Article",
+   "language": "English",
+   "url": "https://allisraelnews.com/faith-under-siege-new-film-exposes-putins-crackdown-on-ukrainian-jews",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-10-22",
+   "outlet": "Team Never Quit Podcast",
+   "title": "Christian Hickey on Team Never Quit",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://teamneverquit.com/podcast/christian-hickey/",
+   "note": "Forwrd Global"
+  },
+  {
+   "date": "2025-10-20",
+   "outlet": "OSV",
+   "title": "Filmmakers tell story of Ukraine’s Christians ‘hunted’ by Russia - OSV News",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.osvnews.com/filmmakers-tell-story-of-ukraines-christians-hunted-by-russia/",
+   "note": "Angel Reprint"
+  },
+  {
+   "date": "2025-10-20",
+   "outlet": "Catholic Standard",
+   "title": "Filmmakers tell story of Ukraine’s persecuted Christians ‘hunted’ by Russia",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.cathstan.org/us-world/filmmakers-tell-story-of-ukraines-persecuted-christians-hunted-by-russia",
+   "note": "Reprint"
+  },
+  {
+   "date": "2025-10-12",
+   "outlet": "Rapzilla",
+   "title": "‘A Faith Under Siege’ Reminds us to Pray for the Persecuted",
+   "type": "Article",
+   "language": "English",
+   "url": "https://rapzilla.com/2025-10-a-faith-under-siege-pray-persecuted/",
+   "note": "Organic"
+  },
+  {
+   "date": "2025-10-10",
+   "outlet": "FGGAM",
+   "title": "Digging In — Pastor Continues to Serve in Ukraine After Losing Church and Second Home in Russia’s War",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.fggam.org/2025/10/digging-in-pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
+   "note": "FG - Baptist Press Reprint"
+  },
+  {
+   "date": "2025-10-10",
+   "outlet": "Biblical Recorder",
+   "title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.brnow.org/news/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
+   "note": "FG - Baptist Press Reprint"
+  },
+  {
+   "date": "2025-10-09",
+   "outlet": "Baptist Press",
+   "title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-28",
+   "outlet": "Newsmax",
+   "title": "Filmmakers Seek to Expose Plight of Ukrainian Christians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.newsmax.com/platinum/film-plight-ukraine/2025/09/19/id/1227115/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-26",
+   "outlet": "The Christian Broadcasting Network",
+   "title": "Why Trump Made a Sharp Turn on Ukraine War, Criticizing Putin and Praising Zelenskyy",
+   "type": "Article",
+   "language": "English",
+   "url": "https://cbn.com/news/world/why-trump-made-sharp-turn-ukraine-war-criticizing-putin-and-praising-zelenskyy",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-25",
+   "outlet": "The Washington Times",
+   "title": "Ukraine’s church decision is about security, not faith",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.washingtontimes.com/news/2025/sep/25/ukraines-church-decision-security-faith/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-24",
+   "outlet": "Just Love Movies",
+   "title": "Defiant Story of Ukraine’s Christians: Docu-series A FAITH UNDER SIEGE Launches Tomorrow",
+   "type": "Article",
+   "language": "English",
+   "url": "https://justlovemovies.com/2025/09/24/defiant-story-of-ukraines-christians-docu-series-a-faith-under-siege-launches-tomorrow/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-16",
+   "outlet": "Christian Post",
+   "title": "Why Christians must stand with Ukraine’s Jewish community",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/why-christians-must-stand-with-ukraines-jewish-community.html",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-14",
+   "outlet": "The Christian Broadcasting Network",
+   "title": "Murder, Torture, and Chaos: How Russia Reportedly Targets Evangelicals",
+   "type": "Article",
+   "language": "English",
+   "url": "https://cbn.com/news/world/murder-torture-and-chaos-how-russia-reportedly-targets-evangelicals",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-09-01",
+   "outlet": "The Christian Broadcasting Network",
+   "title": "WATCH 'A Faith Under Siege': New Doc Exposes Severe Persecution of Evangelical Christians by Russia",
+   "type": "Article",
+   "language": "English",
+   "url": "https://cbn.com/news/world/watch-faith-under-siege-new-doc-exposes-severe-persecution-evangelical-christians-russia",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-08-28",
+   "outlet": "The Hill",
+   "title": "What’s at stake in Russia’s bid for Ukraine’s Donetsk territory?",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thehill.com/policy/international/5474178-ukraine-russia-donetsk-territory/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-08-26",
+   "outlet": "USA Today",
+   "title": "Op-Ed: Deal to end Russia-Ukraine war must include returning abducted Ukrainian kids",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.usatoday.com/story/opinion/2025/08/26/russia-return-kidnapped-ukrainian-kids/85780669007/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-08-24",
+   "outlet": "Fox 23",
+   "title": "Tulsa Ukrainian Community celebrates Ukraine's 34th Independence Day",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.fox23.com/news/tulsa-ukrainian-community-celebrates-ukraines-34th-independence-day/article_5bfb47d9-cd4d-4fe4-9d8f-c71102ce023a.html",
+   "note": "KA"
+  },
+  {
+   "date": "2025-08-23",
+   "outlet": "KTUL",
+   "title": "Tulsans spreading hope in Ukraine, documentary highlights attack on faith",
+   "type": "Article",
+   "language": "English",
+   "url": "https://ktul.com/news/local/tulsans-spreading-hope-in-ukraine-documentary-highlights-attack-on-faith",
+   "note": "KA"
+  },
+  {
+   "date": "2025-08-19",
+   "outlet": "Word and Way",
+   "title": "Three New Documentary Projects Warn About Abusive, Nationalistic Faith",
+   "type": "Article",
+   "language": "English",
+   "url": "https://wordandway.org/2025/08/19/three-new-documentary-projects-warn-about-abusive-nationalistic-faith/",
+   "note": ""
+  },
+  {
+   "date": "2025-08-14",
+   "outlet": "World Magazine",
+   "title": "Steal, kill, destroy Inside the Russian campaign to purge Christians from occupied Ukrainian territory",
+   "type": "Article",
+   "language": "English",
+   "url": "https://wng.org/articles/steal-kill-destroy-1754445679",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-08-02",
+   "outlet": "Spirit Radio",
+   "title": "A Faith Under Siege",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.spiritradio.ie/podcast/a-faith-under-siege-the-documentary/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-08-02",
+   "outlet": "Christian Daily International",
+   "title": "Film shows effect of Russian invasion on Ukraine evangelicals",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.christiandaily.com/news/film-shows-effect-of-russian-invasion-on-ukraine-evangelicals",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-08-01",
+   "outlet": "Shaken Podcast",
+   "title": "A Faith Under Siege with Karl Alhgren",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://purposely.com/podcasts/shaken-with-steve-sunshine/?ppplayer=e6aa26037dde8bfc02dc40251ce36262&ppepisode=024ae06ef53ca96fdf461d0710db072f",
+   "note": "KA"
+  },
+  {
+   "date": "2025-07-30",
+   "outlet": "First Person with Wayne Shepherd",
+   "title": "Colby Barrett on the First Person Show",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://open.spotify.com/show/0bk5xwuiLe1OCyqu5VKLP9",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-30",
+   "outlet": "Euromaidan Press",
+   "title": "Seven Ukrainian war documentaries Russia doesn’t want you to see",
+   "type": "Article",
+   "language": "English",
+   "url": "https://euromaidanpress.com/2025/07/30/ukrainian-war-documentaries-russia-doesnt-want-you-to-see/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-07-28",
+   "outlet": "TBN UK",
+   "title": "Sheila Walsh hosts Colby Barrett - A Faith Under Siege",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://watch.tbn.uk/watch/replay/19286340/sheila-walsh-hosts-colby-barrett-a-faith-under-siege",
+   "note": "TBN"
+  },
+  {
+   "date": "2025-07-25",
+   "outlet": "Alex McFarland Show",
+   "title": "Alex MacFarland Is Joined By Colby Barrett To Discuss A New Movie \"A Faith Under Siege\"",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://afr.net/podcasts/real-truth-for-today/2025/july/alex-macfarland-is-joined-by-colby-barrett-to-discuss-a-new-movie-a-faith-under-siege/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-23",
+   "outlet": "Evangelicals Now",
+   "title": "Ukraine film highlights Russian oppression of Christians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.e-n.org.uk/world-news/2025-08-ukraine-film-highlights-russian-oppression-of-christians/",
+   "note": "CBN reprint"
+  },
+  {
+   "date": "2025-07-23",
+   "outlet": "Steve Gruber Show",
+   "title": "Steven Moore | Exposing the Persecution of Ukrainian Christians",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://stevegruber.podbean.com/e/steven-moore-exposing-the-persecution-of-ukrainian-christians/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-21",
+   "outlet": "Yahoo News",
+   "title": "Two Rivers Church in Johnson City to host documentary screening",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.yahoo.com/news/two-rivers-church-johnson-city-165630864.html",
+   "note": "TBC"
+  },
+  {
+   "date": "2025-07-21",
+   "outlet": "WIVT/WBGH",
+   "title": "Two Rivers Church in Johnson City to host documentary screening",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.binghamtonhomepage.com/news/two-rivers-church-in-johnson-city-to-host-documentary-screening/",
+   "note": "TBC"
+  },
+  {
+   "date": "2025-07-20",
+   "outlet": "Fox News Radio",
+   "title": "Extra: Putin’s Persecution of Ukrainian Christians",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://radio.foxnews.com/2025/07/20/extra-putins-persecution-of-ukrainian-christians/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-07-11",
+   "outlet": "Quad City Times",
+   "title": "Ukrainian filmmaker, former GOP staffer to screen 'Faith Under Siege' documentary in DeWitt",
+   "type": "Article",
+   "language": "English",
+   "url": "https://qctimes.com/life-entertainment/local/events/article_f78d3ffe-4ec6-4d86-9433-6876d64f7471.html",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-11",
+   "outlet": "Dispatch Argus",
+   "title": "Ukrainian filmmaker, former GOP staffer to screen 'Faith Under Siege' documentary in DeWitt",
+   "type": "Article",
+   "language": "English",
+   "url": "https://qconline.com/life-entertainment/local/events/article_c00501d8-1030-5838-badb-779e824aa14e.html",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-11",
+   "outlet": "Quad City Business Journal",
+   "title": "IA NICE hosts ‘A Faith Under Siege’ film about Russia’s war with Ukraine Film’s producers to stop in for local screening, Q&A",
+   "type": "Article",
+   "language": "English",
+   "url": "https://quadcitiesbusiness.com/ia-nice-hosts-a-faith-under-siege-film-about-russias-war-with-ukraine-films-producers-to-stop-in-for-local-screening-qa/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-07-09",
+   "outlet": "Info Chretienne",
+   "title": "Des documentaristes chrétiens veulent aider l’Ukraine",
+   "type": "Article",
+   "language": "French",
+   "url": "https://www.infochretienne.com/articles/des-documentaristes-chretiens-veulent-aider-lukraine/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-09",
+   "outlet": "Christianity Today",
+   "title": "Des documentaristes chrétiens veulent aider l’Ukraine",
+   "type": "Article",
+   "language": "French",
+   "url": "https://fr.christianitytoday.com/2025/07/documentaristes-chretiens-ukraine-persecution-eglise-fr/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-09",
+   "outlet": "Faith on View",
+   "title": "Ukraine’s persecuted Christians: New film exposes hidden religious war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.faithonview.com/ukraines-persecuted-christians-new-film-exposes-hidden-religious-war/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-08",
+   "outlet": "Baptist News Global",
+   "title": "The Christian Documentarians Trying to Help Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://baptistnews.com/article/the-christian-documentarians-trying-to-help-ukraine/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-08",
+   "outlet": "The Dispatch",
+   "title": "Mornigng Dispatch - Includes Christianity Today Article",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thedispatch.com/newsletter/morning/texas-flooding-death-toll-rises/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-07",
+   "outlet": "Faith and Leadership",
+   "title": "Christian documentarians in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://faithandleadership.com/news-ideas/mondays-news-ideas-772025",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-07",
+   "outlet": "Christianity Today",
+   "title": "The Christian Documentarians Trying to Help Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianitytoday.com/2025/07/christian-documentarians-help-ukraine-evangelicals/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-07",
+   "outlet": "Christianity Today",
+   "title": "CT Daily Briefing",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.christianitytoday.com/newsletter/archive/ct-daily-briefing-07-08-2025/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-07-07",
+   "outlet": "Ukrainetoday.org",
+   "title": "Why isn’t anything Ukraine doing working with Trump?",
+   "type": "Article",
+   "language": "English",
+   "url": "https://ukrainetoday.org/why-isnt-anything-ukraine-doing-working-with-trump/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-07-01",
+   "outlet": "60 Plus",
+   "title": "A Special Message from Pat Boone",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.60plus.org/democrats-move-farther-left-putin-continues-his-murderous-escapades/",
+   "note": "Steve Okin"
+  },
+  {
+   "date": "2025-07-01",
+   "outlet": "Idaho State Journal",
+   "title": "What to do this week in East Idaho",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.newsbreak.com/idaho-state-journal-1591702/4084196788734-what-to-do-this-week-in-east-idaho",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-06-30",
+   "outlet": "Federal News Wire",
+   "title": "WEEKEND INTERVIEW: Colby Barrett and Steven Moore on ‘A Faith Under Siege’ in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thefederalnewswire.com/stories/673658650-weekend-interview-colby-barrett-and-steven-moore-on-a-faith-under-siege-in-ukraine",
+   "note": "SM/Forward Global"
+  },
+  {
+   "date": "2025-06-29",
+   "outlet": "Business Ukraine Magazine",
+   "title": "New documentary exposes Russian oppression of Ukraine’s Christian minorities",
+   "type": "Article",
+   "language": "English",
+   "url": "https://businessukraine.ua/new-documentary-exposes-russian-oppression-of-ukraines-christian-minorities/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-06-29",
+   "outlet": "East Idaho News",
+   "title": "Bengal Theater to host free showings of Ukraine war documentary ‘A Faith Under Siege’",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.eastidahonews.com/2025/06/bengal-theater-to-host-free-showings-of-ukraine-war-documentary-a-faith-under-siege/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-06-26",
+   "outlet": "Peace Power Ukraine - Federal Newswire",
+   "title": "Inside “Faith Under Siege”: Ukraine’s Evangelical Frontline Against Russian Repression",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/us/podcast/inside-faith-under-siege-ukraines-evangelical-frontline/id1798878241?i=1000714657588",
+   "note": "SM/Forward Global"
+  },
+  {
+   "date": "2025-06-25",
+   "outlet": "Mid South Viewpoint - Bott Radio Network",
+   "title": "Interview on Fatih Under Siege",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://open.spotify.com/episode/1S75v4UMseYKSt6WzDmuNN?si=dea04a5001074b5e&nd=1&dlsi=679b1e87e05c4dbd",
+   "note": "JB/Forward Global"
+  },
+  {
+   "date": "2025-06-25",
+   "outlet": "National Interest",
+   "title": "Ukraine’s Fight for Religious Liberty",
+   "type": "Article",
+   "language": "English",
+   "url": "https://nationalinterest.org/feature/ukraines-fight-for-religious-liberty",
+   "note": "Melinda Haring"
+  },
+  {
+   "date": "2025-06-23",
+   "outlet": "Faith Radio - The Reconnect",
+   "title": "Interview on Faith Under Siege",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.myfaithradio.com/programs/reconnect-with-carmen-laberge/americas-long-conflict-with-iran-elizabeth-neumann-russias-attacks-on-ukrainian-christians-colby-barrett-1750684800/",
+   "note": "JB/Forward Global"
+  },
+  {
+   "date": "2025-06-23",
+   "outlet": "Forbes Ukraine",
+   "title": "Forbes Ukraine Interview with Steven Moore",
+   "type": "Article",
+   "language": "English",
+   "url": "https://ukrainetoday.org/forbes-ukraine-interview-with-steven-moore/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-06-19",
+   "outlet": "Newsmax - Todd Starnes Show",
+   "title": "\"A Faith Under Siege\" shows plight of Ukraine's Chirstians",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=md5p36VEYkY&t=11s",
+   "note": "JB/Forward Global"
+  },
+  {
+   "date": "2025-06-15",
+   "outlet": "National Post",
+   "title": "Adam Zivo: Russia is systematically persecuting Ukrainian Christians",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://nationalpost.com/opinion/adam-zivo-russia-is-systematically-persecuting-ukrainian-christians",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-06-10",
+   "outlet": "Bristol Press (CT)",
+   "title": "Ukraine-Russia negotiations are about freedom",
+   "type": "Article",
+   "language": "English",
+   "url": "https://bristolpress.pressreader.com/the-bristol-press/20250610",
+   "note": "Forward Global Repost"
+  },
+  {
+   "date": "2025-06-08",
+   "outlet": "Cirtus County Chronicle",
+   "title": "Ukraine-Russia negotiations are about freedom",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.chronicleonline.com/opinion/columnists/ukraine-russia-negotiations-are-about-freedom/article_64b15091-6ca9-5f96-acab-b050b7f6f15c.html",
+   "note": "Forward Global Repost"
+  },
+  {
+   "date": "2025-06-07",
+   "outlet": "Latrobe Bulletin",
+   "title": "Ukraine-Russia negotiations are about freedom",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.latrobebulletinnews.com/opinion/editorials/commentary-ukraine-russia-negotiations-are-about-freedom/article_a875710e-aee9-4fd1-84e3-4bea0983fb3d.html",
+   "note": "Forward Global Repost"
+  },
+  {
+   "date": "2025-06-05",
+   "outlet": "DC Journal",
+   "title": "Ukraine-Russia Negotiations Are About Freedom",
+   "type": "Article",
+   "language": "English",
+   "url": "https://dcjournal.com/ukraine-russia-negotiations-are-about-freedom/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-06-05",
+   "outlet": "TimesLeader",
+   "title": "Ukraine-Russia negotiations are about freedom",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.timesleader.com/opinion/op-ed/1701281/ukraine-russia-negotiations-are-about-freedom",
+   "note": "Forward Global Repost"
+  },
+  {
+   "date": "2025-05-31",
+   "outlet": "NewsMax",
+   "title": "\"A Faith Under Siege\" shows plight of Ukraine's Chirstians",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://www.dropbox.com/scl/fi/6iuws6n3ft13ts0vmvts7/Colby-Barrett-Steven-Moore.mp4?rlkey=1833lodh4fg8ki6ns2iu4w8x2&e=1&st=8fxqppt2&dl=0",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-05-22",
+   "outlet": "Christian Post",
+   "title": "How bad is Putin, really?",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/how-bad-is-putin-really.html",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-05-18",
+   "outlet": "About the Word",
+   "title": "A film about the persecution of evangelical Christians in Ukraine is published on the YouTube channel A Faith Under Siege",
+   "type": "TV & video",
+   "language": "English/Ukrainian",
+   "url": "https://slovoproslovo.info/en/a-film-about-the-persecution-of-evangelical-christians-in-ukraine-is-published-on-the-youtube-channel-a-faith-under-siege/",
+   "note": "Forward Global (repost)"
+  },
+  {
+   "date": "2025-05-17",
+   "outlet": "USA Today",
+   "title": "Russia abducts Ukrainian kids and treats them like prisoners of war. Save them.",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.usatoday.com/story/opinion/2025/05/09/ukraine-russia-agreement-return-abducted-children/83486614007/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-05-10",
+   "outlet": "CBN News",
+   "title": "Green Beret Reveals How He Became Missionary to Ukraine Soldiers",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=73zeEIHF-pI",
+   "note": "CBN interview"
+  },
+  {
+   "date": "2025-05-09",
+   "outlet": "Fox News Radio",
+   "title": "Brian Kilmeade Show Interview",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=ZmR88ZpL6Fs",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "CBN news",
+   "title": "Faith Under Siege: New Doc Released, Exposing Severe Persecution of Evangelical Christians by Russia",
+   "type": "Article",
+   "language": "English",
+   "url": "https://cbn.com/news/world/faith-under-siege-new-doc-released-exposing-severe-persecution-evangelical-christians",
+   "note": "CBN Article"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "Religion Unplugged",
+   "title": "Faith Under Siege’ Documents Russia’s Persecution Of Christians In Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://religionunplugged.com/news/2025/5/7/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine",
+   "note": "FG - Repost of Baptist Press"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "Roys Report",
+   "title": "New Documentary Chronicles Russia’s Persecution of Christians in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://julieroys.com/documentary-chronicles-russias-persecution-christians-in-ukraine/",
+   "note": "FG - Repost of Baptist Press"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "The Alabama Baptist",
+   "title": "‘A Faith Under Seige’: Documentary spotlights Russia’s persecution of Ukrainian Christians",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thealabamabaptist.org/a-faith-under-seige-documentary-spotlights-russias-persecution-of-ukrainian-christians/",
+   "note": "FG - Repost of Baptist Press"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "Baptist Record",
+   "title": "‘A Faith Under Siege’ documents Russia’s persecution of Christians in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thebaptistrecord.org/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
+   "note": "FG - Repost of Baptist Press"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "Baptist News Global",
+   "title": "‘A Faith Under Siege’ Documents Russia’s Persecution Of Christians In Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://baptistnews.com/article/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
+   "note": "FG - Repost of Religion Unplugged"
+  },
+  {
+   "date": "2025-05-07",
+   "outlet": "In Defense of the Cross",
+   "title": "Christian Persecution News Across the World",
+   "type": "Article",
+   "language": "English",
+   "url": "https://indefenseofthecross.com/news-links/",
+   "note": "Link to CBN"
+  },
+  {
+   "date": "2025-05-06",
+   "outlet": "BaptistPress",
+   "title": "‘A Faith Under Siege’ documents Russia’s persecution of Christians in",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/a-faith-under-siege-documents-russias-persecution-of-christians-in-ukraine/",
+   "note": "Forward Global"
+  },
+  {
+   "date": "2025-05-05",
+   "outlet": "Slug Mag",
+   "title": "A Faith Under Siege (2025) Documentary Screening",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.slugmag.com/event/screening-a-faith-under-siege-2025-documentary-screening/",
+   "note": ""
+  },
+  {
+   "date": "2025-04-22",
+   "outlet": "bushcenter.org",
+   "title": "Faith in the face of Russian repression: Ukrainian pastor Mykhailo Brytsyn",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.bushcenter.org/publications/faith-in-the-face-of-russian-repression-ukrainian-pastor-mykhailo-brytsyn",
+   "note": "UFP, result of the visit to Bush Center in Feb 2025"
+  },
+  {
+   "date": "2025-04-19",
+   "outlet": "The Spectator",
+   "title": "Inside Russia’s repression of Ukraine’s churches",
+   "type": "Article",
+   "language": "English",
+   "url": "https://thespectator.com/topic/what-believers-in-ukraine-are-putting-up-with/",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-04-18",
+   "outlet": "Salem News TV Stacy Washington",
+   "title": "Interview",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://icnk.io/u/0cgYc-JIUgaq/",
+   "note": "Eden Gordon Hill Media"
+  },
+  {
+   "date": "2025-04-18",
+   "outlet": "Salem News TV Wilkow",
+   "title": "Interview",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://icnk.io/u/KbkUZOeWQPwv/",
+   "note": "Eden Gordon Hill Media"
+  },
+  {
+   "date": "2025-04-14",
+   "outlet": "CityWatch LA",
+   "title": "A Faith Under Siege: Ukraine’s Fight for Freedom, Faith, and the Future",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.citywatchla.com/world-watch/30713-a-faith-under-siege-ukraines-fight-for-freedom-faith-and-the-future",
+   "note": "UFP"
+  },
+  {
+   "date": "2025-04-04",
+   "outlet": "Christian Post",
+   "title": "Why is nobody talking about the nearly 20,000 abducted Ukrainian children?",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/why-is-nobody-talking-about-the-20k-abducted-ukrainian-children.html#cp-talk",
+   "note": "Eden's team Op-ed 2"
+  },
+  {
+   "date": "2025-03-31",
+   "outlet": "Polskie Radio",
+   "title": "Interview with Lodygin for Polish Radio",
+   "type": "Radio & podcast",
+   "language": "Ukrainian",
+   "url": "https://podcasty.polskieradio.pl/podcast/polske-radio-dlia-ukrainy,410/odcinek/ranok-vira-v-oblozi-film-pro-peresliduvannia-virian-na-okupovanykh-rosiieiu-terytoriiakh,c24d5538-f14d-480b-b6b7-eee0950f46d4",
+   "note": "Yaroslav in the news"
+  },
+  {
+   "date": "2025-03-29",
+   "outlet": "The All-American Book Club",
+   "title": "March 29: A Faith Under Siege: Russia’s Hidden War on Ukraine’s Christians faithundersiege.com",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=vo7-3cJ45kQ",
+   "note": "Eden Gordon Hill Media"
+  },
+  {
+   "date": "2025-03-26",
+   "outlet": "KXEL",
+   "title": "Colby Barrett and Steven E. Moore on \"A Faith Under Siege\"",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://soundcloud.com/newstalk1540kxel/colby-barrett-and-steven-e-moore-on-a-faith-under-siege-wed-mar-26-2025",
+   "note": "Eden Gordon Hill Media"
+  },
+  {
+   "date": "2025-03-25",
+   "outlet": "TVP World",
+   "title": "Steven Moore - A key GOP operative on why the US shouldn't abandon Ukraine",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/us/podcast/steven-moore-a-key-gop-operative-on-why-the-us/id1774794515?i=1000700475043",
+   "note": "Steven in the News"
+  },
+  {
+   "date": "2025-03-25",
+   "outlet": "The Hill",
+   "title": "Putin is just playing Trump for time",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://thehill.com/opinion/national-security/5212684-russian-attack-ukrainian-civilians/",
+   "note": "Steven's frriend Mark Toth article"
+  },
+  {
+   "date": "2025-03-11",
+   "outlet": "TVP World",
+   "title": "Ukraine agrees to U.S.-led ceasefire plan if Russia accepts | Steven Moore",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://youtu.be/KSs41pf4R8Y?feature=shared&t=257",
+   "note": "Steven in the News"
+  },
+  {
+   "date": "2025-02-26",
+   "outlet": "Christian Post",
+   "title": "A hidden war: Russia is targeting Ukraine’s Christians",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christianpost.com/voices/a-hidden-war-russia-is-targeting-ukraines-christians.html",
+   "note": "Eden's team Op-ed 1 (derivative)"
+  },
+  {
+   "date": "2025-02-25",
+   "outlet": "RealClear | Religion",
+   "title": "The Hidden War: How Russia is Targeting Ukraine’s Christians – A Must-Read Article on the Crisis and Our Film",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.realclearreligion.org/articles/2025/02/25/the_hidden_war_how_russia_is_targeting_ukraines_christians_1093777.html",
+   "note": "Eden's team Op-ed 1"
+  },
+  {
+   "date": "2025-02-18",
+   "outlet": "EWTN",
+   "title": "Ukraine, Russia, and the Fight for Peace | EWTN News Nightly",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=mvlt1129Glw&t=226s",
+   "note": "Steven on News"
+  },
+  {
+   "date": "2025-02-11",
+   "outlet": "Vsi Razom",
+   "title": "«Віра під облогою»: фільм для американців, який розповідає про переслідування християн Росією",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://vsirazom.ua/news/vira-pid-oblogoyu-film-dlya-amerykancziv-yakyj-rozpovidaye-pro-peresliduvannya-hrystyyan-rosiyeyu",
+   "note": "PB derivatives"
+  },
+  {
+   "date": "2025-02-10",
+   "outlet": "Right Side Broadcasting TV",
+   "title": "Interview",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://drive.google.com/file/d/168knFKwVFaH34xozxZI5qYXLgpBt8rxb/view?usp=drivesdk",
+   "note": "Eden Gordon Hill Media"
+  },
+  {
+   "date": "2025-02-09",
+   "outlet": "Christians For Ukraine",
+   "title": "У США покажуть документальний фільм про переслідування росіянами євангельських християн",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://c4u.org.ua/en/media/news/2859",
+   "note": "PB derivatives"
+  },
+  {
+   "date": "2025-02-09",
+   "outlet": "Christian News",
+   "title": "\"Віра в облозі\". Вийшов фільм про переслідування євангельських християн окупаційною владою РФ",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://www.christian-news.com.ua/kultura-ukr/7373-vira-v-oblozi-vyishov-film-pro-peresliduvannia-ievanhelskykh-khrystyian-okupatsiinoiu-vladoiu-rf.html",
+   "note": "PB derivatives"
+  },
+  {
+   "date": "2025-02-08",
+   "outlet": "SlovoProSlovo",
+   "title": "“Віра під облогою”: новий документальний фільм викриває переслідування євангельських християн з боку Росії",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://slovoproslovo.info/faith-under-siege-documentary/",
+   "note": "PB derivatives"
+  },
+  {
+   "date": "2025-02-07",
+   "outlet": "The 700 Club",
+   "title": "Persecution Of Christians You Haven't Heard About",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=QYQSBjcdXqM",
+   "note": "Prayer Breakfast coverage (CBN)"
+  },
+  {
+   "date": "2025-02-06",
+   "outlet": "CBN News",
+   "title": "New Film Exposes Extreme Christian Persecution of Ukrainians by Russian Forces",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=RLG379jiC5c",
+   "note": "Prayer Breakfast coverage"
+  },
+  {
+   "date": "2025-01-22",
+   "outlet": "Sobor.com.ua",
+   "title": "Жахливі факти переслідування християн на окупованих територіях України обговорили на панелі в Давосі",
+   "type": "Article",
+   "language": "Ukrainian",
+   "url": "https://sobor.com.ua/news/peresliduvannya-23",
+   "note": "UFP Ukraine House of Davos"
+  },
+  {
+   "date": "2025-01-21",
+   "outlet": "Ukraine House of Davos",
+   "title": "Faith Under Siege | Ukraine House Davos 2025 - YouTube",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=PkSe2XqaONM",
+   "note": "UFP Ukraine House of Davos"
+  },
+  {
+   "date": "2025-01-21",
+   "outlet": "Politico",
+   "title": "Reality bites as Trump takes power",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.politico.com/newsletters/global-playbook/2025/01/21/reality-bites-as-trump-takes-power-00197354",
+   "note": "UFP Ukraine House of Davos"
+  },
+  {
+   "date": "2024-11-12",
+   "outlet": "The Catholic Channel",
+   "title": "Conversation with Cardinal Dolan",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=dieMmSBfs6k",
+   "note": "SM"
+  },
+  {
+   "date": "2024-11-05",
+   "outlet": "telluridenews.com",
+   "title": "Sharing the voices of Ukraine Telluride local helps document stories of resilience in the Russo-Ukrainian War",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.telluridenews.com/news/article_2cfd364e-9bd3-11ef-8fa5-7ff28a7ded5e.html",
+   "note": "Colby's local newspaper"
+  },
+  {
+   "date": "",
+   "outlet": "The Pathway",
+   "title": "Pastor continues to serve in Ukraine after losing church, second home in Russia’s war",
+   "type": "Article",
+   "language": "English",
+   "url": "https://mbcpathway.com/2025/10/10/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
+   "note": "FG - Baptist Press Reprint"
+  },
+  {
+   "date": "",
+   "outlet": "Baptist Press",
+   "title": "Colby Barrett op-ed",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/ukraine-church-destroyed-in-russian-missile-strike-seeks-to-endure/",
+   "note": "Colby's op-ed for Karl"
+  },
+  {
+   "date": "",
+   "outlet": "Tulsa World",
+   "title": "Colby Barrett op-ed",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://tulsaworld.com/opinion/column/article_d700ecde-a7db-47de-98b4-2ed4239452c3.html",
+   "note": "Colby's op-ed for Karl"
+  }
+ ],
+ "featuredLogos": [
+  {
+   "name": "Fox News",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/ade2cb11-4937-4e3b-b945-a82e73200401/FOX.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "Politico",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/faf64325-c822-4568-885d-15e767ba013a/POLITICO.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "USA Today",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/d5ca0ec4-2a1b-4bed-ac32-81d6b025b97f/USA.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "Newsmax",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/b124b453-be68-48ff-a799-dbd27e00a635/Newsmax.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "CBN",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/27c6bc25-fe70-4135-a759-41ac96624501/CBN.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "Christianity Today",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/5f36ae2d-4b6a-4f26-a22e-4647f8356291/CT.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "The Christian Post",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/c74e6dab-4f0b-459d-b331-5db3a28e015c/CP.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "Salem Media",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/4f3a0002-f4c7-4a70-b968-85941840c510/SALEM.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "Baptist Press",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/c2b92e98-7e37-49a7-ab11-24257f661813/BP.png?content-type=image%2Fpng"
+  },
+  {
+   "name": "The 700 Club",
+   "logo": "https://images.squarespace-cdn.com/content/67855d6ea32c2d2b45267848/05b32e82-4182-40aa-adf2-fa86b38fdaac/700.png?content-type=image%2Fpng"
+  }
+ ]
 }
