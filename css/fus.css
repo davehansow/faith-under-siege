@@ -430,19 +430,24 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
   .fus-sc-kit, .fus-sc-faq { grid-template-columns: 1fr; gap: 32px; }
 }
 
-/* Native Squarespace form in the same section as .fus-sc-formhead: dark, square, A24-style */
-.page-section:has(.fus-sc-formhead) .form-wrapper, .page-section:has(.fus-sc-formhead) .form-block { max-width: 720px; margin: 0 auto 96px; padding: 0 var(--fus-gutter); color: var(--fus-fg); font-family: var(--fus-font); }
-.page-section:has(.fus-sc-formhead) label, .page-section:has(.fus-sc-formhead) legend, .page-section:has(.fus-sc-formhead) .title, .page-section:has(.fus-sc-formhead) .description { color: var(--fus-fg) !important; font-family: var(--fus-font) !important; }
-.page-section:has(.fus-sc-formhead) .title { font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
-.page-section:has(.fus-sc-formhead) input:not([type=checkbox]):not([type=radio]):not([type=submit]),
-.page-section:has(.fus-sc-formhead) select,
-.page-section:has(.fus-sc-formhead) textarea { background: #121212 !important; color: var(--fus-fg) !important; border: 1px solid var(--fus-line-strong) !important; border-radius: 0 !important; padding: 14px 16px !important; font-family: var(--fus-font) !important; font-size: 16px !important; }
-.page-section:has(.fus-sc-formhead) input:focus, .page-section:has(.fus-sc-formhead) select:focus, .page-section:has(.fus-sc-formhead) textarea:focus { border-color: var(--fus-red-text) !important; outline: none; }
-.page-section:has(.fus-sc-formhead) button[type=submit], .page-section:has(.fus-sc-formhead) input[type=submit], .page-section:has(.fus-sc-formhead) .form-button-wrapper button { background: var(--fus-red) !important; color: #fff !important; border: 1px solid var(--fus-red) !important; border-radius: 0 !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; padding: 16px 28px !important; }
-.page-section:has(.fus-sc-formhead) .form-item { margin-bottom: 22px; }
-.page-section:has(.fus-sc-formhead) .form-item label.title, .page-section:has(.fus-sc-formhead) legend.title { display: block; margin-bottom: 8px; }
-.page-section:has(.fus-sc-formhead) input:not([type=checkbox]):not([type=radio]):not([type=submit]), .page-section:has(.fus-sc-formhead) select, .page-section:has(.fus-sc-formhead) textarea { width: 100% !important; box-sizing: border-box; }
-.page-section:has(.fus-sc-formhead) .form-submission-text { color: var(--fus-fg); font-size: 18px; }
+/* Native Squarespace forms in any section holding the new blocks: dark, square, A24-style */
+.page-section:has(.fus) .sqs-block-form { max-width: 760px; margin: 0 auto 96px !important; padding: 0 var(--fus-gutter) !important; box-sizing: border-box; }
+.page-section:has(.fus) .sqs-block-form, .page-section:has(.fus) .sqs-block-form * { font-family: var(--fus-font) !important; }
+.page-section:has(.fus) .sqs-block-form label, .page-section:has(.fus) .sqs-block-form legend, .page-section:has(.fus) .sqs-block-form .title, .page-section:has(.fus) .sqs-block-form .caption, .page-section:has(.fus) .sqs-block-form .description, .page-section:has(.fus) .sqs-block-form p, .page-section:has(.fus) .sqs-block-form span { color: var(--fus-fg) !important; }
+.page-section:has(.fus) .sqs-block-form .title, .page-section:has(.fus) .sqs-block-form legend { font-size: 12px !important; font-weight: 500 !important; letter-spacing: 0.14em !important; text-transform: uppercase !important; }
+.page-section:has(.fus) .sqs-block-form .required, .page-section:has(.fus) .sqs-block-form .description { color: var(--fus-muted) !important; text-transform: none !important; letter-spacing: 0 !important; }
+.page-section:has(.fus) .sqs-block-form input:not([type=checkbox]):not([type=radio]):not([type=submit]):not([type=button]),
+.page-section:has(.fus) .sqs-block-form select,
+.page-section:has(.fus) .sqs-block-form textarea { background: #141414 !important; color: var(--fus-fg) !important; border: 1px solid var(--fus-line-strong) !important; border-radius: 0 !important; padding: 14px 16px !important; font-size: 16px !important; width: 100% !important; box-sizing: border-box; box-shadow: none !important; }
+.page-section:has(.fus) .sqs-block-form input::placeholder, .page-section:has(.fus) .sqs-block-form textarea::placeholder { color: #6f6a63 !important; }
+.page-section:has(.fus) .sqs-block-form select { color-scheme: dark; }
+.page-section:has(.fus) .sqs-block-form input:focus, .page-section:has(.fus) .sqs-block-form select:focus, .page-section:has(.fus) .sqs-block-form textarea:focus { border-color: var(--fus-red-text) !important; outline: none !important; }
+.page-section:has(.fus) .sqs-block-form input[type=checkbox], .page-section:has(.fus) .sqs-block-form input[type=radio] { accent-color: var(--fus-red); }
+.page-section:has(.fus) .sqs-block-form .form-item, .page-section:has(.fus) .sqs-block-form fieldset { margin-bottom: 22px !important; }
+.page-section:has(.fus) .sqs-block-form button, .page-section:has(.fus) .sqs-block-form input[type=submit], .page-section:has(.fus) .sqs-block-form .sqs-button-element--primary { background: var(--fus-red) !important; color: #fff !important; border: 1px solid var(--fus-red) !important; border-radius: 0 !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; padding: 16px 32px !important; }
+.page-section:has(.fus) .sqs-block-form button:hover, .page-section:has(.fus) .sqs-block-form input[type=submit]:hover { background: #c81d23 !important; }
+.page-section:has(.fus) .sqs-block-form fieldset { border: 0 !important; padding: 0 !important; min-width: 0; }
+.page-section:has(.fus) .sqs-block-form .form-submission-text { font-size: 18px; }
 
 @media (max-width: 640px) {
   :root { --fus-gutter: 16px; }
