@@ -441,16 +441,26 @@
       el.innerHTML = '<div class="fus-press">' + pinned.concat(rest).slice(0, limit).map(pressItem).join('') + '</div>';
     }).catch(function (e) { failed(el, e); });
   }
+  /* Give every logo a similar visual weight: wide wordmarks get shorter, square marks taller (but not by area alone, which makes square marks look heavy) */
+  function fitLogo(img) {
+    var ratio = img.naturalWidth / img.naturalHeight; if (!ratio) return;
+    var h = 34 * Math.pow(ratio, -0.4) * (+img.getAttribute('data-scale') || 1);
+    h = Math.max(15, Math.min(32, h));
+    img.style.height = Math.round(h) + 'px'; img.style.width = Math.round(h * ratio) + 'px'; img.style.maxWidth = 'none';
+  }
   function pressLogos(el) {
     getJSON(dataUrl('press.json', C.pressUrl)).then(function (data) {
       var logos = data.featuredLogos || (data.featuredOutlets || []).map(function (x) { return { name: x }; });
       var n = (data.items || []).length;
       el.innerHTML = '<div class="fus-logos"><span class="fus-eyebrow">As featured in</span>' +
         logos.map(function (x) {
-          return safeUrl(x.logo) ? '<img class="fus-logos__img" src="' + esc(x.logo) + '" alt="' + esc(x.name) + '" loading="lazy">'
+          return safeUrl(x.logo) ? '<img class="fus-logos__img" src="' + esc(x.logo) + '" alt="' + esc(x.name) + '"' + (x.scale ? ' data-scale="' + (+x.scale || 1) + '"' : '') + ' loading="lazy">'
             : '<span class="fus-logos__name">' + esc(x.name) + '</span>';
         }).join('') +
         '<a class="fus-link fus-logos__more" href="' + esc(C.pressPath) + '">' + (Math.floor(n / 10) * 10) + '+ features</a></div>';
+      [].forEach.call(el.querySelectorAll('.fus-logos__img'), function (img) {
+        if (img.complete && img.naturalWidth) fitLogo(img); else img.addEventListener('load', function () { fitLogo(img); });
+      });
     }).catch(function (e) { failed(el, e); });
   }
 
