@@ -1,13 +1,31 @@
 <!-- =====================================================
      A Faith Under Siege · Code Injection › FOOTER
      Squarespace: Website › Website Tools › Code Injection › Footer
-     Loads the site script from the GitHub repo. The hourly stamp makes browsers
-     fetch updates within the hour instead of keeping an old copy.
+     Loads the newest site script and data from the GitHub repo. It looks up the
+     latest commit (checked every 10 minutes per visitor) and loads that exact
+     version, so CDN caches can never serve an old copy.
      ===================================================== -->
 <script>
   (function () {
-    var s = document.createElement('script');
-    s.src = 'https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/js/fus.js?v=' + Math.floor(Date.now() / 36e5);
-    document.body.appendChild(s);
+    var REPO = 'davehansow/faith-under-siege', KEY = 'fus-sha', saved = null;
+    try { saved = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
+    function load(ref) {
+      var base = 'https://cdn.jsdelivr.net/gh/' + REPO + '@' + ref;
+      window.FUS_CONFIG = window.FUS_CONFIG || {};
+      window.FUS_CONFIG.dataBase = base + '/data';
+      var s = document.createElement('script');
+      s.src = base + '/js/fus.js';
+      document.body.appendChild(s);
+    }
+    if (saved && saved.sha && Date.now() - saved.t < 6e5) return load(saved.sha);
+    fetch('https://api.github.com/repos/' + REPO + '/commits/main', { headers: { Accept: 'application/vnd.github.sha' } })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (sha) {
+        sha = sha.trim();
+        if (!/^[0-9a-f]{40}$/.test(sha)) throw new Error('bad sha');
+        try { localStorage.setItem(KEY, JSON.stringify({ sha: sha, t: Date.now() })); } catch (e) {}
+        load(sha);
+      })
+      .catch(function () { load(saved && saved.sha ? saved.sha : 'main'); });
   })();
 </script>
