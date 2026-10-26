@@ -453,6 +453,7 @@
   }
 
   /* ---------------- component: laurels ---------------- */
+  var LAUREL_BRANCH = '<svg class="fus-laurel__branch" viewBox="0 -4 50 118" aria-hidden="true"><path d="M43.3 3.6 L40.8 5.4 L38.4 7.3 L36.0 9.4 L33.8 11.5 L31.7 13.8 L29.7 16.2 L27.8 18.6 L26.0 21.2 L24.4 23.9 L22.9 26.6 L21.5 29.4 L20.3 32.2 L19.3 35.2 L18.3 38.1 L17.6 41.1 L17.0 44.2 L16.5 47.3 L16.2 50.3 L16.0 53.4 L16.0 56.6 L16.2 59.7 L16.5 62.7 L17.0 65.8 L17.6 68.9 L18.3 71.9 L19.3 74.8 L20.3 77.8 L21.5 80.6 L22.9 83.4 L24.4 86.1 L26.0 88.8 L27.8 91.4 L29.7 93.8 L31.7 96.2 L33.8 98.5 L36.0 100.6 L38.4 102.7 L40.8 104.6 L43.3 106.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><ellipse cx="45.5" cy="6.2" rx="7.2" ry="2.9" transform="rotate(-5 45.5 6.2)" fill="currentColor"/><ellipse cx="41.0" cy="0.5" rx="7.2" ry="2.9" transform="rotate(-73 41.0 0.5)" fill="currentColor"/><ellipse cx="34.7" cy="15.5" rx="7.2" ry="2.9" transform="rotate(-19 34.7 15.5)" fill="currentColor"/><ellipse cx="28.9" cy="11.1" rx="7.2" ry="2.9" transform="rotate(-87 28.9 11.1)" fill="currentColor"/><ellipse cx="26.4" cy="27.1" rx="7.2" ry="2.9" transform="rotate(-33 26.4 27.1)" fill="currentColor"/><ellipse cx="19.7" cy="24.3" rx="7.2" ry="2.9" transform="rotate(-101 19.7 24.3)" fill="currentColor"/><ellipse cx="21.2" cy="40.4" rx="7.2" ry="2.9" transform="rotate(-47 21.2 40.4)" fill="currentColor"/><ellipse cx="14.0" cy="39.3" rx="7.2" ry="2.9" transform="rotate(-115 14.0 39.3)" fill="currentColor"/><ellipse cx="19.4" cy="54.6" rx="7.2" ry="2.9" transform="rotate(-61 19.4 54.6)" fill="currentColor"/><ellipse cx="12.1" cy="55.2" rx="7.2" ry="2.9" transform="rotate(-129 12.1 55.2)" fill="currentColor"/><ellipse cx="21.0" cy="68.8" rx="7.2" ry="2.9" transform="rotate(-75 21.0 68.8)" fill="currentColor"/><ellipse cx="14.2" cy="71.2" rx="7.2" ry="2.9" transform="rotate(-143 14.2 71.2)" fill="currentColor"/><ellipse cx="26.1" cy="82.2" rx="7.2" ry="2.9" transform="rotate(-89 26.1 82.2)" fill="currentColor"/><ellipse cx="20.0" cy="86.1" rx="7.2" ry="2.9" transform="rotate(-157 20.0 86.1)" fill="currentColor"/><ellipse cx="34.2" cy="93.9" rx="7.2" ry="2.9" transform="rotate(-103 34.2 93.9)" fill="currentColor"/><ellipse cx="29.2" cy="99.2" rx="7.2" ry="2.9" transform="rotate(-171 29.2 99.2)" fill="currentColor"/><ellipse cx="48.3" cy="0.2" rx="7" ry="2.8" transform="rotate(-34 48.3 0.2)" fill="currentColor"/></svg>';
   function laurelsBlock(el) {
     var filmSlug = attr(el, 'film', ''), limit = +attr(el, 'limit', 8), only = attr(el, 'awards', '');
     Promise.all([getJSON(dataUrl('laurels.json', C.laurelsUrl)), loadCatalog().catch(function () { return { bySlug: {} }; })]).then(function (r) {
@@ -461,8 +462,9 @@
         .sort(function (a, b) { var ra = a.award in rank ? rank[a.award] : 9, rb = b.award in rank ? rank[b.award] : 9; return ra - rb || String(b.year).localeCompare(String(a.year)); });
       el.innerHTML = '<div class="fus-laurels">' + items.slice(0, limit).map(function (l) {
         var f = r[1].bySlug[l.film];
-        return '<div class="fus-laurel"><span class="fus-laurel__award">' + esc(l.award) + '</span><span class="fus-laurel__fest">' + esc(l.festival) + '</span>' +
-          '<span class="fus-laurel__meta">' + esc((f ? f.title + ' · ' : '') + l.year) + '</span></div>';
+        return '<div class="fus-laurel' + (l.award === 'Winner' ? ' fus-laurel--win' : '') + '">' + LAUREL_BRANCH +
+          '<div class="fus-laurel__text"><span class="fus-laurel__award">' + esc(l.award) + '</span><span class="fus-laurel__fest">' + esc(l.festival) + '</span>' +
+          '<span class="fus-laurel__meta">' + esc((f ? f.title + ' · ' : '') + l.year) + '</span></div>' + LAUREL_BRANCH.replace('fus-laurel__branch', 'fus-laurel__branch fus-laurel__branch--r') + '</div>';
       }).join('') + '</div>';
     }).catch(function (e) { failed(el, e); });
   }
