@@ -130,6 +130,18 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 
 /* ---------- 3. Component base ---------- */
 .fus { color: var(--fus-fg); font-family: var(--fus-font); }
+.fus :where(h1, h2, h3, h4, h5, h6, p, li, span, blockquote, figcaption, strong, em) { color: inherit; }
+
+/* Sections holding the new blocks: dark background and edge-to-edge blocks,
+   whatever color theme or block width the section was given in the editor */
+.page-section:has(.fus) .section-background { background: var(--fus-bg) !important; }
+.page-section:has(.fus-hero--over) .section-background { background: #160A0B !important; }
+.page-section:has(.fus-hero--over) .section-background img,
+.page-section:has(.fus-hero--over) .section-background video { opacity: 1; }
+.page-section:has(.fus) .content-wrapper { max-width: none !important; padding: 0 !important; }
+.page-section:has(.fus) .fluid-engine { display: flex !important; flex-direction: column; }
+.page-section:has(.fus) .fluid-engine > .fe-block { width: 100% !important; grid-area: auto !important; }
+.page-section:has(.fus) .sqs-block { padding: 0 !important; }
 .fus .fus, .fus-light .fus { color: inherit; }
 .fus *, .fus *::before, .fus *::after { box-sizing: border-box; }
 .fus a { color: inherit; text-decoration: none; }
