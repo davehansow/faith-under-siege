@@ -119,8 +119,6 @@ html.fus-on .blog-categories-list a {
 html.fus-on .blog-basic-grid--text .blog-title a,
 html.fus-on .blog-list .blog-title a { text-decoration: none; }
 html.fus-on .blog-item-content p { font-size: 19px; line-height: 1.6; max-width: 720px; }
-html.fus-on .blog-basic-grid .image-wrapper img,
-html.fus-on .blog-list .image-wrapper img { filter: ~"saturate(0.9)"; }
 
 /* Footer */
 html.fus-on .sections .page-section.fus-footer-rule,
