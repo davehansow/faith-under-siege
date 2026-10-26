@@ -1,8 +1,13 @@
 <!-- =====================================================
      A Faith Under Siege · Code Injection › FOOTER
      Squarespace: Website › Website Tools › Code Injection › Footer
-     Option A (recommended): load the script from the GitHub + jsDelivr repo.
-     Option B: paste the full contents of js/fus.js between <script> and </script> instead.
+     Loads the site script from the GitHub repo. The hourly stamp makes browsers
+     fetch updates within the hour instead of keeping an old copy.
      ===================================================== -->
-<script src="https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/js/fus.js" defer></script>
-<!-- e.g. https://cdn.jsdelivr.net/gh/<github-user>/<repo>@main/js/fus.js -->
+<script>
+  (function () {
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/js/fus.js?v=' + Math.floor(Date.now() / 36e5);
+    document.body.appendChild(s);
+  })();
+</script>

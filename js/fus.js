@@ -43,7 +43,9 @@
       var h = a.getAttribute('href'); if (/^\/(watch|press)(\/|\?|$)/.test(h)) a.setAttribute('href', SP + h);
     });
   }
-  function dataUrl(name, override) { return override || (C.dataBase ? C.dataBase.replace(/\/$/, '') + '/' + name : name); }
+  // Hourly version stamp so browsers pick up data updates within the hour instead of caching for days
+  var STAMP = 'v=' + Math.floor(Date.now() / 36e5);
+  function dataUrl(name, override) { return override || (C.dataBase ? C.dataBase.replace(/\/$/, '') + '/' + name + '?' + STAMP : name); }
 
   /* ---------------- helpers ---------------- */
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
