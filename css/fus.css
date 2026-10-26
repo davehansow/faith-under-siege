@@ -416,7 +416,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-sc-step { border-top: 2px solid currentColor; padding-top: 22px; }
 .fus-sc-step__n { display: block; font-size: 56px; line-height: 1; font-weight: 500; letter-spacing: -0.03em; color: var(--fus-red-on-light); margin-bottom: 18px; }
 .fus-light .fus-sc-step p { color: var(--fus-light-muted); }
-.fus-sc-formhead { max-width: 720px; margin: 0 auto; padding: 96px var(--fus-gutter) 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 100px; }
+.sqs-block-code .fus.fus-sc-formhead, .fus-sc-formhead { max-width: 760px; margin: 0 auto; padding: 96px var(--fus-gutter) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 100px; }
 .fus-sc-faq { display: grid; grid-template-columns: ~"minmax(0, 4fr) minmax(0, 8fr)"; gap: 56px; }
 .fus-sc-faq__list { border-top: 1px solid var(--fus-line-strong); }
 .fus-sc-faq details { border-bottom: 1px solid var(--fus-line-strong); }
@@ -433,6 +433,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 /* Native Squarespace forms in any section holding the new blocks: dark, square, A24-style */
 .page-section:has(.fus) .sqs-block-form { max-width: 760px; margin: 0 auto 96px !important; padding: 0 var(--fus-gutter) !important; box-sizing: border-box; }
 .page-section:has(.fus) .sqs-block-form, .page-section:has(.fus) .sqs-block-form * { font-family: var(--fus-font) !important; }
+.page-section:has(.fus) .sqs-block-form * { color: var(--fus-fg) !important; }
 .page-section:has(.fus) .sqs-block-form label, .page-section:has(.fus) .sqs-block-form legend, .page-section:has(.fus) .sqs-block-form .title, .page-section:has(.fus) .sqs-block-form .caption, .page-section:has(.fus) .sqs-block-form .description, .page-section:has(.fus) .sqs-block-form p, .page-section:has(.fus) .sqs-block-form span { color: var(--fus-fg) !important; }
 .page-section:has(.fus) .sqs-block-form .title, .page-section:has(.fus) .sqs-block-form legend { font-size: 12px !important; font-weight: 500 !important; letter-spacing: 0.14em !important; text-transform: uppercase !important; }
 .page-section:has(.fus) .sqs-block-form .required, .page-section:has(.fus) .sqs-block-form .description { color: var(--fus-muted) !important; text-transform: none !important; letter-spacing: 0 !important; }
