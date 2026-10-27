@@ -512,11 +512,10 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-footer__logo img { display: block; width: 260px; max-width: 100%; height: auto; }
 /* Newsletter row: the native Newsletter block is moved into the slot by the footer script */
 .fus-footer__news { display: grid; grid-template-columns: ~"minmax(0, 1fr) minmax(0, 1.15fr)"; gap: 24px 56px; align-items: center; padding: 36px 0; border-top: 1px solid var(--fus-line-strong); }
-.fus-footer__news--empty { display: none; }
 .fus-footer__news-text p { margin: 0; }
 .fus-footer__news-text .fus-eyebrow { margin-bottom: 10px; }
 .fus-footer__news-title { font-size: 22px; line-height: 1.25; letter-spacing: -0.01em; color: var(--fus-fg); max-width: 440px; }
-.fus-footer__news .sqs-block-newsletter { padding: 0 !important; margin: 0 !important; }
+.fus-footer__news .sqs-block-newsletter, .fus-footer__news .newsletter-block, .fus-footer__news .sqs-block { padding: 0 !important; margin: 0 !important; width: 100% !important; }
 .fus-footer__news .newsletter-form-wrapper, .fus-footer__news .newsletter-block { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: none !important; text-align: left !important; }
 .fus-footer__news .newsletter-form-header { display: none !important; }
 .fus-footer__news .newsletter-form, .fus-footer__news .newsletter-form-body { display: flex !important; flex-wrap: wrap; align-items: stretch; gap: 0; margin: 0 !important; }

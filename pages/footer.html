@@ -25,18 +25,23 @@
 <script>
 (function () {
   document.querySelectorAll('[data-fus-year]').forEach(function (e) { e.textContent = new Date().getFullYear(); });
-  /* Move the footer's Newsletter block into the slot (skipped inside the Squarespace editor). */
+  /* Move the footer's Newsletter block into the "Stay in the loop" row (skipped inside the Squarespace editor). */
   if (window.top !== window.self) return;
-  if (document.readyState === 'loading') return document.addEventListener('DOMContentLoaded', move);
-  move();
+  var done = false;
   function move() {
-  var slot = document.querySelector('[data-fus-newsletter-slot]'), sec = slot && slot.closest('.page-section, section, footer.sections, #footer-sections');
-  var root = document.getElementById('footer-sections') || sec;
-  var nl = root && root.querySelector('.sqs-block-newsletter');
-  if (!nl) { slot && slot.parentNode.classList.add('fus-footer__news--empty'); return; }
-  var fe = nl.closest('.fe-block');
-  slot.appendChild(nl);
-  if (fe && !fe.querySelector('.sqs-block')) fe.style.display = 'none';
+    if (done) return;
+    var slot = document.querySelector('[data-fus-newsletter-slot]'); if (!slot) return;
+    var root = document.getElementById('footer-sections') || document.querySelector('footer.sections') || document;
+    var nl = root.querySelector('.newsletter-block, .sqs-block-newsletter, [data-block-type="51"]');
+    if (!nl) { var f = root.querySelector('.newsletter-form, .newsletter-form-wrapper'); nl = f && (f.closest('.sqs-block') || f); }
+    if (!nl || slot.contains(nl)) return;
+    var fe = nl.closest('.fe-block');
+    slot.appendChild(nl); done = true;
+    slot.parentNode.classList.add('fus-footer__news--ready');
+    if (fe && !fe.querySelector('.sqs-block, form')) fe.style.display = 'none';
   }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', move); else move();
+  window.addEventListener('load', move);
+  setTimeout(move, 1500); setTimeout(move, 4000);
 })();
 </script>
