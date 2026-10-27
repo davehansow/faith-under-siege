@@ -561,6 +561,8 @@
   }, true);
   function boot(root) {
     document.documentElement.classList.toggle('fus-on', isNewPage());
+    // Blog list: only page one gets the big lead story
+    if (document.body) document.body.classList.toggle('fus-blog-paged', /[?&]offset=/.test(location.search));
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {
       if (el.__fus) return; el.__fus = 1;
       el.classList.add('fus');

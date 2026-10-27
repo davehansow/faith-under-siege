@@ -144,6 +144,74 @@ html.fus-on .blog-basic-grid--text .blog-title a,
 html.fus-on .blog-list .blog-title a { text-decoration: none; }
 html.fus-on .blog-item-content p { font-size: 19px; line-height: 1.6; max-width: 720px; }
 
+/* ---------- Blog (/news-and-updates): native Squarespace blog, restyled ---------- */
+html.fus-on .collection-type-blog,
+html.fus-on .collection-type-blog #page,
+html.fus-on .collection-type-blog .page-section,
+html.fus-on .collection-type-blog .page-section .section-background { background: var(--fus-bg) !important; background-color: var(--fus-bg) !important; }
+html.fus-on .collection-type-blog .page-section, html.fus-on .collection-type-blog .page-section :where(h1, h2, h3, h4, p, li, span, time, div, a) { color: var(--fus-fg); }
+html.fus-on .collection-type-blog .blog-author, html.fus-on .collection-type-blog .blog-meta-item--author, html.fus-on .collection-type-blog .blog-meta-delimiter { display: none !important; }
+
+/* List view: big lead story, then a three-column grid */
+html.fus-on .collection-type-blog.view-list .page-section .content-wrapper { max-width: var(--fus-max) !important; margin: 0 auto !important; padding: 64px var(--fus-gutter) 96px !important; box-sizing: border-box; }
+html.fus-on .collection-type-blog.view-list .blog-basic-grid { display: grid !important; grid-template-columns: ~"repeat(3, minmax(0, 1fr))" !important; gap: 64px 32px !important; padding: 0 !important; }
+html.fus-on .blog-basic-grid--container { display: flex !important; flex-direction: column; gap: 0 !important; width: auto !important; margin: 0 !important; padding: 0 !important; }
+html.fus-on .blog-basic-grid--container .image-wrapper, html.fus-on .blog-basic-grid--image { display: block; overflow: hidden; aspect-ratio: 16 / 10; margin: 0 0 20px !important; padding: 0 !important; background: var(--fus-surface); }
+html.fus-on .blog-basic-grid--container .image-wrapper img, html.fus-on .blog-basic-grid--image img { width: 100% !important; height: 100% !important; object-fit: cover; position: static !important; transition: transform .5s ease, filter .3s ease; filter: saturate(0.9); }
+html.fus-on .blog-basic-grid--container:hover .image-wrapper img, html.fus-on .blog-basic-grid--container:hover .blog-basic-grid--image img { transform: scale(1.04); filter: none; }
+html.fus-on .blog-basic-grid--text { display: flex; flex-direction: column; gap: 12px; padding: 0 !important; }
+html.fus-on .collection-type-blog .blog-meta-section, html.fus-on .collection-type-blog .blog-date, html.fus-on .collection-type-blog .blog-meta-primary { color: var(--fus-muted) !important; font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 !important; }
+html.fus-on .collection-type-blog .blog-title { margin: 0 !important; font-size: 23px !important; line-height: 1.2 !important; font-weight: 500 !important; letter-spacing: -0.015em; }
+html.fus-on .collection-type-blog .blog-title a { color: var(--fus-fg) !important; text-decoration: none !important; background-image: none !important; }
+html.fus-on .collection-type-blog .blog-basic-grid--container:hover .blog-title a, html.fus-on .collection-type-blog .blog-title a:hover { color: var(--fus-red-text) !important; }
+html.fus-on .collection-type-blog .blog-excerpt, html.fus-on .collection-type-blog .blog-excerpt p { margin: 0 !important; color: var(--fus-soft) !important; font-size: 16px !important; line-height: 1.55 !important; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+html.fus-on .collection-type-blog .blog-more-link { margin-top: 4px !important; color: var(--fus-red-text) !important; font-size: 12px !important; font-weight: 600 !important; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none !important; background-image: none !important; }
+html.fus-on .collection-type-blog .blog-more-link::after { content: " \2192"; }
+/* first post on page one becomes the lead story */
+html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child { grid-column: ~"1 / -1"; display: grid !important; grid-template-columns: ~"minmax(0, 1.5fr) minmax(0, 1fr)"; gap: 48px !important; align-items: center; padding-bottom: 64px !important; border-bottom: 1px solid var(--fus-line-strong); }
+html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .image-wrapper,
+html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-basic-grid--image { margin: 0 !important; }
+html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-title { font-size: ~"clamp(30px, 3.4vw, 46px)" !important; line-height: 1.06 !important; letter-spacing: -0.025em; }
+html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-meta-section::before { content: "Latest"; color: var(--fus-red-text); margin-right: 12px; }
+/* pagination */
+html.fus-on .collection-type-blog .blog-list-pagination { margin-top: 72px !important; padding-top: 28px !important; border-top: 1px solid var(--fus-line-strong); display: flex; justify-content: space-between; }
+html.fus-on .collection-type-blog .blog-list-pagination a { color: var(--fus-fg) !important; font-size: 13px !important; font-weight: 600 !important; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none !important; border: 1px solid var(--fus-line-strong); padding: 14px 22px; display: inline-flex; gap: 10px; align-items: center; }
+html.fus-on .collection-type-blog .blog-list-pagination a:hover { border-color: var(--fus-fg); }
+html.fus-on .collection-type-blog .blog-list-pagination svg { stroke: currentColor !important; }
+@media (max-width: 1000px) { html.fus-on .collection-type-blog.view-list .blog-basic-grid { grid-template-columns: ~"repeat(2, minmax(0, 1fr))" !important; } }
+@media (max-width: 700px) {
+  html.fus-on .collection-type-blog.view-list .blog-basic-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+  html.fus-on .collection-type-blog.view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child { grid-template-columns: 1fr; gap: 20px !important; padding-bottom: 48px !important; }
+  html.fus-on .collection-type-blog.view-list .page-section .content-wrapper { padding-top: 40px !important; }
+}
+
+/* Post view: readable column, big headline, red category label */
+html.fus-on .collection-type-blog.view-item .blog-item-wrapper { max-width: 760px !important; margin: 0 auto !important; padding: 72px var(--fus-gutter) 96px !important; box-sizing: border-box; }
+html.fus-on .collection-type-blog.view-item .page-section .content-wrapper { max-width: none !important; padding: 0 !important; }
+html.fus-on .collection-type-blog .blog-item-top-wrapper { margin-bottom: 40px !important; text-align: left !important; }
+html.fus-on .collection-type-blog .blog-item-meta-wrapper, html.fus-on .collection-type-blog .blog-item-meta-wrapper * { justify-content: flex-start !important; text-align: left !important; }
+html.fus-on .collection-type-blog .blog-meta-item--date, html.fus-on .collection-type-blog .blog-item-meta-wrapper time { color: var(--fus-muted) !important; font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+html.fus-on .collection-type-blog .blog-item-title h1, html.fus-on .collection-type-blog .blog-item-title .entry-title { font-size: ~"clamp(36px, 5vw, 60px)" !important; line-height: 1.04 !important; letter-spacing: -0.03em !important; text-align: left !important; margin: 16px 0 0 !important; color: var(--fus-fg) !important; }
+html.fus-on .collection-type-blog .blog-item-content-wrapper .sqs-block { padding-left: 0 !important; padding-right: 0 !important; }
+html.fus-on .collection-type-blog .blog-item-content p, html.fus-on .collection-type-blog .blog-item-content li { color: var(--fus-soft) !important; font-size: 19px !important; line-height: 1.65 !important; }
+html.fus-on .collection-type-blog .blog-item-content h2, html.fus-on .collection-type-blog .blog-item-content h3 { color: var(--fus-fg) !important; margin-top: 1.6em !important; }
+html.fus-on .collection-type-blog .blog-item-content a { color: var(--fus-fg) !important; text-decoration: underline !important; text-decoration-color: var(--fus-red) !important; text-underline-offset: 3px; background-image: none !important; }
+html.fus-on .collection-type-blog .blog-item-content a:hover { color: var(--fus-red-text) !important; }
+html.fus-on .collection-type-blog .blog-item-content blockquote { border-left: 3px solid var(--fus-red) !important; padding-left: 24px !important; font-size: 24px !important; line-height: 1.4 !important; color: var(--fus-fg) !important; }
+html.fus-on .collection-type-blog .blog-item-content img { width: 100%; height: auto; }
+html.fus-on .collection-type-blog .sqs-block-image .image-caption p { font-size: 14px !important; color: var(--fus-muted) !important; }
+html.fus-on .collection-type-blog .sqs-block-button .sqs-button-element--primary, html.fus-on .collection-type-blog .blog-item-content .sqs-block-button-element { background: var(--fus-red) !important; color: #fff !important; border: 0 !important; text-decoration: none !important; }
+html.fus-on .collection-type-blog .blog-item-author-profile-wrapper { display: none !important; }
+/* share, tags, prev/next */
+html.fus-on .collection-type-blog .blog-item-bottom-wrapper, html.fus-on .collection-type-blog .blog-meta-item--tags, html.fus-on .collection-type-blog .blog-item-comments { border-color: var(--fus-line-strong) !important; color: var(--fus-muted) !important; }
+html.fus-on .collection-type-blog .blog-share-like, html.fus-on .collection-type-blog .squarespace-social-buttons { filter: invert(1) grayscale(1); }
+html.fus-on .collection-type-blog .item-pagination { max-width: 760px; margin: 0 auto !important; padding: 32px var(--fus-gutter) 96px !important; border-top: 1px solid var(--fus-line-strong); display: flex; justify-content: space-between; gap: 24px; box-sizing: border-box; }
+html.fus-on .collection-type-blog .item-pagination-link { color: var(--fus-fg) !important; text-decoration: none !important; display: flex !important; flex-direction: column; gap: 6px; max-width: 48%; }
+html.fus-on .collection-type-blog .item-pagination-prev-next { color: var(--fus-muted) !important; font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
+html.fus-on .collection-type-blog .item-pagination-title { font-size: 19px !important; line-height: 1.25 !important; font-weight: 500 !important; color: var(--fus-fg) !important; }
+html.fus-on .collection-type-blog .item-pagination-link:hover .item-pagination-title { color: var(--fus-red-text) !important; }
+html.fus-on .collection-type-blog .item-pagination-icon svg { stroke: currentColor !important; }
+
 /* Footer */
 html.fus-on .sections .page-section.fus-footer-rule,
 html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
