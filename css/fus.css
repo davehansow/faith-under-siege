@@ -95,6 +95,12 @@ html.fus-on .header .header-actions-action--cta .sqs-button-element--primary {
 /* Header: black bar, white uppercase nav, red screening button */
 html.fus-on .header, html.fus-on .header .header-background, html.fus-on .header .header-announcement-bar-wrapper { background: var(--fus-bg) !important; background-color: var(--fus-bg) !important; }
 html.fus-on .header { border-bottom: 1px solid var(--fus-line); }
+/* Squarespace paints the header colour on extra layers (solid background, border, shadow, inner bar); make them all one black bar */
+html.fus-on .header [class*="header-background"], html.fus-on .header .header-inner, html.fus-on .header .header-display-desktop, html.fus-on .header .header-display-mobile { background: var(--fus-bg) !important; background-color: var(--fus-bg) !important; }
+html.fus-on .header .header-border { border-color: transparent !important; border-width: 0 !important; background: transparent !important; }
+html.fus-on .header .header-dropshadow { box-shadow: none !important; }
+html.fus-on .header .header-nav-item a, html.fus-on .header .header-nav-folder-title { background-image: none !important; text-decoration: none !important; }
+html.fus-on .header .header-nav-item--active > a, html.fus-on .header .header-nav-item--active .header-nav-folder-title, html.fus-on .header .header-nav-item--active .header-nav-folder-title-text { color: var(--fus-red-text) !important; }
 html.fus-on .header .header-nav-item > a, html.fus-on .header .header-nav-folder-title, html.fus-on .header .header-nav-folder-title-text {
   color: var(--fus-fg) !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; text-decoration: none !important;
 }
@@ -260,6 +266,8 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-panel__logos { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px; margin-bottom: 6px; }
 .fus-prime { width: 132px; height: auto; color: #fff; }
 .fus-panel__logo { height: 30px; width: auto; filter: brightness(0) invert(1); }
+.fus-panel__logolink { display: inline-flex; line-height: 0; position: relative; z-index: 2; }
+.fus-panel__logolink:hover .fus-panel__logo { opacity: .75; }
 .fus-panel__wordmark { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: #fff; }
 .fus-panel__yt { height: 24px; width: auto; }
 .fus-panel--feature .fus-btn { align-self: flex-start; margin-top: 8px; }
@@ -267,6 +275,10 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-panel__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .fus-panel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.2) 70%); }
 .fus-panel > *:not(.fus-panel__img) { position: relative; z-index: 1; }
+.fus-panel > .fus-panel__hit { position: absolute; inset: 0; z-index: 2; }
+.fus-panel > .fus-panel__logos, .fus-panel > .fus-btn { z-index: 3; }
+.fus-panel > .fus-panel__logos { pointer-events: none; }
+.fus-panel__logos a { pointer-events: auto; }
 .fus-panel__title { font-size: ~"clamp(40px, 5vw, 64px)"; line-height: 1.02; font-weight: 500; letter-spacing: -0.025em; margin: 0; }
 .fus-panel__list { font-size: 14px; color: var(--fus-muted); }
 
@@ -475,7 +487,31 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-footer__top { display: grid; grid-template-columns: ~"minmax(0, 1.6fr) repeat(3, minmax(0, 1fr))"; gap: 40px; padding-bottom: 56px; }
 .fus-footer__brand { display: flex; flex-direction: column; gap: 18px; padding-right: 24px; }
 .fus-footer__brand p { margin: 0; }
-.fus-footer__name { font-size: ~"clamp(30px, 3vw, 40px)"; font-weight: 600; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase; }
+.fus-footer__logo { display: inline-block; line-height: 0; }
+.fus-footer__logo img { display: block; width: 260px; max-width: 100%; height: auto; }
+/* Newsletter row: the native Newsletter block is moved into the slot by the footer script */
+.fus-footer__news { display: grid; grid-template-columns: ~"minmax(0, 1fr) minmax(0, 1.15fr)"; gap: 24px 56px; align-items: center; padding: 36px 0; border-top: 1px solid var(--fus-line-strong); }
+.fus-footer__news--empty { display: none; }
+.fus-footer__news-text p { margin: 0; }
+.fus-footer__news-text .fus-eyebrow { margin-bottom: 10px; }
+.fus-footer__news-title { font-size: 22px; line-height: 1.25; letter-spacing: -0.01em; color: var(--fus-fg); max-width: 440px; }
+.fus-footer__news .sqs-block-newsletter { padding: 0 !important; margin: 0 !important; }
+.fus-footer__news .newsletter-form-wrapper, .fus-footer__news .newsletter-block { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: none !important; text-align: left !important; }
+.fus-footer__news .newsletter-form-header { display: none !important; }
+.fus-footer__news .newsletter-form, .fus-footer__news .newsletter-form-body { display: flex !important; flex-wrap: wrap; align-items: stretch; gap: 0; margin: 0 !important; }
+.fus-footer__news .newsletter-form-body { flex: 1 1 100%; }
+.fus-footer__news .newsletter-form-fields-wrapper { flex: 1 1 220px; display: flex !important; gap: 0; margin: 0 !important; }
+.fus-footer__news .newsletter-form-field-wrapper { flex: 1 1 0; margin: 0 !important; padding: 0 !important; }
+.fus-footer__news .newsletter-form-field-wrapper .title, .fus-footer__news .newsletter-form-field-wrapper legend { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.fus-footer__news input.newsletter-form-field-element, .fus-footer__news input[type="email"], .fus-footer__news input[type="text"] { width: 100% !important; height: 52px !important; margin: 0 !important; padding: 0 16px !important; background: #141414 !important; border: 1px solid var(--fus-line-strong) !important; border-right: 0 !important; border-radius: 0 !important; color: var(--fus-fg) !important; font-family: var(--fus-font) !important; font-size: 15px !important; box-shadow: none !important; }
+.fus-footer__news input::placeholder { color: var(--fus-muted) !important; opacity: 1; }
+.fus-footer__news input:focus { outline: 2px solid var(--fus-red) !important; outline-offset: -2px; }
+.fus-footer__news .newsletter-form-button-wrapper { margin: 0 !important; }
+.fus-footer__news .newsletter-form-button, .fus-footer__news button[type="submit"] { height: 52px !important; margin: 0 !important; padding: 0 26px !important; background: var(--fus-red) !important; color: #fff !important; border: 0 !important; border-radius: 0 !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 600 !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; cursor: pointer; }
+.fus-footer__news .newsletter-form-button:hover { filter: brightness(1.12); }
+.fus-footer__news .newsletter-form-button-label, .fus-footer__news .newsletter-form-button * { color: #fff !important; }
+.fus-footer__news .newsletter-form-footnote, .fus-footer__news .form-submission-text, .fus-footer__news .newsletter-form-footnote * { flex-basis: 100%; margin: 10px 0 0 !important; font-size: 13px !important; color: var(--fus-muted) !important; text-align: left !important; }
+.fus-footer__news .form-submission-text { color: var(--fus-fg) !important; font-size: 16px !important; }
 .fus-footer__brand .fus-lede { font-size: 16px; max-width: 360px; }
 .fus-footer__col { display: flex; flex-direction: column; gap: 12px; }
 .fus-footer__col .fus-eyebrow { margin-bottom: 6px; }
@@ -492,10 +528,16 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 @media (max-width: 900px) {
   .fus-footer__top { grid-template-columns: 1fr 1fr; }
   .fus-footer__brand { grid-column: ~"1 / -1"; }
+  .fus-footer__news { grid-template-columns: 1fr; }
 }
 @media (max-width: 520px) {
   .fus-footer__top { grid-template-columns: 1fr; }
   .fus-footer__legal { margin-left: 0; }
+  .fus-footer__logo img { width: 220px; }
+  .fus-footer__news-title { font-size: 19px; }
+  .fus-footer__news .newsletter-form-fields-wrapper { flex-basis: 100%; }
+  .fus-footer__news input.newsletter-form-field-element, .fus-footer__news input[type="email"] { border-right: 1px solid var(--fus-line-strong) !important; }
+  .fus-footer__news .newsletter-form-button-wrapper, .fus-footer__news .newsletter-form-button { width: 100%; margin-top: 8px !important; }
 }
 
 @media (max-width: 640px) {
