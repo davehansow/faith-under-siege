@@ -157,9 +157,11 @@ html.fus-on [class*="collection-type-blog"] .blog-author, html.fus-on [class*="c
 html.fus-on [class*="collection-type-blog"].view-list .page-section .content-wrapper { max-width: var(--fus-max) !important; margin: 0 auto !important; padding: 64px var(--fus-gutter) 96px !important; box-sizing: border-box; }
 html.fus-on [class*="collection-type-blog"].view-list .blog-basic-grid { display: grid !important; grid-template-columns: ~"repeat(3, minmax(0, 1fr))" !important; gap: 64px 32px !important; padding: 0 !important; }
 html.fus-on .blog-basic-grid--container { display: flex !important; flex-direction: column; gap: 0 !important; width: auto !important; margin: 0 !important; padding: 0 !important; }
-html.fus-on .blog-basic-grid--container .image-wrapper, html.fus-on .blog-basic-grid--image { display: block; overflow: hidden; aspect-ratio: 16 / 10; margin: 0 0 20px !important; padding: 0 !important; background: var(--fus-surface); }
-html.fus-on .blog-basic-grid--container .image-wrapper img, html.fus-on .blog-basic-grid--image img { width: 100% !important; height: 100% !important; object-fit: cover; position: static !important; transition: transform .5s ease; }
-html.fus-on .blog-basic-grid--container:hover .image-wrapper img, html.fus-on .blog-basic-grid--container:hover .blog-basic-grid--image img { transform: scale(1.04); }
+/* The thumbnail is whichever child of the card holds the image, whatever Squarespace calls it */
+html.fus-on .blog-basic-grid--container > :not(.blog-basic-grid--text):has(img) { display: block !important; position: relative !important; width: 100% !important; height: auto !important; aspect-ratio: 16 / 10; overflow: hidden; margin: 0 0 20px !important; padding: 0 !important; background: var(--fus-surface); }
+html.fus-on .blog-basic-grid--container > :not(.blog-basic-grid--text):has(img) :not(img) { display: block !important; position: static !important; width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
+html.fus-on .blog-basic-grid--container img { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; max-width: none !important; object-fit: cover !important; opacity: 1 !important; visibility: visible !important; transition: transform .5s ease; }
+html.fus-on .blog-basic-grid--container:hover img { transform: scale(1.04); }
 html.fus-on .blog-basic-grid--text { display: flex; flex-direction: column; gap: 12px; padding: 0 !important; }
 html.fus-on [class*="collection-type-blog"] .blog-meta-section, html.fus-on [class*="collection-type-blog"] .blog-date, html.fus-on [class*="collection-type-blog"] .blog-meta-primary { color: var(--fus-muted) !important; font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 !important; }
 html.fus-on [class*="collection-type-blog"] .blog-title { margin: 0 !important; font-size: 23px !important; line-height: 1.2 !important; font-weight: 500 !important; letter-spacing: -0.015em; }
@@ -167,11 +169,14 @@ html.fus-on [class*="collection-type-blog"] .blog-title a { color: var(--fus-fg)
 html.fus-on [class*="collection-type-blog"] .blog-basic-grid--container:hover .blog-title a, html.fus-on [class*="collection-type-blog"] .blog-title a:hover { color: var(--fus-red-text) !important; }
 html.fus-on [class*="collection-type-blog"] .blog-excerpt, html.fus-on [class*="collection-type-blog"] .blog-excerpt p { margin: 0 !important; color: var(--fus-soft) !important; font-size: 16px !important; line-height: 1.55 !important; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 html.fus-on [class*="collection-type-blog"] .blog-more-link { margin-top: 4px !important; color: var(--fus-red-text) !important; font-size: 12px !important; font-weight: 600 !important; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none !important; background-image: none !important; }
-html.fus-on [class*="collection-type-blog"] .blog-more-link::after { content: " \2192"; }
+html.fus-on [class*="collection-type-blog"] .blog-more-link, html.fus-on [class*="collection-type-blog"] .blog-more-link * { text-decoration: none !important; border: 0 !important; box-shadow: none !important; background-image: none !important; }
+html.fus-on [class*="collection-type-blog"] .blog-more-link::before { display: none !important; }
+html.fus-on [class*="collection-type-blog"] .blog-more-link::after { content: " \2192" !important; position: static !important; display: inline !important; width: auto !important; height: auto !important; background: none !important; border: 0 !important; transform: none !important; }
 /* first post on page one becomes the lead story */
 html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child { grid-column: ~"1 / -1"; display: grid !important; grid-template-columns: ~"minmax(0, 1.5fr) minmax(0, 1fr)"; gap: 48px !important; align-items: center; padding-bottom: 64px !important; border-bottom: 1px solid var(--fus-line-strong); }
-html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .image-wrapper,
-html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-basic-grid--image { margin: 0 !important; }
+html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child > :not(.blog-basic-grid--text):has(img) { margin: 0 !important; grid-column: 1; grid-row: 1; }
+html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child > .blog-basic-grid--text { grid-column: 2; grid-row: 1; }
+html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child > :not(.blog-basic-grid--text):not(:has(img)) { display: none !important; }
 html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-title { font-size: ~"clamp(30px, 3.4vw, 46px)" !important; line-height: 1.06 !important; letter-spacing: -0.025em; }
 html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child .blog-meta-section::before { content: "Latest"; color: var(--fus-red-text); margin-right: 12px; }
 /* pagination */
@@ -184,6 +189,7 @@ html.fus-on [class*="collection-type-blog"] .blog-list-pagination svg { stroke: 
 @media (max-width: 700px) {
   html.fus-on [class*="collection-type-blog"].view-list .blog-basic-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
   html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child { grid-template-columns: 1fr; gap: 20px !important; padding-bottom: 48px !important; }
+  html.fus-on [class*="collection-type-blog"].view-list:not(.fus-blog-paged) .blog-basic-grid--container:first-child > .blog-basic-grid--text { grid-column: 1; grid-row: 2; }
   html.fus-on [class*="collection-type-blog"].view-list .page-section .content-wrapper { padding-top: 40px !important; }
 }
 
