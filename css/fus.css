@@ -579,6 +579,24 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 @media (max-width: 800px) { .fus-team { grid-template-columns: ~"repeat(2, minmax(0, 1fr))"; gap: 44px 20px; } .fus-team-intro { padding-top: 110px; } }
 @media (max-width: 520px) { .fus-team { grid-template-columns: 1fr; } }
 
+/* ---------- Testimonials page ---------- */
+.fus-quote { margin: 0; display: flex; flex-direction: column; gap: 18px; }
+.fus .fus-quote__stars { color: var(--fus-red); font-size: 14px; letter-spacing: 0.2em; line-height: 1; }
+.fus-quote blockquote { margin: 0; padding: 0; border: 0; }
+.fus .fus-quote blockquote p { margin: 0; font-size: 18px; line-height: 1.6; color: var(--fus-soft); }
+.fus-quote figcaption { display: flex; flex-direction: column; gap: 4px; padding-top: 16px; border-top: 1px solid var(--fus-line-strong); }
+.fus .fus-quote figcaption strong { font-size: 17px; font-weight: 600; color: var(--fus-fg); }
+.fus .fus-quote figcaption span { font-size: 14px; line-height: 1.45; color: var(--fus-muted); }
+.fus-quote-lead { padding-top: 0; }
+.fus-quote--lead { max-width: 1040px; padding: 48px 0 56px; border-top: 4px solid var(--fus-red); }
+.fus .fus-quote--lead blockquote p { font-size: ~"clamp(30px, 4vw, 52px)"; line-height: 1.12; letter-spacing: -0.025em; font-weight: 500; color: var(--fus-fg); }
+.fus .fus-quote--lead blockquote p::before { content: "\201C"; }
+.fus .fus-quote--lead blockquote p::after { content: "\201D"; }
+.fus-quote--lead figcaption { border-top: 0; padding-top: 0; }
+.fus-quotes { columns: 3 320px; column-gap: 40px; }
+.fus-quotes .fus-quote { break-inside: avoid; margin: 0 0 56px; padding: 28px; background: var(--fus-surface); }
+@media (max-width: 640px) { .fus-quotes .fus-quote { padding: 22px; margin-bottom: 24px; } }
+
 /* ---------- Site footer (code block in the Squarespace footer) ---------- */
 .fus-footer { padding: 88px 0 40px; border-top: 4px solid var(--fus-red); }
 .fus-footer__top { display: grid; grid-template-columns: ~"minmax(0, 1.6fr) repeat(3, minmax(0, 1fr))"; gap: 40px; padding-bottom: 56px; }
