@@ -92,6 +92,24 @@ html.fus-on .header .header-actions-action--cta .sqs-button-element--primary {
   text-decoration: none !important;
 }
 
+/* Header: black bar, white uppercase nav, red screening button */
+html.fus-on .header, html.fus-on .header .header-background, html.fus-on .header .header-announcement-bar-wrapper { background: var(--fus-bg) !important; background-color: var(--fus-bg) !important; }
+html.fus-on .header { border-bottom: 1px solid var(--fus-line); }
+html.fus-on .header .header-nav-item > a, html.fus-on .header .header-nav-folder-title, html.fus-on .header .header-nav-folder-title-text {
+  color: var(--fus-fg) !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; text-decoration: none !important;
+}
+html.fus-on .header .header-nav-item > a:hover, html.fus-on .header .header-nav-folder-title:hover, html.fus-on .header .header-nav-item--active > a { color: var(--fus-red-text) !important; background-image: none !important; }
+html.fus-on .header .header-nav-folder-content { background: #111 !important; border: 1px solid var(--fus-line-strong) !important; border-radius: 0 !important; padding: 10px 0 !important; box-shadow: 0 18px 40px rgba(0,0,0,0.45) !important; }
+html.fus-on .header .header-nav-folder-item > a, html.fus-on .header .header-nav-folder-item-content { color: var(--fus-soft) !important; font-family: var(--fus-font) !important; font-size: 15px !important; letter-spacing: 0 !important; text-transform: none !important; padding: 8px 22px !important; }
+html.fus-on .header .header-nav-folder-item > a:hover { color: var(--fus-fg) !important; background: #1a1a1a !important; }
+html.fus-on .header .header-actions .icon, html.fus-on .header .header-actions svg { fill: var(--fus-soft) !important; color: var(--fus-soft) !important; }
+html.fus-on .header .header-actions a:hover .icon, html.fus-on .header .header-actions a:hover svg { fill: var(--fus-red-text) !important; color: var(--fus-red-text) !important; }
+html.fus-on .header .header-burger-btn div, html.fus-on .header .burger-inner > div { background-color: var(--fus-fg) !important; }
+html.fus-on .header-menu, html.fus-on .header-menu .header-menu-bg { background: var(--fus-bg) !important; background-color: var(--fus-bg) !important; }
+html.fus-on .header-menu .header-menu-nav-item a, html.fus-on .header-menu .header-menu-nav-folder-content a { color: var(--fus-fg) !important; font-family: var(--fus-font) !important; font-size: 28px !important; font-weight: 500 !important; letter-spacing: -0.01em !important; text-transform: none !important; }
+html.fus-on .header-menu .header-menu-nav-item a:hover { color: var(--fus-red-text) !important; }
+html.fus-on .header-menu .header-menu-cta a, html.fus-on .header-menu .btn { background: var(--fus-red) !important; color: #fff !important; border-radius: 0 !important; text-transform: uppercase !important; letter-spacing: 0.08em !important; font-size: 13px !important; }
+
 /* Native buttons: flat, square, outlined (A24-style) */
 html.fus-on .sqs-block-button-element,
 html.fus-on .sqs-button-element--primary,
@@ -451,6 +469,34 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .page-section:has(.fus) .sqs-block-form button:hover, .page-section:has(.fus) .sqs-block-form input[type=submit]:hover { background: #c81d23 !important; }
 .page-section:has(.fus) .sqs-block-form fieldset { border: 0 !important; padding: 0 !important; min-width: 0; }
 .page-section:has(.fus) .sqs-block-form .form-submission-text { font-size: 18px; }
+
+/* ---------- Site footer (code block in the Squarespace footer) ---------- */
+.fus-footer { padding: 88px 0 40px; border-top: 4px solid var(--fus-red); }
+.fus-footer__top { display: grid; grid-template-columns: ~"minmax(0, 1.6fr) repeat(3, minmax(0, 1fr))"; gap: 40px; padding-bottom: 56px; }
+.fus-footer__brand { display: flex; flex-direction: column; gap: 18px; padding-right: 24px; }
+.fus-footer__brand p { margin: 0; }
+.fus-footer__name { font-size: ~"clamp(30px, 3vw, 40px)"; font-weight: 600; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase; }
+.fus-footer__brand .fus-lede { font-size: 16px; max-width: 360px; }
+.fus-footer__col { display: flex; flex-direction: column; gap: 12px; }
+.fus-footer__col .fus-eyebrow { margin-bottom: 6px; }
+.fus .fus-footer__col a { font-size: 15px; color: var(--fus-soft); }
+.fus .fus-footer__col a:hover { color: var(--fus-fg); }
+.fus-footer__bottom { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding-top: 28px; border-top: 1px solid var(--fus-line-strong); }
+.fus-footer__social { display: flex; gap: 18px; }
+.fus .fus-footer__social a { color: var(--fus-soft); display: inline-flex; }
+.fus .fus-footer__social a:hover { color: var(--fus-red-text); }
+.fus-footer__social svg { width: 20px; height: 20px; }
+.fus .fus-footer__mail { font-size: 14px; color: var(--fus-soft); }
+.fus-footer__legal { margin: 0 0 0 auto; font-size: 13px; color: var(--fus-muted); }
+.fus .fus-footer__legal a { text-decoration: underline; }
+@media (max-width: 900px) {
+  .fus-footer__top { grid-template-columns: 1fr 1fr; }
+  .fus-footer__brand { grid-column: ~"1 / -1"; }
+}
+@media (max-width: 520px) {
+  .fus-footer__top { grid-template-columns: 1fr; }
+  .fus-footer__legal { margin-left: 0; }
+}
 
 @media (max-width: 640px) {
   :root { --fus-gutter: 16px; }
