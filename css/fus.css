@@ -204,7 +204,7 @@ html.fus-on .collection-type-blog .sqs-block-button .sqs-button-element--primary
 html.fus-on .collection-type-blog .blog-item-author-profile-wrapper { display: none !important; }
 /* share, tags, prev/next */
 html.fus-on .collection-type-blog .blog-item-bottom-wrapper, html.fus-on .collection-type-blog .blog-meta-item--tags, html.fus-on .collection-type-blog .blog-item-comments { border-color: var(--fus-line-strong) !important; color: var(--fus-muted) !important; }
-html.fus-on .collection-type-blog .blog-share-like, html.fus-on .collection-type-blog .squarespace-social-buttons { filter: invert(1) grayscale(1); }
+html.fus-on .collection-type-blog .blog-share-like, html.fus-on .collection-type-blog .squarespace-social-buttons { filter: ~"invert(1) grayscale(1)"; }
 html.fus-on .collection-type-blog .item-pagination { max-width: 760px; margin: 0 auto !important; padding: 32px var(--fus-gutter) 96px !important; border-top: 1px solid var(--fus-line-strong); display: flex; justify-content: space-between; gap: 24px; box-sizing: border-box; }
 html.fus-on .collection-type-blog .item-pagination-link { color: var(--fus-fg) !important; text-decoration: none !important; display: flex !important; flex-direction: column; gap: 6px; max-width: 48%; }
 html.fus-on .collection-type-blog .item-pagination-prev-next { color: var(--fus-muted) !important; font-size: 12px !important; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; }
@@ -298,8 +298,8 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-stream strong { color: var(--fus-fg); font-weight: 500; }
 
 /* ---------- 5. Press logos strip ---------- */
-.fus-logos__img { height: 24px; width: auto; max-width: 130px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.85; }
-.fus-light .fus-logos__img { filter: brightness(0); opacity: 0.8; }
+.fus-logos__img { height: 24px; width: auto; max-width: 130px; object-fit: contain; filter: ~"brightness(0) invert(1)"; opacity: 0.85; }
+.fus-light .fus-logos__img { filter: ~"brightness(0)"; opacity: 0.8; }
 .fus-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 44px; padding: 28px 0; border-bottom: 1px solid var(--fus-line); }
 .fus-logos__name { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: var(--fus-soft); }
 .fus-logos__more { margin-left: auto; color: var(--fus-red-text); }
@@ -333,7 +333,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-panel--feature::after { background: linear-gradient(to top, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.6) 38%, rgba(10,10,10,0) 68%); }
 .fus-panel__logos { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 26px; margin-bottom: 6px; }
 .fus-prime { width: 132px; height: auto; color: #fff; }
-.fus-panel__logo { height: 30px; width: auto; filter: brightness(0) invert(1); }
+.fus-panel__logo { height: 30px; width: auto; filter: ~"brightness(0) invert(1)"; }
 .fus-panel__logolink { display: inline-flex; line-height: 0; position: relative; z-index: 2; }
 .fus-panel__logolink:hover .fus-panel__logo { opacity: .75; }
 .fus-panel__wordmark { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: #fff; }
@@ -560,7 +560,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: ~"repeat(3, minmax(0, 1fr))"; gap: 64px 40px; }
 .fus-team__card { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; }
 .fus-team__card::before { display: none !important; content: none !important; }
-.fus-team__photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; background: #1a1a1a; margin-bottom: 10px; filter: grayscale(0.25); transition: filter .3s ease; }
+.fus-team__photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; background: #1a1a1a; margin-bottom: 10px; filter: ~"grayscale(0.25)"; transition: filter .3s ease; }
 .fus-team__card:hover .fus-team__photo { filter: none; }
 .fus .fus-team__role { margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-red-text); }
 .fus .fus-team__name { margin: 0; font-size: 24px; line-height: 1.15; font-weight: 500; letter-spacing: -0.015em; }
@@ -596,7 +596,7 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-footer__news input:focus { outline: 2px solid var(--fus-red) !important; outline-offset: -2px; }
 .fus-footer__news .newsletter-form-button-wrapper { margin: 0 !important; }
 .fus-footer__news .newsletter-form-button, .fus-footer__news button[type="submit"] { height: 52px !important; margin: 0 !important; padding: 0 26px !important; background: var(--fus-red) !important; color: #fff !important; border: 0 !important; border-radius: 0 !important; font-family: var(--fus-font) !important; font-size: 13px !important; font-weight: 600 !important; letter-spacing: 0.1em !important; text-transform: uppercase !important; cursor: pointer; }
-.fus-footer__news .newsletter-form-button:hover { filter: brightness(1.12); }
+.fus-footer__news .newsletter-form-button:hover { filter: ~"brightness(1.12)"; }
 .fus-footer__news .newsletter-form-button-label, .fus-footer__news .newsletter-form-button * { color: #fff !important; }
 .fus-footer__news .newsletter-form-footnote, .fus-footer__news .form-submission-text, .fus-footer__news .newsletter-form-footnote * { flex-basis: 100%; margin: 10px 0 0 !important; font-size: 13px !important; color: var(--fus-muted) !important; text-align: left !important; }
 .fus-footer__news .form-submission-text { color: var(--fus-fg) !important; font-size: 16px !important; }
