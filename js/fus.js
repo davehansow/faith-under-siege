@@ -559,10 +559,22 @@
     if (t.classList.contains('fus-logos__img')) { var s = document.createElement('span'); s.className = 'fus-logos__name'; s.textContent = t.alt; t.replaceWith(s); }
     else if (t.closest && t.closest('.fus')) t.style.display = 'none';
   }, true);
+  // Blog thumbnails: if Squarespace's lazy loader never fills an image in, load it ourselves
+  function blogImages() {
+    if (!document.body || !/collection-type-blog/.test(document.body.className)) return;
+    setTimeout(function () {
+      [].forEach.call(document.querySelectorAll('.blog-basic-grid img[data-src], .blog-item img[data-src], article img[data-src]'), function (img) {
+        if (img.getAttribute('src') && img.naturalWidth > 1) return;
+        var u = img.getAttribute('data-src'); if (!u) return;
+        img.src = u + (u.indexOf('?') < 0 ? '?format=1000w' : ''); img.removeAttribute('data-load');
+      });
+    }, 1200);
+  }
   function boot(root) {
     document.documentElement.classList.toggle('fus-on', isNewPage());
     // Blog list: only page one gets the big lead story
     if (document.body) document.body.classList.toggle('fus-blog-paged', /[?&]offset=/.test(location.search));
+    blogImages();
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {
       if (el.__fus) return; el.__fus = 1;
       el.classList.add('fus');
