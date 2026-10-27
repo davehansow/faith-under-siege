@@ -23,7 +23,7 @@
     watchPath: '/watch',                // pages live at /watch/<slug>; any video plays at /watch/film?v=<id>
     filmTemplatePath: '/watch/film',
     pressPath: '/press',
-    journalPath: '/journal',
+    journalPath: '/news-and-updates',
     screeningPath: '/general-screening', // every "Host a screening" button goes here
     stagingPrefix: '',                  // e.g. '/new' while the new pages are built beside the live site; '' at launch
     social: { instagram: 'faithundersiege', x: 'FaithUnderSiege', facebook: 'afaithundersiege', tiktok: '' }
