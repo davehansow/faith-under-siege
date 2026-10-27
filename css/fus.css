@@ -486,7 +486,8 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-team-intro { padding-top: 140px; }
 .fus-team-intro .fus-wrap { display: flex; flex-direction: column; gap: 22px; }
 .fus-team-intro .fus-h1 { max-width: 900px; }
-.fus-team-band img { display: block; width: 100%; height: auto; }
+.fus-team-intro { padding-bottom: 48px; }
+.fus-team-list { padding-top: 24px; }
 .fus-team-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 18px; margin-bottom: 40px; border-bottom: 1px solid var(--fus-line-strong); }
 .fus-team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: ~"repeat(3, minmax(0, 1fr))"; gap: 64px 40px; }
 .fus-team__card { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; }
