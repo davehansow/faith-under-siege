@@ -201,6 +201,8 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .fus-hero .fus-h1 { max-width: 900px; }
 .fus-hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
 .fus-stream { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 32px; padding-top: 18px; border-top: 1px solid rgba(245,243,239,0.18); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fus-muted); }
+.fus .fus-stream a { color: inherit; border-bottom: 1px solid rgba(245,243,239,0.3); }
+.fus .fus-stream a:hover { color: var(--fus-fg); border-color: var(--fus-red-text); }
 .fus-stream strong { color: var(--fus-fg); font-weight: 500; }
 
 /* ---------- 5. Press logos strip ---------- */
