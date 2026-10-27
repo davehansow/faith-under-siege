@@ -482,6 +482,26 @@ html.fus-on footer.sections { border-top: 1px solid var(--fus-line); }
 .page-section:has(.fus) .sqs-block-form fieldset { border: 0 !important; padding: 0 !important; min-width: 0; }
 .page-section:has(.fus) .sqs-block-form .form-submission-text { font-size: 18px; }
 
+/* ---------- Team page ---------- */
+.fus-team-intro { padding-top: 140px; }
+.fus-team-intro .fus-wrap { display: flex; flex-direction: column; gap: 22px; }
+.fus-team-intro .fus-h1 { max-width: 900px; }
+.fus-team-band img { display: block; width: 100%; height: auto; }
+.fus-team-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 18px; margin-bottom: 40px; border-bottom: 1px solid var(--fus-line-strong); }
+.fus-team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: ~"repeat(4, minmax(0, 1fr))"; gap: 56px 28px; }
+.fus-team__card { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; }
+.fus-team__card::before { display: none !important; content: none !important; }
+.fus-team__photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; background: #1a1a1a; margin-bottom: 10px; filter: grayscale(0.25); transition: filter .3s ease; }
+.fus-team__card:hover .fus-team__photo { filter: none; }
+.fus .fus-team__role { margin: 0; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-red-text); }
+.fus .fus-team__name { margin: 0; font-size: 24px; line-height: 1.15; font-weight: 500; letter-spacing: -0.015em; }
+.fus .fus-team__bio { margin: 4px 0 0; font-size: 15px; line-height: 1.6; color: var(--fus-soft); }
+.fus-team-cta { border-top: 1px solid var(--fus-line); }
+.fus-team-cta .fus-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding-top: 24px; padding-bottom: 40px; }
+@media (max-width: 1100px) { .fus-team { grid-template-columns: ~"repeat(3, minmax(0, 1fr))"; } }
+@media (max-width: 800px) { .fus-team { grid-template-columns: ~"repeat(2, minmax(0, 1fr))"; gap: 44px 20px; } .fus-team-intro { padding-top: 110px; } }
+@media (max-width: 520px) { .fus-team { grid-template-columns: 1fr; } }
+
 /* ---------- Site footer (code block in the Squarespace footer) ---------- */
 .fus-footer { padding: 88px 0 40px; border-top: 4px solid var(--fus-red); }
 .fus-footer__top { display: grid; grid-template-columns: ~"minmax(0, 1.6fr) repeat(3, minmax(0, 1fr))"; gap: 40px; padding-bottom: 56px; }
