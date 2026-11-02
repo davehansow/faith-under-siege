@@ -376,6 +376,16 @@
         '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(screeningUrl(attr(el, 'screening-url', ''))) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +
         '<dl class="fus-dl">' + rows.map(function (x) { return '<dt>' + x[0] + '</dt><dd' + (x[2] ? ' class="fus-dl__stack"' : '') + '>' + x[1] + '</dd>'; }).join('') + '</dl></div>' +
+        (f.extras || []).filter(function (x) { return x.youtubeId; }).map(function (x) {
+          return '<div class="fus-section" style="background:#0A0A0A;color:#F5F3EF"><div class="fus-wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:40px 56px;align-items:center">' +
+            '<div class="fus-player" style="margin:0"><img src="' + esc(x.image || thumb(x.youtubeId, 'maxresdefault')) + '" alt="" loading="lazy" onerror="if(this.src.indexOf(\'maxres\')>0){this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')}else{this.remove()}">' +
+            '<button type="button" class="fus-player__btn" data-play="' + esc(x.youtubeId) + '" aria-label="Play ' + esc(x.title) + '">' + svgPlay(32) + '</button></div>' +
+            '<div style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">' +
+            (x.eyebrow ? '<p class="fus-eyebrow" style="color:#FF4A4A">' + esc(x.eyebrow) + (x.runtime ? ' · ' + esc(x.runtime) : '') + '</p>' : '') +
+            '<h2 class="fus-h2" style="color:#F5F3EF">' + esc(x.title) + '</h2>' +
+            (x.text ? '<p class="fus-lede" style="color:#C9C4BC">' + esc(x.text) + '</p>' : '') +
+            '<button type="button" class="fus-btn fus-btn--red" data-play="' + esc(x.youtubeId) + '" data-target="extra">Watch now</button></div></div></div>';
+        }).join('') +
         (related.length ? '<div class="fus-section"><div class="fus-wrap"><div class="fus-head"><h2 class="fus-h2">Keep watching</h2><a class="fus-link" href="' + esc(C.watchPath) + '">View all</a></div>' +
           '<div class="fus-grid fus-grid--4">' + related.map(function (x) { return card(x, { noLine: true }); }).join('') + '</div></div></div>' : '') +
         '</div>';
@@ -383,7 +393,8 @@
       el.addEventListener('click', function (e) {
         var p = e.target.closest('.fus-player__btn, [data-play]');
         if (p) {
-          var id = p.getAttribute('data-play') || f.youtubeId, box = el.querySelector('.fus-player');
+          var id = p.getAttribute('data-play') || f.youtubeId, sec = p.getAttribute('data-target') === 'extra' && p.closest('.fus-section');
+          var box = p.closest('.fus-player') || (sec && sec.querySelector('.fus-player')) || el.querySelector('.fus-player');
           box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="' + esc(f.title) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
           box.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
