@@ -338,12 +338,13 @@
       }).join('');
       if (!watch && f.youtubeId) watch = '<a class="fus-pill fus-pill--solid" href="https://www.youtube.com/watch?v=' + esc(f.youtubeId) + '" target="_blank" rel="noopener">YouTube, free</a>';
       var rows = [
-        ['Featuring', esc(f.featuring)], ['Directed by', esc(f.director && f.director.charAt(0) !== '[' ? f.director : '')],
+        ['Featuring', esc(f.featuring)], ['Directed by', esc(f.director && f.director.charAt(0) !== '[' ? f.director : '')]
+      ].concat((f.credits || []).map(function (c) { return [esc(c[0]), esc(c[1])]; })).concat([
         ['Series', coll.label ? '<a href="' + esc(C.watchPath + '?collection=' + f.collection) + '">' + esc(coll.label) + '</a>' : ''],
         ['Topic', esc((f.topicLabels || []).join(' · '))], ['Watch on', watch],
-        ['Laurels', mine.length ? mine.map(function (l) { return '<span>' + esc(l.award + ', ' + l.festival + ' ' + l.year) + '</span>'; }).join('') : '', 'stack'],
+        ['Laurels', mine.length ? mine.map(function (l) { return '<span>' + esc(l.award + ', ' + l.festival + (l.year ? ' ' + l.year : '')) + '</span>'; }).join('') : '', 'stack'],
         ['In the press', coverage.map(function (p) { return '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener">' + esc(p.outlet) + ' · ' + esc(fmtDate(p.date)) + '</a>'; }).join(''), 'stack']
-      ].filter(function (x) { return x[1]; });
+      ]).filter(function (x) { return x[1]; });
       var poster = f.image || thumb(f.youtubeId, 'maxresdefault');
       el.innerHTML =
         '<div class="fus-film fus-light">' +
