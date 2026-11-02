@@ -256,31 +256,32 @@
     loading(el, 'Loading films…');
     loadCatalog().then(function (cat) {
       var params = new URLSearchParams(location.search);
-      var s = { format: params.get('format') || 'all', topic: params.get('topic') || 'all', coll: params.get('collection') || 'all', q: params.get('q') || '', sort: params.get('sort') || 'new' };
-      var formats = [['all', 'All'], ['feature', 'Feature'], ['film', 'Films'], ['episode', 'Episodes'], ['short', 'Shorts'], ['clip', 'Clips']]
-        .filter(function (o) { return o[0] === 'all' || present(cat, function (f) { return f.type === o[0]; }); });
-      var topics = [['all', 'All']].concat(Object.keys(cat.topics).filter(function (k) { return present(cat, function (f) { return (f.topics || []).indexOf(k) >= 0; }); }).map(function (k) { return [k, cat.topics[k]]; }));
-      var colls = [['all', 'All']].concat(Object.keys(cat.collections).filter(function (k) { return present(cat, function (f) { return f.collection === k; }); }).map(function (k) { return [k, cat.collections[k].label]; }));
-      function chips(key, opts, label) {
-        return '<div class="fus-chips" role="group" aria-label="' + esc(label) + '"><span class="fus-chips__label">' + esc(label) + '</span>' +
-          opts.map(function (o) { return '<button type="button" class="fus-chip" data-k="' + key + '" data-v="' + esc(o[0]) + '">' + esc(o[1]) + '</button>'; }).join('') + '</div>';
-      }
+      // One row of categories like YouTube's chips; topic and sort sit in compact dropdowns
+      var cats = [['all', 'All'], ['feature', 'Feature'], ['fiw', 'Series'], ['short', 'Shorts'], ['clip', 'Clips']];
+      function inCat(f, c) { return c === 'all' ? f.type !== 'clip' : c === 'fiw' ? f.collection === 'fiw' : c === 'short' ? f.type === 'short' || f.type === 'episode' : c === 'feature' ? f.type === 'feature' : f.type === c; }
+      var startCat = params.get('collection') === 'fiw' ? 'fiw' : params.get('collection') === 'clips' ? 'clip' : params.get('format') === 'film' ? 'fiw' : params.get('format') || 'all';
+      if (!cats.some(function (c) { return c[0] === startCat; })) startCat = 'all';
+      var s = { cat: startCat, topic: params.get('topic') || 'all', q: params.get('q') || '', sort: params.get('sort') || 'new' };
+      cats = cats.filter(function (c) { return c[0] === 'all' || present(cat, function (f) { return inCat(f, c[0]); }); });
+      // only topics with at least two films, so every option is worth choosing
+      var topics = Object.keys(cat.topics).filter(function (k) { return cat.films.filter(function (f) { return f.type !== 'clip' && (f.topics || []).indexOf(k) >= 0; }).length >= 2; });
+      if (topics.indexOf(s.topic) < 0) s.topic = 'all';
       el.innerHTML =
         '<div class="fus-filters"><div class="fus-filters__inner">' +
+        '<div class="fus-chips" role="group" aria-label="Category" style="flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch">' + cats.map(function (c) { return '<button type="button" class="fus-chip" data-k="cat" data-v="' + esc(c[0]) + '" style="flex:0 0 auto">' + esc(c[1]) + '</button>'; }).join('') + '</div>' +
         '<div class="fus-filters__row"><label class="fus-sr" for="fus-q">Search films</label>' +
-        '<input id="fus-q" class="fus-input" type="search" placeholder="Search by title, person or place" value="' + esc(s.q) + '">' +
-        '<label class="fus-chips__label" for="fus-sort" style="min-width:0">Sort</label>' +
-        '<select id="fus-sort" class="fus-select"><option value="new">Featured</option><option value="date">Newest</option><option value="short">Shortest first</option><option value="az">A to Z</option></select>' +
-        '<button type="button" class="fus-btn" data-reset style="margin-left:auto">Clear filters</button></div>' +
-        chips('format', formats, 'Format') + chips('topic', topics, 'Topic') + chips('coll', colls, 'Collection') +
+        '<input id="fus-q" class="fus-input" type="search" placeholder="Search titles, people and places" value="' + esc(s.q) + '">' +
+        '<label class="fus-sr" for="fus-topic">Topic</label><select id="fus-topic" class="fus-select"><option value="all">All topics</option>' +
+        topics.map(function (k) { return '<option value="' + esc(k) + '">' + esc(cat.topics[k]) + '</option>'; }).join('') + '</select>' +
+        '<label class="fus-sr" for="fus-sort">Sort</label><select id="fus-sort" class="fus-select"><option value="new">Featured</option><option value="date">Newest</option><option value="short">Shortest first</option><option value="az">A to Z</option></select>' +
+        '<button type="button" class="fus-btn" data-reset style="margin-left:auto">Clear</button></div>' +
         '</div></div><p class="fus-count" aria-live="polite"></p><div class="fus-grid"></div>';
-      var grid = el.querySelector('.fus-grid'), count = el.querySelector('.fus-count'), q = el.querySelector('#fus-q'), sort = el.querySelector('#fus-sort');
-      sort.value = s.sort;
+      var grid = el.querySelector('.fus-grid'), count = el.querySelector('.fus-count'), q = el.querySelector('#fus-q'), sort = el.querySelector('#fus-sort'), topicSel = el.querySelector('#fus-topic'), reset = el.querySelector('[data-reset]');
+      sort.value = s.sort; topicSel.value = s.topic;
       function sync() {
         var p = new URLSearchParams();
-        if (s.format !== 'all') p.set('format', s.format);
+        if (s.cat === 'fiw') p.set('collection', 'fiw'); else if (s.cat !== 'all') p.set('format', s.cat);
         if (s.topic !== 'all') p.set('topic', s.topic);
-        if (s.coll !== 'all') p.set('collection', s.coll);
         if (s.q) p.set('q', s.q);
         if (s.sort !== 'new') p.set('sort', s.sort);
         var qs = p.toString();
@@ -289,18 +290,15 @@
       function draw() {
         var nq = norm(s.q);
         var res = cat.films.filter(function (f) {
-          if (f.type === 'clip' && s.format !== 'clip' && s.coll !== 'clips' && !nq) return false;
-          return (s.format === 'all' || f.type === s.format) &&
-            (s.topic === 'all' || (f.topics || []).indexOf(s.topic) >= 0) &&
-            (s.coll === 'all' || f.collection === s.coll) &&
-            (!nq || f._search.indexOf(nq) >= 0);
+          if (nq) { if (f._search.indexOf(nq) < 0) return false; if (s.cat === 'all') return s.topic === 'all' || (f.topics || []).indexOf(s.topic) >= 0; }
+          return inCat(f, s.cat) && (s.topic === 'all' || (f.topics || []).indexOf(s.topic) >= 0);
         });
         if (s.sort === 'az') res.sort(function (a, b) { return a.title.localeCompare(b.title); });
         else if (s.sort === 'short') res.sort(function (a, b) { return minutesOf(a) - minutesOf(b); });
         else if (s.sort === 'date') res.sort(function (a, b) { return String(b.published || b.year || '').localeCompare(String(a.published || a.year || '')); });
-        var clips = cat.films.filter(function (f) { return f.type === 'clip'; }).length;
-        var noun = s.format === 'clip' || s.coll === 'clips' ? ['clip', 'clips'] : ['film', 'films'];
-        count.textContent = res.length + ' ' + noun[res.length === 1 ? 0 : 1] + (s.format === 'all' && s.coll === 'all' && !nq && clips ? ' · plus ' + clips + ' clips from the field under Clips' : '');
+        var noun = s.cat === 'clip' ? ['clip', 'clips'] : ['film', 'films'];
+        count.textContent = res.length + ' ' + noun[res.length === 1 ? 0 : 1];
+        reset.style.display = s.cat !== 'all' || s.topic !== 'all' || s.q ? '' : 'none';
         grid.innerHTML = res.length ? res.map(function (f) { return card(f); }).join('') : '';
         grid.setAttribute('data-empty', res.length ? 'false' : 'true');
         if (!res.length) grid.innerHTML = '<p class="fus-empty">Nothing matches those filters yet. Try clearing one.</p>';
@@ -310,10 +308,11 @@
       el.addEventListener('click', function (e) {
         var b = e.target.closest('[data-k]');
         if (b) { s[b.getAttribute('data-k')] = b.getAttribute('data-v'); draw(); return; }
-        if (e.target.closest('[data-reset]')) { s = { format: 'all', topic: 'all', coll: 'all', q: '', sort: s.sort }; q.value = ''; draw(); }
+        if (e.target.closest('[data-reset]')) { s = { cat: 'all', topic: 'all', q: '', sort: s.sort }; q.value = ''; topicSel.value = 'all'; draw(); }
       });
       var t; q.addEventListener('input', function () { clearTimeout(t); t = setTimeout(function () { s.q = q.value; draw(); }, 120); });
       sort.addEventListener('change', function () { s.sort = sort.value; draw(); });
+      topicSel.addEventListener('change', function () { s.topic = topicSel.value; draw(); });
       draw();
     }).catch(function (e) { failed(el, e); });
   }
