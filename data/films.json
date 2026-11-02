@@ -267,6 +267,37 @@
    "trailerId": "amhkL54aB7E"
   },
   {
+   "slug": "pastor-of-kherson",
+   "title": "The Pastor of Kherson",
+   "youtubeId": "Ykw40K3Mmxs",
+   "match": "Pastor of Kherson",
+   "type": "short",
+   "topics": [
+    "clergy",
+    "front"
+   ],
+   "logline": "A Ukrainian pastor chooses faith over fear when war reaches Kherson.",
+   "synopsis": [
+    "When war reached the streets of Kherson, Ukrainian pastor Oleh Derkachenko faced a choice: surrender to fear or stand firm in faith.",
+    "The award-winning short tells the true story of a man whose journey from addiction to redemption prepared him for an extraordinary test of courage. Through powerful storytelling and dramatic recreations, it follows a pastor determined to lead his church, serve his neighbors and hold on to hope in the face of overwhelming danger."
+   ],
+   "featuring": "Pastor Oleh Derkachenko",
+   "runtime": "12 min",
+   "year": "2026",
+   "page": "/watch/pastor-of-kherson",
+   "pressMatch": [
+    "Pastor of Kherson",
+    "Derkachenko"
+   ],
+   "order": 85,
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=Ykw40K3Mmxs"
+    }
+   ]
+  },
+  {
    "slug": "no-priests-left",
    "title": "No Priests Left",
    "youtubeId": "R-j_SUu9NsY",
