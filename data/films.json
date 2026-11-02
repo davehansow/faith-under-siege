@@ -267,6 +267,39 @@
    "trailerId": "amhkL54aB7E"
   },
   {
+   "slug": "nadiia",
+   "title": "Nadiia",
+   "youtubeId": "Gn3w3wwPWg8",
+   "match": "Nadiia",
+   "type": "short",
+   "collection": "series",
+   "topics": [
+    "children"
+   ],
+   "logline": "A mother of faith defies Russian occupiers to rescue her children.",
+   "synopsis": [
+    "Nadiia, a mother of faith, defies Russian occupiers to rescue her children, while thousands of Ukrainian boys and girls remain trapped. Her courage exposes a system of forced deportations, “re-education,” and stolen identities."
+   ],
+   "featuring": "Nadiia",
+   "year": "2026",
+   "published": "2026-11-12",
+   "page": "/watch/nadiia",
+   "pressMatch": [
+    "Nadiia"
+   ],
+   "order": 86,
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=Gn3w3wwPWg8"
+    },
+    {
+     "label": "Angel Studios",
+     "url": "https://www.angel.com/watch/shared/796da230-ef16-45e8-8c2f-5d6bb92b3879"
+    }
+   ]
+  },
+  {
    "slug": "pastor-of-kherson",
    "title": "The Pastor of Kherson",
    "youtubeId": "Ykw40K3Mmxs",
@@ -314,7 +347,8 @@
      "Co-producer and editor",
      "Josh Glaser"
     ]
-   ]
+   ],
+   "collection": "series"
   },
   {
    "slug": "no-priests-left",
