@@ -95,6 +95,11 @@
       if (!f.page) f.page = f.curated === false && f.youtubeId ? C.filmTemplatePath + '?v=' + encodeURIComponent(f.youtubeId) : C.watchPath + '/' + f.slug;
       else if (SP && /^\/(watch|press)(\/|\?|$)/.test(f.page)) f.page = SP + f.page;
       if (!f.runtime && f.seconds) f.runtime = fmtDuration(f.seconds);
+      // Not yet released: show the placeholder art and a premiere date until that day
+      var today = new Date(), iso = today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+      f._upcoming = !!(f.premiere && iso < f.premiere);
+      if (f._upcoming && f.premiereImage) f.image = f.premiereImage;
+      if (f._upcoming) f._premiere = f.premiereLabel || fmtDate(f.premiere);
       f.collectionLabel = (cat.collections[f.collection] || {}).label || '';
       f.topicLabels = (f.topics || []).map(function (t) { return cat.topics[t] || t; });
       f._search = norm([f.title, f.subtitle, f.logline, f.featuring, f.collectionLabel].concat(f.topicLabels).join(' '));
@@ -204,7 +209,7 @@
       (img ? '<img src="' + esc(img) + '" alt="" loading="lazy" onerror="this.remove()">' : '') +
       '<span class="fus-card__fallback" aria-hidden="true">' + (img ? '' : esc(f.title)) + '</span>' +
       '<span class="fus-card__badge">' + esc(TYPE_LABEL[f.type] || 'Film') + '</span>' +
-      (f.runtime ? '<span class="fus-card__time">' + esc(f.runtime) + '</span>' : '') +
+      (f._upcoming ? '<span class="fus-card__time" style="background:#E3242B;color:#fff">Premieres ' + esc(f._premiere) + '</span>' : f.runtime ? '<span class="fus-card__time">' + esc(f.runtime) + '</span>' : '') +
       '</div>' +
       (opts.noMeta || !meta ? '' : '<span class="fus-card__meta">' + esc(meta) + '</span>') +
       '<h3 class="fus-card__title">' + esc(f.title) + '</h3>' +
@@ -323,7 +328,8 @@
       if (!f) { el.innerHTML = '<div class="fus-wrap"><p class="fus-empty">We couldn’t find that film. <a href="' + esc(C.watchPath) + '">See all films</a>.</p></div>'; return; }
       var coll = cat.collections[f.collection] || {};
       var eyebrow = coll.label ? coll.label + (f.episode ? ' · Film ' + f.episode + (f.collection === 'fiw' ? ' of 5' : '') : '') : (TYPE_LABEL[f.type] || 'Film');
-      var facts = [f.year, f.runtime, f.language || 'English'].filter(Boolean);
+      var facts = [f._upcoming ? 'Premieres ' + f._premiere : '', f.year, f.runtime, f.language || 'English'].filter(Boolean);
+      var early = f._upcoming ? (f.watchOn || []).filter(function (w) { return safeUrl(w.url) && !/youtube/i.test(w.label); })[0] : null;
       var mine = laurels.filter(function (l) { return l.film === f.slug; });
       var terms = (f.pressMatch || [f.title]).map(norm);
       var coverage = press.filter(function (p) { var t = norm(p.title + ' ' + (p.note || '')); return terms.some(function (x) { return x && t.indexOf(x) >= 0; }); })
@@ -354,7 +360,7 @@
         '<div class="fus-film__facts">' + facts.map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div></div>' +
         '<div class="fus-wrap"><div class="fus-player">' +
         (poster ? '<img src="' + esc(poster) + '" alt="" onerror="if(this.src.indexOf(\'maxres\')>0){this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')}else{this.remove()}">' : '') +
-        (f.youtubeId ? '<button type="button" class="fus-player__btn" aria-label="Play ' + esc(f.title) + '">' + svgPlay(32) + '</button>' : '<span class="fus-player__fallback">Video coming soon</span>') +
+        (f._upcoming ? (early ? '<a class="fus-btn fus-btn--red" style="position:absolute;right:24px;bottom:24px;z-index:2" href="' + esc(safeUrl(early.url)) + '" target="_blank" rel="noopener">Watch now on ' + esc(early.label) + ' ↗</a>' : '') : f.youtubeId ? '<button type="button" class="fus-player__btn" aria-label="Play ' + esc(f.title) + '">' + svgPlay(32) + '</button>' : '<span class="fus-player__fallback">Video coming soon</span>') +
         '</div>' +
         '<div class="fus-film__bar"><div>' + (f.trailerId ? '<button type="button" class="fus-btn" data-play="' + esc(f.trailerId) + '">Trailer</button>' : '') +
         '<a class="fus-btn" href="' + esc(C.watchPath) + '">All films</a></div>' +
@@ -365,6 +371,7 @@
         '<a class="fus-btn" href="sms:?&body=' + encodeURIComponent('Watch ' + f.title + ': ' + shareUrl) + '">Text a friend</a>' +
         '</div></div></div>' +
         '<div class="fus-wrap fus-film__body"><div class="fus-film__synopsis">' +
+        (f._upcoming ? '<p class="fus-film__notice" style="margin:0 0 8px;padding:14px 18px;border-left:3px solid #E3242B;background:rgba(227,36,43,0.06);font-size:16px;line-height:1.5">This short film premieres on YouTube on ' + esc(f._premiere) + '.' + (early ? ' You can watch it now on <a href="' + esc(safeUrl(early.url)) + '" target="_blank" rel="noopener">' + esc(early.label) + '</a>.' : '') + '</p>' : '') +
         (f.synopsis && f.synopsis.length ? f.synopsis : [f.logline || '']).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') +
         '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(screeningUrl(attr(el, 'screening-url', ''))) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +

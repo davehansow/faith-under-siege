@@ -296,7 +296,10 @@
      "label": "Angel Studios",
      "url": "https://www.angel.com/watch/shared/796da230-ef16-45e8-8c2f-5d6bb92b3879"
     }
-   ]
+   ],
+   "premiere": "2026-11-12",
+   "premiereLabel": "Nov 12",
+   "premiereImage": "https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@59ac40e723b340a283cf6c1d5e41e5d281ff9468/img/nadiia-premiere.jpg"
   },
   {
    "slug": "pastor-of-kherson",
