@@ -224,13 +224,13 @@
     var limit = +attr(el, 'limit', 12), state = 'all';
     loading(el);
     loadCatalog().then(function (cat) {
-      var tabs = [['all', 'All'], ['feature', 'Feature'], ['series', 'Series'], ['fiw', 'Faith in War'], ['short', 'Shorts'], ['clip', 'Clips']].filter(function (t) {
-        return t[0] === 'all' || present(cat, function (f) { return t[0] === 'series' ? f.collection === 'series' || f.type === 'episode' : t[0] === 'fiw' ? f.collection === 'fiw' : f.type === t[0]; });
+      // "Series" is the Faith in War series
+      var tabs = [['all', 'All'], ['feature', 'Feature'], ['fiw', 'Series'], ['short', 'Shorts'], ['clip', 'Clips']].filter(function (t) {
+        return t[0] === 'all' || present(cat, function (f) { return t[0] === 'fiw' ? f.collection === 'fiw' : f.type === t[0]; });
       });
       function list() {
         return cat.films.filter(function (f) {
           if (state === 'all') return f.type !== 'clip';
-          if (state === 'series') return f.collection === 'series' || f.type === 'episode';
           if (state === 'fiw') return f.collection === 'fiw';
           return f.type === state;
         }).slice(0, limit);

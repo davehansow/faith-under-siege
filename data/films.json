@@ -281,7 +281,6 @@
    "youtubeId": "Gn3w3wwPWg8",
    "match": "Nadiia",
    "type": "short",
-   "collection": "series",
    "topics": [
     "children"
    ],
@@ -358,8 +357,7 @@
      "Co-producer and editor",
      "Josh Glaser"
     ]
-   ],
-   "collection": "series"
+   ]
   },
   {
    "slug": "no-priests-left",
