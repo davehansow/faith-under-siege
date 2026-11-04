@@ -1,7 +1,11 @@
-<!-- FAITH LEADERS LETTER · SECTION 1 OF 3 · paste into ONE Code Block in ONE full-width section at the top of /faith-leaders.
-     Replaces the old section of four photos (delete that section; the photos are used below).
-     Section 2: your existing letter text blocks, with faith-leaders-2-letter.html in a Code Block at the TOP of that section.
-     Section 3: faith-leaders-3-sign.html in a Code Block, then your existing Form block, then faith-leaders-4-share.html. -->
+<!-- FAITH LEADERS LETTER · everything lives in ONE section, stacked top to bottom:
+     1. Code Block: this file (faith-leaders-1-top.html)
+     2. Code Block: faith-leaders-2-letter.html
+     3. Your existing letter text blocks (unchanged, so you can keep editing them)
+     4. Code Block: faith-leaders-3-sign.html
+     5. Your existing Form block
+     6. Code Block: faith-leaders-4-share.html
+     Delete the old four-photo blocks; the photos are used in this file. -->
 <section class="fus fus-hero fus-sc-hero fus-fl-hero" id="fus-fl-top">
   <div class="fus-hero__media"><img src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/506dbc14-a2e0-4d45-81b3-beca1db7aef6/FAITH+IN+UKRAINE+A.jpg?format=2500w" alt="A Ukrainian soldier and a civilian with their hands on a fallen tree, a Bible resting on the trunk"></div>
   <div class="fus-wrap fus-hero__body">
@@ -54,7 +58,8 @@
   new IntersectionObserver(function (e) { pastTop = !e[0].isIntersecting; upd(); }).observe(top);
   function watchSign() {
     var s = document.getElementById('sign'); if (!s) return setTimeout(watchSign, 800);
-    new IntersectionObserver(function (e) { signVis = e[0].isIntersecting; upd(); }, { rootMargin: '0px 0px -20% 0px' }).observe(s.closest('.page-section') || s);
+    var vis = new Map(), io = new IntersectionObserver(function (es) { es.forEach(function (e) { vis.set(e.target, e.isIntersecting); }); signVis = Array.from(vis.values()).some(Boolean); upd(); });
+    [s, document.querySelector('.sqs-block-form'), document.querySelector('.fus-fl-share')].forEach(function (t) { if (t) io.observe(t); });
   }
   watchSign();
 })();
