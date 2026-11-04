@@ -375,6 +375,14 @@
         '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(screeningUrl(attr(el, 'screening-url', ''))) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +
         '<dl class="fus-dl">' + rows.map(function (x) { return '<dt>' + x[0] + '</dt><dd' + (x[2] ? ' class="fus-dl__stack"' : '') + '>' + x[1] + '</dd>'; }).join('') + '</dl></div>' +
+        (f.specials || []).filter(function (x) { return safeUrl(x.url); }).map(function (x) {
+          return '<div class="fus-section" style="background:#0A0A0A;color:#F5F3EF"><div class="fus-wrap" style="display:flex;flex-wrap:wrap;gap:28px 56px;align-items:flex-end;justify-content:space-between">' +
+            '<div style="display:flex;flex-direction:column;gap:14px;max-width:720px">' +
+            '<p class="fus-eyebrow" style="color:#FF4A4A">' + esc(x.eyebrow || 'Special') + '</p>' +
+            '<h2 class="fus-h2" style="color:#F5F3EF">' + esc(x.title) + '</h2>' +
+            (x.guests ? '<p class="fus-lede" style="color:#C9C4BC">TBN\'s Praise sits down with ' + esc(x.guests) + ' to talk about the story behind this film.</p>' : '') + '</div>' +
+            '<a class="fus-btn fus-btn--red" href="' + esc(safeUrl(x.url)) + '" target="_blank" rel="noopener">' + esc(x.label || 'Watch') + ' ↗</a></div></div>';
+        }).join('') +
         (f.extras || []).filter(function (x) { return x.youtubeId; }).map(function (x) {
           return '<div class="fus-section" style="background:#0A0A0A;color:#F5F3EF"><div class="fus-wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:40px 56px;align-items:center">' +
             '<div class="fus-player" style="margin:0"><img src="' + esc(x.image || thumb(x.youtubeId, 'maxresdefault')) + '" alt="" loading="lazy" onerror="if(this.src.indexOf(\'maxres\')>0){this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')}else{this.remove()}">' +

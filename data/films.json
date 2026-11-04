@@ -112,7 +112,16 @@
     }
    ],
    "order": 95,
-   "trailerId": "1uXKPOwao8I"
+   "trailerId": "1uXKPOwao8I",
+   "specials": [
+    {
+     "title": "Meaghan's Story",
+     "guests": "Meaghan Mobbs",
+     "url": "https://www.tbnplus.com/m/tIBwqwL8/meaghan-mobbs-faith-in-war-meagans-story-praise?play=1",
+     "eyebrow": "TBN Praise special",
+     "label": "Watch on TBN+"
+    }
+   ]
   },
   {
    "slug": "even-in-the-ruins",
@@ -148,7 +157,16 @@
      "url": "https://start.tbnplus.com/"
     }
    ],
-   "order": 94
+   "order": 94,
+   "specials": [
+    {
+     "title": "Stories from the Front Lines",
+     "guests": "Colby Barrett, Anna Shvetsova, Yuri Babinets and Mark Sergeev",
+     "url": "https://www.tbnplus.com/m/rjeD0xko/colby-barrett-anna-shvetsova-yuri-babinets-mark-sergeev-stories-from-the-front-lines-praise?play=1",
+     "eyebrow": "TBN Praise special",
+     "label": "Watch on TBN+"
+    }
+   ]
   },
   {
    "slug": "safe-ground",
@@ -189,7 +207,16 @@
     "landmine",
     "Hendrickson"
    ],
-   "order": 93
+   "order": 93,
+   "specials": [
+    {
+     "title": "Ryan's Story",
+     "guests": "Ryan Hendrickson",
+     "url": "https://www.tbnplus.com/m/qtVsxLwW/ryan-hendrickson-faith-in-war-ryans-story-praise?play=1",
+     "eyebrow": "TBN Praise special",
+     "label": "Watch on TBN+"
+    }
+   ]
   },
   {
    "slug": "soldiers-of-light",
@@ -231,7 +258,16 @@
     "Green Beret Reveals"
    ],
    "order": 92,
-   "trailerId": "-yqNfeeOBLM"
+   "trailerId": "-yqNfeeOBLM",
+   "specials": [
+    {
+     "title": "Christian & Ashley's Story",
+     "guests": "Christian and Ashley Hickey",
+     "url": "https://www.tbnplus.com/m/fIvHWp1n/christian-ashley-hickey-faith-in-war-christian-ashleys-story-praise?play=1",
+     "eyebrow": "TBN Praise special",
+     "label": "Watch on TBN+"
+    }
+   ]
   },
   {
    "slug": "no-surrender",
@@ -272,7 +308,16 @@
     }
    ],
    "order": 91,
-   "trailerId": "amhkL54aB7E"
+   "trailerId": "amhkL54aB7E",
+   "specials": [
+    {
+     "title": "Stories from the Front Lines",
+     "guests": "Colby Barrett, Anna Shvetsova, Yuri Babinets and Mark Sergeev",
+     "url": "https://www.tbnplus.com/m/rjeD0xko/colby-barrett-anna-shvetsova-yuri-babinets-mark-sergeev-stories-from-the-front-lines-praise?play=1",
+     "eyebrow": "TBN Praise special",
+     "label": "Watch on TBN+"
+    }
+   ]
   },
   {
    "slug": "nadiia",
