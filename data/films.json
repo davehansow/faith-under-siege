@@ -45,7 +45,9 @@
    ],
    "logline": "Believers hunted under Russian occupation, and the churches that refuse to close.",
    "synopsis": [
-    "A Faith Under Siege goes inside occupied Ukraine, where pastors are hunted, churches are seized, and believers keep worshipping anyway."
+    "A Faith Under Siege goes inside occupied Ukraine, where pastors are hunted, churches are seized, and believers keep worshipping anyway.",
+    "In a region once known as the post-Soviet “Bible Belt,” evangelical and Protestant Christians now face seized churches, tortured pastors and abducted children under Russian occupation. Yet their faith is not fading. It is growing stronger.",
+    "Through firsthand accounts and footage filmed on the ground, the documentary shows that this is not only a war for land. It is a war for faith. The full film is free to watch on YouTube, and churches and groups can host a free screening."
    ],
    "featuring": "",
    "director": "[Director]",
@@ -90,7 +92,9 @@
    ],
    "logline": "Veteran Meaghan Mobbs searches for Ukrainian children abducted by Russia.",
    "synopsis": [
-    "Veteran Meaghan Mobbs searches for the Ukrainian children Russia has abducted, and the families still waiting for them."
+    "Veteran Meaghan Mobbs searches for the Ukrainian children Russia has abducted, and the families still waiting for them.",
+    "Ukraine has verified more than 20,000 cases of children taken by Russia. Many have had their names changed and their language forbidden, and some have been told their families no longer want them.",
+    "The Stolen Children follows Mobbs, a combat veteran and West Point graduate, as she travels to Ukraine to investigate one of the most devastating and underreported consequences of the war, working alongside Ukrainian officials and human-rights investigators. It is film one of the Faith in War series."
    ],
    "featuring": "Meaghan Mobbs",
    "director": "[Director]",
@@ -136,7 +140,9 @@
    ],
    "logline": "Pastor Mark Sergeev keeps his flock together after his church is seized.",
    "synopsis": [
-    "After Russian forces seize his church, Ukrainian pastor Mark Sergeev keeps his congregation together."
+    "After Russian forces seize his church, Ukrainian pastor Mark Sergeev keeps his congregation together.",
+    "Mark led Melitopol Christian Church, founded by his parents more than 30 years ago, until Russian forces confiscated the church and his home. After moving to Kyiv, he lost another home to the war.",
+    "Even in the Ruins follows the pastor and frontline chaplain as he rebuilds his ministry and keeps serving soldiers, displaced families and communities devastated by Russia’s invasion. It is film two of the Faith in War series."
    ],
    "featuring": "Mark Sergeev",
    "director": "[Director]",
@@ -181,7 +187,9 @@
    ],
    "logline": "Former Green Beret Ryan Hendrickson clears landmines from Ukrainian farmland.",
    "synopsis": [
-    "Former Green Beret Ryan Hendrickson returns to Ukraine to clear landmines from farmland, so families can plant, harvest and live on their land again."
+    "Former Green Beret Ryan Hendrickson returns to Ukraine to clear landmines from farmland, so families can plant, harvest and live on their land again.",
+    "In 2010, during combat operations in Afghanistan, Hendrickson stepped on an IED while trying to rescue an Afghan soldier. He recovered, returned to active duty, and later carried that experience into a new mission.",
+    "Safe Ground follows the retired U.S. Army Green Beret, Purple Heart recipient and author as he risks his life so Ukrainians can walk their land safely again. It is film three of the Faith in War series, and it also streams on Prime Video."
    ],
    "featuring": "Ryan Hendrickson",
    "director": "[Director]",
@@ -231,7 +239,9 @@
    ],
    "logline": "Green Beret turned missionary Christian Hickey serves Ukraine’s soldiers.",
    "synopsis": [
-    "Christian Hickey, a former Marine, deputy sheriff and Green Beret, moves his family to Ukraine to serve its soldiers as a missionary."
+    "Christian Hickey, a former Marine, deputy sheriff and Green Beret, moves his family to Ukraine to serve its soldiers as a missionary.",
+    "Most families would do everything they could to stay away from a war. Christian and Ashley Hickey moved toward one, with their five children beside them, answering what they believed was God’s call after Russia’s full-scale invasion.",
+    "Guided by a Ukrainian military chaplain, Christian travels toward the front lines to deliver humanitarian aid and medical supplies and to hand out audio Bibles. Soldiers of Light is film four of the Faith in War series."
    ],
    "featuring": "Christian Hickey",
    "director": "[Director]",
@@ -282,7 +292,9 @@
    ],
    "logline": "Kyiv pastor Yuri Babinets refuses to leave his city or his church.",
    "synopsis": [
-    "Kyiv pastor Yuri Babinets refuses to leave his city or his church."
+    "When Russian forces invaded Ukraine, Kyiv pastor Yuri Babinets had every reason to leave. He chose to stay.",
+    "No Surrender follows Yuri through the first uncertain days of the full-scale invasion and the long war that followed. As missiles fell and families fled, he kept his church doors open and served people with nowhere else to turn.",
+    "His courage is the kind that rarely makes headlines: staying present, sitting with families who have lost everything, and showing up when leaving would be easier. It is film five of the Faith in War series, also available in Ukrainian."
    ],
    "featuring": "Yuri Babinets",
    "director": "[Director]",
@@ -419,7 +431,11 @@
    "pressMatch": [
     "No Priests Left"
    ],
-   "order": 80
+   "order": 80,
+   "synopsis": [
+    "When Russian forces occupy his city, a Ukrainian Catholic priest refuses to flee and keeps serving his parishioners under persecution.",
+    "No Priests Left asks what happens to a parish when every priest is gone, and shows both the brutality of the occupation and the strength of the faith that survives it."
+   ]
   },
   {
    "slug": "orthodox-under-fire",
@@ -433,7 +449,12 @@
    ],
    "logline": "Orthodox believers caught between Moscow and Kyiv.",
    "runtime": "10 min",
-   "order": 79
+   "order": 79,
+   "synopsis": [
+    "After Russian forces desecrate a church and brutalize its clergy in the Ukrainian village of Bobak, the local community learns that the Moscow Patriarchate has blessed the war against them.",
+    "Abandoned by their spiritual leaders, the parishioners vote to leave the Moscow church and join the independent Orthodox Church of Ukraine."
+   ],
+   "page": "/watch/film?v=nvDJBpK3gJk"
   },
   {
    "slug": "jewish-persecution",
@@ -451,7 +472,12 @@
     "Jewish",
     "Jews"
    ],
-   "order": 78
+   "order": 78,
+   "synopsis": [
+    "In occupied areas of Ukraine, Russia has imposed harsh laws and policies on evangelical Christians and religious minorities, especially Jews.",
+    "This short shows how those measures have disrupted Jewish life and religious freedom, and how Ukrainians under constant missile and drone attack have grown stronger in their faith."
+   ],
+   "page": "/watch/film?v=5GghWokX0bc"
   },
   {
    "slug": "behind-the-scenes",
@@ -465,7 +491,11 @@
    ],
    "logline": "How the team films safely inside a war zone.",
    "runtime": "10 min",
-   "order": 77
+   "order": 77,
+   "synopsis": [
+    "The producers, director and crew of A Faith Under Siege on what it took to make a film in the middle of a war zone, from navigating danger on the ground to capturing stories of faith and resilience."
+   ],
+   "page": "/watch/film?v=g9vKyw6ADFU"
   },
   {
    "slug": "updates-from-the-front",
@@ -479,7 +509,11 @@
    ],
    "logline": "Dispatches from the communities closest to the fighting.",
    "runtime": "9 min",
-   "order": 75
+   "order": 75,
+   "synopsis": [
+    "The cast and crew of A Faith Under Siege check in over FaceTime for a real-time look at life on the ground in Ukraine, from the people living through the war and fighting for Ukraine’s freedom."
+   ],
+   "page": "/watch/film?v=FHjUc-035uI"
   },
   {
    "slug": "putin-and-christians",
@@ -493,7 +527,12 @@
    ],
    "logline": "Explained: how the Kremlin uses its church against Ukraine’s believers.",
    "runtime": "5 min",
-   "order": 74
+   "order": 74,
+   "synopsis": [
+    "In what was once called the post-Soviet “Bible Belt,” a fast-growing community of evangelical and Protestant believers has become a prime target of Russia’s occupation.",
+    "This explainer shows how the Kremlin uses its church against Ukraine’s believers, who endure seized churches, tortured pastors and abducted children while keeping their faith alive in secret."
+   ],
+   "page": "/watch/film?v=wdOBA2G8BnM"
   }
  ],
  "hide": [

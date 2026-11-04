@@ -1,12 +1,35 @@
 <!-- WATCH · paste this whole file into ONE Code Block, in ONE full-width section.
-     Page URL slug: /watch · Section: dark -->
-<!-- WATCH PAGE (/watch) · page title + full library with search and filters.
-     Filters are shareable links, e.g. /watch?collection=fiw or /watch?topic=children -->
+     Page URL slug: /watch · Section: dark
+     Filters are shareable links, e.g. /watch?collection=fiw or /watch?topic=children
+     The list inside the library is for search engines; the site script swaps in the full library.
+     Built by scripts/build-seo-blocks.mjs from data/films.json. -->
+<style>.fus-on .fus-seo{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}</style>
 <section class="fus" style="padding:64px 0 96px"><div class="fus-wrap">
   <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:36px">
     <p class="fus-eyebrow">Free to stream</p>
     <h1 class="fus-h1">Every film</h1>
     <p class="fus-lede">Features, series and short films from inside Ukraine. New releases are added automatically from YouTube.</p>
   </div>
-  <div data-fus="library"></div>
+  <div data-fus="library">
+    <div class="fus-seo">
+      <h2>Documentaries about faith in Russian-occupied Ukraine, free to watch</h2>
+      <ul>
+        <li><a href="/watch/a-faith-under-siege">A Faith Under Siege</a> (58 min): Believers hunted under Russian occupation, and the churches that refuse to close.</li>
+        <li><a href="/watch/the-stolen-children">The Stolen Children</a> (39 min): Veteran Meaghan Mobbs searches for Ukrainian children abducted by Russia.</li>
+        <li><a href="/watch/even-in-the-ruins">Even in the Ruins</a> (31 min): Pastor Mark Sergeev keeps his flock together after his church is seized.</li>
+        <li><a href="/watch/safe-ground">Safe Ground</a> (28 min): Former Green Beret Ryan Hendrickson clears landmines from Ukrainian farmland.</li>
+        <li><a href="/watch/soldiers-of-light">Soldiers of Light</a> (36 min): Green Beret turned missionary Christian Hickey serves Ukraine’s soldiers.</li>
+        <li><a href="/watch/no-surrender">No Surrender</a> (18 min): Kyiv pastor Yuri Babinets refuses to leave his city or his church.</li>
+        <li><a href="/watch/nadiia">Nadiia</a>: A mother of faith defies Russian occupiers to rescue her children.</li>
+        <li><a href="/watch/pastor-of-kherson">The Pastor of Kherson</a> (12 min): A Ukrainian pastor chooses faith over fear when war reaches Kherson.</li>
+        <li><a href="/watch/no-priests-left">No Priests Left</a> (16 min): What happens to a parish when every priest is gone.</li>
+        <li><a href="/watch/film?v=nvDJBpK3gJk">Orthodox Under Fire</a> (10 min): Orthodox believers caught between Moscow and Kyiv.</li>
+        <li><a href="/watch/film?v=5GghWokX0bc">Russia Targets Jewish Life in Ukraine</a> (7 min): Ukraine’s Jewish communities under occupation.</li>
+        <li><a href="/watch/film?v=g9vKyw6ADFU">Behind the Scenes</a> (10 min): How the team films safely inside a war zone.</li>
+        <li><a href="/watch/film?v=FHjUc-035uI">Updates from the Front</a> (9 min): Dispatches from the communities closest to the fighting.</li>
+        <li><a href="/watch/film?v=wdOBA2G8BnM">Ukraine’s Christians vs. Putin’s Church</a> (5 min): Explained: how the Kremlin uses its church against Ukraine’s believers.</li>
+      </ul>
+      <p><a href="/watch?collection=fiw">The Faith in War series</a> · <a href="/general-screening">Host a free screening</a></p>
+    </div>
+  </div>
 </div></section>

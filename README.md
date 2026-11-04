@@ -113,3 +113,10 @@ From this folder run `python3 -m http.server 8000`, then open `http://localhost:
 ## Placeholders still to fill
 
 Hero and series images, real logo, `[X]` screenings number, directors, the Angel series episodes (not found on the YouTube channel yet), TikTok handle, and a few press rows without headlines (for example "Colby Barrett op-ed").
+
+## Search and sharing (SEO)
+
+- `js/fus.js` adds structured data that Google reads: the organization and website on every page, `Movie`/`TVEpisode` + `VideoObject` on each film page (so films can show up in Google's video results), the film list on `/watch`, and `NewsArticle` on blog posts. It also fills in a page's search description when Squarespace's is empty. It never overwrites an SEO title, description or image set in Squarespace, so those settings always win.
+- The film page, `/watch` and `/press` Code Blocks carry plain text (title, synopsis, links) inside their placeholders, for search engines, AI tools and link previews that don't run scripts. Visitors never see it: the script swaps in the full page. After editing `data/films.json` or `data/press.json`, run `node scripts/build-seo-blocks.mjs` and re-paste the changed blocks.
+- Curated shorts without their own page link to the player (`/watch/film?v=<id>`), which is marked noindex so it never competes with the real film pages.
+- Link previews (iMessage, Facebook, X, Slack) only read Squarespace's page settings, so set each page's SEO title, SEO description and social sharing image there.

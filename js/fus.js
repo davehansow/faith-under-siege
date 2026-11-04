@@ -255,6 +255,7 @@
   function library(el) {
     loading(el, 'Loading films…');
     loadCatalog().then(function (cat) {
+      try { seoLibrary(cat); } catch (e) {}
       var params = new URLSearchParams(location.search);
       // One row of categories like YouTube's chips; topic and sort sit in compact dropdowns
       var cats = [['all', 'All'], ['feature', 'Feature'], ['fiw', 'Series'], ['short', 'Shorts'], ['clip', 'Clips']];
@@ -358,7 +359,7 @@
         '<h1 class="fus-h1">' + esc(f.title) + '</h1></div>' +
         '<div class="fus-film__facts">' + facts.map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div></div>' +
         '<div class="fus-wrap"><div class="fus-player">' +
-        (poster ? '<img src="' + esc(poster) + '" alt="" onerror="if(this.src.indexOf(\'maxres\')>0){this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')}else{this.remove()}">' : '') +
+        (poster ? '<img src="' + esc(poster) + '" alt="' + esc(f.title + ' (documentary still)') + '" onerror="if(this.src.indexOf(\'maxres\')>0){this.src=this.src.replace(\'maxresdefault\',\'hqdefault\')}else{this.remove()}">' : '') +
         (f._upcoming ? (early ? '<a class="fus-btn fus-btn--red" style="position:absolute;right:24px;bottom:24px;z-index:2" href="' + esc(safeUrl(early.url)) + '" target="_blank" rel="noopener">Watch now on ' + esc(early.label) + ' ↗</a>' : '') : f.youtubeId ? '<button type="button" class="fus-player__btn" aria-label="Play ' + esc(f.title) + '">' + svgPlay(32) + '</button>' : '<span class="fus-player__fallback">Video coming soon</span>') +
         '</div>' +
         '<div class="fus-film__bar"><div>' + (f.trailerId ? '<button type="button" class="fus-btn" data-play="' + esc(f.trailerId) + '">Trailer</button>' : '') +
@@ -396,7 +397,8 @@
         (related.length ? '<div class="fus-section"><div class="fus-wrap"><div class="fus-head"><h2 class="fus-h2">Keep watching</h2><a class="fus-link" href="' + esc(C.watchPath) + '">View all</a></div>' +
           '<div class="fus-grid fus-grid--4">' + related.map(function (x) { return card(x, { noLine: true }); }).join('') + '</div></div></div>' : '') +
         '</div>';
-      document.title = f.title + ' · A Faith Under Siege';
+      if (!slug) document.title = f.title + ' · A Faith Under Siege';   // curated pages keep their Squarespace SEO title
+      try { seoFilm(f, cat, laurels, !slug); } catch (e) {}
       el.addEventListener('click', function (e) {
         var p = e.target.closest('.fus-player__btn, [data-play]');
         if (p) {
@@ -416,6 +418,7 @@
     loading(el, 'Loading coverage…');
     getJSON(dataUrl('press.json', C.pressUrl)).then(function (data) {
       var all = (data.items || []).filter(function (p) { return safeUrl(p.url); }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
+      describe('A Faith Under Siege in the press: ' + all.length + '+ articles, TV segments and interviews from outlets including Politico, Fox News, CBN, Newsmax and Christianity Today.');
       var outlets = {}; all.forEach(function (p) { outlets[norm(p.outlet)] = 1; });
       var years = {}; all.forEach(function (p) { if (p.date) years[p.date.slice(0, 4)] = 1; });
       var s = { type: 'all', year: 'all', lang: 'all', q: '', limit: 24 };
@@ -577,6 +580,116 @@
     if (io) io.observe(el); else go();
   }
 
+
+  /* ---------------- search & sharing (structured data, meta fallbacks) ----------------
+     Google runs this script, so it reads the JSON-LD and descriptions added here. Squarespace's own
+     page settings (SEO title, SEO description, social image) always win: nothing here overwrites a
+     value that is already set. Link previews (iMessage, Facebook, X) don't run scripts, so those
+     still come from Squarespace's page settings. */
+  var SITE = 'https://www.faithundersiege.com', ORG_ID = SITE + '/#org';
+  function absUrl(u) { try { return new URL(u, SITE).href; } catch (e) { return u; } }
+  function ld(id, data) {
+    var s = document.getElementById('fus-ld-' + id);
+    if (!s) { s = document.createElement('script'); s.type = 'application/ld+json'; s.id = 'fus-ld-' + id; s.className = 'fus-ld'; document.head.appendChild(s); }
+    s.textContent = JSON.stringify(data);
+  }
+  function metaTag(key, content) {
+    if (!content) return;
+    var prop = /^(og|article):/.test(key), sel = 'meta[' + (prop ? 'property' : 'name') + '="' + key + '"]', m = document.head.querySelector(sel);
+    if (m && m.getAttribute('content')) return;   // Squarespace's value wins
+    if (!m) { m = document.createElement('meta'); m.setAttribute(prop ? 'property' : 'name', key); m.setAttribute('data-fus', ''); document.head.appendChild(m); }
+    m.setAttribute('content', content);
+  }
+  function describe(text, image) {
+    text = String(text || '').replace(/\s+/g, ' ').trim();
+    if (text.length > 158) text = text.slice(0, 155).replace(/\s+\S*$/, '') + '…';
+    metaTag('description', text); metaTag('og:description', text); metaTag('twitter:description', text);
+    if (image) { metaTag('og:image', image); metaTag('twitter:image', image); }
+  }
+  function isoDuration(sec) { sec = Math.round(sec || 0); if (!sec) return ''; var h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60; return 'PT' + (h ? h + 'H' : '') + (m ? m + 'M' : '') + (s ? s + 'S' : ''); }
+  function crumbs(list) {
+    return { '@type': 'BreadcrumbList', itemListElement: list.map(function (c, i) { return { '@type': 'ListItem', position: i + 1, name: c[0], item: absUrl(c[1]) }; }) };
+  }
+  function seoSite() {
+    // Page-specific data from a previous page is cleared on Squarespace's AJAX page loads
+    [].forEach.call(document.querySelectorAll('script.fus-ld:not(#fus-ld-site)'), function (s) { s.remove(); });
+    var S = C.social, same = [
+      S.instagram && 'https://www.instagram.com/' + S.instagram, S.x && 'https://x.com/' + S.x,
+      S.facebook && 'https://www.facebook.com/' + S.facebook, S.tiktok && 'https://www.tiktok.com/@' + S.tiktok,
+      'https://www.youtube.com/@AFaithUnderSiege', 'https://www.linkedin.com/company/faith-under-siege', 'https://www.faithinwar.com'
+    ].filter(Boolean);
+    ld('site', { '@context': 'https://schema.org', '@graph': [
+      { '@type': 'Organization', '@id': ORG_ID, name: 'A Faith Under Siege', alternateName: 'Faith Under Siege', url: SITE + '/',
+        logo: 'https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/img/fus-logo.png', email: 'hello@faithundersiege.com',
+        description: 'Free documentaries about faith and religious persecution in Russian-occupied Ukraine, including the feature A Faith Under Siege and the Faith in War series.',
+        sameAs: same },
+      { '@type': 'WebSite', '@id': SITE + '/#website', name: 'A Faith Under Siege', url: SITE + '/', publisher: { '@id': ORG_ID }, inLanguage: 'en-US' }
+    ] });
+    seoBlogPost();
+  }
+  /* Blog posts: Article data from what Squarespace already prints on the page */
+  function seoBlogPost() {
+    var b = document.body;
+    if (!b || !/collection-type-blog/.test(b.className) || !/view-item/.test(b.className)) return;
+    var h = document.querySelector('.blog-item-title h1, article h1, h1'), og = function (k) { var m = document.head.querySelector('meta[property="' + k + '"]'); return m ? m.getAttribute('content') : ''; };
+    var t = document.querySelector('time[datetime]'), dp = document.head.querySelector('meta[itemprop="datePublished"]'), dm = document.head.querySelector('meta[itemprop="dateModified"]');
+    var date = (dp && dp.getAttribute('content')) || (t && t.getAttribute('datetime')) || '';
+    var img = og('og:image').replace(/^http:/, 'https:');
+    var data = { '@context': 'https://schema.org', '@type': 'NewsArticle', headline: (h ? h.textContent : og('og:title')).trim().slice(0, 110),
+      mainEntityOfPage: location.href.split(/[?#]/)[0], publisher: { '@id': ORG_ID, '@type': 'Organization', name: 'A Faith Under Siege' },
+      author: { '@type': 'Organization', name: 'A Faith Under Siege', url: SITE + '/' } };
+    if (img) data.image = [img];
+    if (date) data.datePublished = date;
+    if (dm && dm.getAttribute('content')) data.dateModified = dm.getAttribute('content');
+    if (og('og:description')) data.description = og('og:description');
+    ld('page', data);
+    describe(og('og:description'));
+  }
+  function filmVideo(f, cat) {
+    if (!f.youtubeId || f._upcoming || !(f.published || f.year)) return null;
+    var v = { '@type': 'VideoObject', name: f.title, description: (f.synopsis && f.synopsis.join(' ')) || f.logline || f.title,
+      thumbnailUrl: [thumb(f.youtubeId, 'maxresdefault'), thumb(f.youtubeId, 'hqdefault')],
+      uploadDate: /T/.test(f.published || '') ? f.published : (f.published || f.year + '-01-01') + 'T12:00:00+00:00', embedUrl: 'https://www.youtube.com/embed/' + f.youtubeId,
+      url: absUrl(f.page), publisher: { '@id': ORG_ID }, isFamilyFriendly: true, inLanguage: 'en' };
+    if (f.seconds) v.duration = isoDuration(f.seconds);
+    return v;
+  }
+  function seoFilm(f, cat, laurels, player) {
+    var url = absUrl(location.pathname), desc = (f.synopsis && f.synopsis[0]) || f.logline || '';
+    var image = f.image ? absUrl(f.image) : thumb(f.youtubeId, 'maxresdefault');
+    describe(desc ? desc + (f._upcoming ? '' : ' Watch free.') : '', image);
+    if (player) { metaTag('robots', 'noindex'); return; }   // the catch-all player (/watch/film?v=…) is never a film's main page
+    var coll = cat.collections[f.collection] || {}, video = filmVideo(f, cat);
+    var work = { '@type': f.collection === 'fiw' ? 'TVEpisode' : 'Movie', '@id': url + '#film', name: f.title, url: url,
+      description: (f.synopsis && f.synopsis.join(' ')) || f.logline, image: image, inLanguage: 'en',
+      genre: ['Documentary'], about: [{ '@type': 'Thing', name: 'Russian invasion of Ukraine' }, { '@type': 'Thing', name: 'Religious persecution' }],
+      productionCompany: { '@type': 'Organization', name: 'Fourthsign Productions' }, publisher: { '@id': ORG_ID } };
+    if (f.year) work.dateCreated = String(f.year);
+    if (f.seconds) work.duration = isoDuration(f.seconds);
+    if (f.director && f.director.charAt(0) !== '[') work.director = { '@type': 'Person', name: f.director };
+    if (f.featuring && f.featuring.charAt(0) !== '[') work.actor = { '@type': 'Person', name: f.featuring.split(',')[0].trim() };
+    if (f.collection === 'fiw') {
+      work.partOfSeries = { '@type': 'TVSeries', name: coll.label || 'Faith in War', url: absUrl(C.watchPath + '?collection=fiw'), sameAs: coll.url || undefined };
+      if (f.episode) work.episodeNumber = f.episode;
+    }
+    var awards = (laurels || []).filter(function (l) { return l.film === f.slug && /winner|merit|honorable/i.test(l.award); }).map(function (l) { return l.award + ', ' + l.festival + (l.year ? ' ' + l.year : ''); });
+    if (awards.length) work.award = awards;
+    if (video) work.video = { '@id': url + '#video' };
+    ld('page', { '@context': 'https://schema.org', '@graph': [work, video && Object.assign({ '@id': url + '#video' }, video), crumbs([['Home', '/'], ['Watch', C.watchPath], [f.title, location.pathname]])].filter(Boolean) });
+  }
+  function seoLibrary(cat) {
+    var films = cat.films.filter(function (f) { return f.curated !== false && f.type !== 'clip' && f.page && f.page.indexOf('?') < 0; });
+    describe('Watch free documentaries about faith in Russian-occupied Ukraine: the feature A Faith Under Siege, the five-part Faith in War series, and short films from the front lines.');
+    ld('page', { '@context': 'https://schema.org', '@graph': [
+      { '@type': 'CollectionPage', name: 'Watch | A Faith Under Siege', url: absUrl(C.watchPath), isPartOf: { '@id': SITE + '/#website' },
+        mainEntity: { '@type': 'ItemList', itemListElement: films.map(function (f, i) { return { '@type': 'ListItem', position: i + 1, url: absUrl(f.page), name: f.title }; }) } },
+      { '@type': 'TVSeries', name: 'Faith in War', url: absUrl(C.watchPath + '?collection=fiw'), sameAs: 'https://www.faithinwar.com',
+        description: ((cat.collections.fiw || {}).description) || '', numberOfEpisodes: films.filter(function (f) { return f.collection === 'fiw'; }).length,
+        episode: films.filter(function (f) { return f.collection === 'fiw'; }).map(function (f) { return { '@type': 'TVEpisode', name: f.title, url: absUrl(f.page), episodeNumber: f.episode }; }) },
+      crumbs([['Home', '/'], ['Watch', C.watchPath]])
+    ] });
+  }
+
   /* ---------------- boot ---------------- */
   var COMPONENTS = { rail: rail, library: library, film: film, press: pressPage, 'press-headlines': pressHeadlines, 'press-logos': pressLogos, laurels: laurelsBlock, journal: journal, 'journal-filter': journalFilter, social: social };
   // A logo or key-art image that fails to load falls back to text / plain panel instead of a broken icon
@@ -655,6 +768,7 @@
     document.documentElement.classList.toggle('fus-on', isNewPage());
     // Blog list: only page one gets the big lead story
     if (document.body) document.body.classList.toggle('fus-blog-paged', /[?&]offset=/.test(location.search));
+    try { seoSite(); } catch (e) {}
     blogImages();
     faithLetter();
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {
