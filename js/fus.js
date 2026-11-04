@@ -596,11 +596,67 @@
       });
     }, 1200);
   }
+
+  /* Faith leaders letter (/faith-leaders): compact, readable letter type; small citations; long letter folds with "Read the full letter". */
+  var FL_CSS = [
+    '.fus .fus-fl-letter .sqs-block-html p, .fus .fus-fl-letter .sqs-block-html li { font-size: 16px !important; line-height: 1.65 !important; letter-spacing: 0 !important; margin: 0 0 0.85em !important; color: #2A2A2A !important; }',
+    '.fus .fus-fl-letter .sqs-block-html h1, .fus .fus-fl-letter .sqs-block-html h2 { font-size: clamp(26px, 3vw, 34px) !important; line-height: 1.12 !important; font-weight: 500 !important; letter-spacing: -0.02em !important; text-transform: none !important; margin: 0 0 0.7em !important; color: #141414 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html h3, .fus .fus-fl-letter .sqs-block-html h4 { font-size: 18px !important; line-height: 1.3 !important; font-weight: 600 !important; letter-spacing: 0 !important; text-transform: none !important; margin: 1.4em 0 0.4em !important; color: #141414 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html strong, .fus .fus-fl-letter .sqs-block-html b { font-weight: 600 !important; color: #141414 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html a { text-decoration: underline !important; text-decoration-color: #C41D24 !important; text-underline-offset: 2px; }',
+    '.fus .fus-fl-letter .sqs-block-html ol, .fus .fus-fl-letter .sqs-block-html ul { padding-left: 1.2em !important; margin: 0.4em 0 1em !important; }',
+    '.fus .fus-fl-letter .sqs-block-html ol > li { margin-bottom: 0.7em !important; padding: 12px 14px !important; background: #EBE8E2 !important; list-style-position: inside; }',
+    '.fus .fus-fl-letter .sqs-block-html li::marker { color: #C41D24; font-weight: 600; }',
+    '.fus .fus-fl-letter .sqs-block-html li p { margin: 0 0 0.4em !important; display: inline; }',
+    '.fus .fus-fl-letter sup { font-size: 0.62em !important; line-height: 0 !important; vertical-align: super; color: #C41D24 !important; font-weight: 600; }',
+    '.fus .fus-fl-letter sup a { text-decoration: none !important; color: #C41D24 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html .fus-fl-sign-off, .fus .fus-fl-letter .sqs-block-html .fus-fl-sign-off * { font-weight: 500 !important; color: #141414 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html .fus-fl-note-start { margin-top: 28px !important; padding-top: 16px !important; border-top: 1px solid #D6D2CA; }',
+    '.fus .fus-fl-letter .sqs-block-html .fus-fl-note, .fus .fus-fl-letter .sqs-block-html .fus-fl-note p, .fus .fus-fl-letter .sqs-block-html .fus-fl-note li, .fus .fus-fl-letter .sqs-block-html .fus-fl-note a, .fus .fus-fl-letter .sqs-block-html .fus-fl-note span { font-size: 11.5px !important; line-height: 1.5 !important; color: #77726B !important; margin-bottom: 0.35em !important; word-break: break-word; }',
+    '.fus .fus-fl-letter .sqs-block-html .fus-fl-note h2, .fus .fus-fl-letter .sqs-block-html .fus-fl-note h3, .fus .fus-fl-letter .sqs-block-html .fus-fl-note h4, .fus .fus-fl-letter .sqs-block-html h2.fus-fl-note, .fus .fus-fl-letter .sqs-block-html h3.fus-fl-note, .fus .fus-fl-letter .sqs-block-html h4.fus-fl-note { font-size: 11px !important; letter-spacing: 0.14em !important; text-transform: uppercase !important; color: #77726B !important; margin: 0 0 8px !important; font-weight: 600 !important; }',
+    '.fus .fus-fl-letter .sqs-block-html ol.fus-fl-note > li, .fus .fus-fl-letter .sqs-block-html .fus-fl-note ol > li { background: none !important; padding: 0 !important; margin-bottom: 0.35em !important; list-style-position: outside; }',
+    '.fus-fl-letter.is-folded { max-height: 760px; overflow: hidden; position: relative; }',
+    '.fus-fl-letter.is-folded::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 180px; background: linear-gradient(rgba(245,243,239,0), #F5F3EF 85%); pointer-events: none; }',
+    '.fus .fus-fl-more { align-self: flex-start; margin-top: 4px; background: #141414 !important; color: #fff !important; border-color: #141414 !important; }'
+  ].join('\n');
+  function faithLetter(tries) {
+    var letter = document.querySelector('[data-fl-letter]');
+    if (!letter) return;
+    if (!document.getElementById('fus-fl-style')) { var st = document.createElement('style'); st.id = 'fus-fl-style'; st.textContent = FL_CSS; document.head.appendChild(st); }
+    if (!letter.children.length) { if ((tries || 0) < 12) setTimeout(function () { faithLetter((tries || 0) + 1); }, 500); return; }
+    if (letter.__fl) return; letter.__fl = 1;
+    // Everything after the sign-off ("Signatures of Pastors + Leaders" / "In faith and solidarity") is citations.
+    var els = [].slice.call(letter.querySelectorAll('.sqs-html-content > *')), signed = -1, noteRe = /^\s*(end\s*notes?|notes|sources|citations|references)\b/i;
+    els.forEach(function (e, i) {
+      var t = e.textContent || '';
+      if (/in faith and solidarity|signatures? of pastors/i.test(t)) { e.classList.add('fus-fl-sign-off'); signed = i; }
+      if (signed < 0 && noteRe.test(t) && i > els.length / 2) signed = i - 1;
+    });
+    if (signed >= 0) {
+      var first = true;
+      els.slice(signed + 1).forEach(function (e) {
+        if (/signatures? of pastors|in faith and solidarity/i.test(e.textContent || '')) { e.classList.add('fus-fl-sign-off'); return; }
+        e.classList.add('fus-fl-note'); if (first) { e.classList.add('fus-fl-note-start'); first = false; }
+      });
+    }
+    // Fold a long letter so the page doesn't feel endless.
+    if (letter.scrollHeight > 1100) {
+      letter.classList.add('is-folded');
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'fus-btn fus-fl-more'; b.textContent = 'Read the full letter';
+      letter.parentNode.insertBefore(b, letter.nextSibling);
+      b.addEventListener('click', function () {
+        var open = letter.classList.toggle('is-folded') === false;
+        b.textContent = open ? 'Show less' : 'Read the full letter';
+        if (!open) letter.closest('.fus-fl-paper').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  }
   function boot(root) {
     document.documentElement.classList.toggle('fus-on', isNewPage());
     // Blog list: only page one gets the big lead story
     if (document.body) document.body.classList.toggle('fus-blog-paged', /[?&]offset=/.test(location.search));
     blogImages();
+    faithLetter();
     [].forEach.call((root || document).querySelectorAll('[data-fus]'), function (el) {
       if (el.__fus) return; el.__fus = 1;
       el.classList.add('fus');
