@@ -376,6 +376,15 @@
         '<div class="fus-film__ctas"><a class="fus-btn fus-btn--red" href="' + esc(screeningUrl(attr(el, 'screening-url', ''))) + '">Host a screening of this film</a>' +
         (f.guideUrl ? '<a class="fus-btn" href="' + esc(safeUrl(f.guideUrl)) + '">Discussion guide</a>' : '') + '</div></div>' +
         '<dl class="fus-dl">' + rows.map(function (x) { return '<dt>' + x[0] + '</dt><dd' + (x[2] ? ' class="fus-dl__stack"' : '') + '>' + x[1] + '</dd>'; }).join('') + '</dl></div>' +
+        ((f.quotes || []).filter(function (q) { return q.text && q.name; }).length ? '<div class="fus-section" style="padding-top:0"><div class="fus-wrap">' +
+          '<p class="fus-eyebrow" style="margin:0 0 24px">What leaders are saying</p>' +
+          f.quotes.filter(function (q) { return q.text && q.name; }).map(function (q) {
+            var paras = [].concat(q.text);
+            return '<figure class="fus-quote" style="max-width:880px;margin:0 0 40px;padding:36px 0 0;border-top:4px solid var(--fus-red)">' +
+              '<blockquote>' + paras.map(function (p, i) { return '<p style="font-size:20px;color:var(--fus-light-fg)' + (i ? ';margin-top:1em' : '') + '">“' + esc(p) + (i === paras.length - 1 ? '”' : '') + '</p>'; }).join('') + '</blockquote>' +
+              '<figcaption style="border-top-color:rgba(10,10,10,0.15)"><strong style="color:var(--fus-light-fg)">' + esc(q.name) + '</strong>' + (q.role ? '<span style="color:var(--fus-light-muted)">' + esc(q.role) + '</span>' : '') + '</figcaption></figure>';
+          }).join('') +
+          '<a class="fus-link" href="/testimonials">More testimonials</a></div></div>' : '') +
         (f.specials || []).filter(function (x) { return safeUrl(x.url); }).map(function (x) {
           return '<div class="fus-section" style="background:#0A0A0A;color:#F5F3EF"><div class="fus-wrap" style="display:flex;flex-wrap:wrap;gap:28px 56px;align-items:flex-end;justify-content:space-between">' +
             '<div style="display:flex;flex-direction:column;gap:14px;max-width:720px">' +
