@@ -480,7 +480,9 @@
       var items = (data.items || []).filter(function (p) { return safeUrl(p.url) && p.type !== 'Radio & podcast' && !/^(interview|colby barrett op-ed|steven on)/i.test(p.title); });
       var pinned = items.filter(function (p) { return p.featured; });
       var rest = items.filter(function (p) { return !p.featured; }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
-      el.innerHTML = '<div class="fus-press">' + pinned.concat(rest).slice(0, limit).map(pressItem).join('') + '</div>';
+      var first = {}; rest.forEach(function (p) { var k = norm(p.title), q = first[k]; if (!q || String(p.date) < String(q.date)) first[k] = p; }); // a syndicated reprint shows once, as the original (earliest) outlet
+      var seen = {}, list = pinned.concat(rest.filter(function (p) { return first[norm(p.title)] === p; })).filter(function (p) { var k = norm(p.title); if (seen[k]) return false; seen[k] = 1; return true; });
+      el.innerHTML = '<div class="fus-press">' + list.slice(0, limit).map(pressItem).join('') + '</div>';
     }).catch(function (e) { failed(el, e); });
   }
   /* Give every logo a similar visual weight: wide wordmarks get shorter, square marks taller (but not by area alone, which makes square marks look heavy) */

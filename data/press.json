@@ -14,13 +14,94 @@
  ],
  "items": [
   {
-   "date": "2026-10-23",
-   "outlet": "Military Times",
-   "title": "Colby Barrett op-ed",
+   "date": "2026-10-29",
+   "outlet": "Christian Post",
+   "title": "Colby Barrett: Why is faith growing in Ukraine, even as Russia destroys its churches?",
    "type": "Op-ed",
    "language": "English",
+   "url": "https://www.christianpost.com/voices/russia-is-attacking-ukraines-churches-why-is-faith-growing.html",
+   "note": "Colby op-ed"
+  },
+  {
+   "date": "2026-10-26",
+   "outlet": "Kentucky Today",
+   "title": "Ukraine church destroyed in Russian missile strike seeks to endure",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kentuckytoday.com/baptist_life/ukraine-church-destroyed-in-russian-missile-strike-seeks-to-endure/article_11541f88-a437-49d6-92bf-c963b76252c0.html",
+   "note": "Karl Interview reprint"
+  },
+  {
+   "date": "2026-10-25",
+   "outlet": "Kyiv Post",
+   "title": "ANALYSIS: ‘Trump Is Cooked’: Republicans Clash Over Ukraine as Midterms Loom",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kyivpost.com/analysis/88090",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-10-23",
+   "outlet": "Military Times",
+   "title": "Marine sniper veteran visits Ukraine to meet man behind 2,069-meter shot",
+   "type": "Article",
+   "language": "English",
    "url": "https://www.militarytimes.com/veterans/2026/10/23/marine-sniper-veteran-visits-ukraine-to-meet-man-behind-2069-meter-shot/",
-   "note": "Colby's op-ed"
+   "note": "Colby interview"
+  },
+  {
+   "date": "2026-10-23",
+   "outlet": "Baptist Press",
+   "title": "Ukraine church destroyed in Russian missile strike seeks to endure",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.baptistpress.com/resource-library/news/ukraine-church-destroyed-in-russian-missile-strike-seeks-to-endure/",
+   "note": "Karl interview"
+  },
+  {
+   "date": "2026-10-23",
+   "outlet": "Relevant Radio",
+   "title": "Colby Barrett on The Drew Mariani Show",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://relevantradio.com/2026/10/high-energy-costs-and-russias-war-on-religion/",
+   "note": "Colby Interview"
+  },
+  {
+   "date": "2026-10-23",
+   "outlet": "Army Times",
+   "title": "Marine sniper veteran visits Ukraine to meet man behind 2,069-meter shot",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.armytimes.com/news/your-army/2026/10/23/marine-sniper-veteran-visits-ukraine-to-meet-man-behind-2069-meter-shot/",
+   "note": "Colby Interview"
+  },
+  {
+   "date": "2026-10-22",
+   "outlet": "Tulsa World",
+   "title": "Karl Ahlgren: Russia keeps bombing churches in Ukraine, but Congress can act",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://tulsaworld.com/opinion/column/article_d700ecde-a7db-47de-98b4-2ed4239452c3.html",
+   "note": "Colby's op-ed for Karl"
+  },
+  {
+   "date": "2026-10-22",
+   "outlet": "Peace & Power Ukraine",
+   "title": "Russia's Stolen Children, Trump's Putin Deal, & Ukraine's Future w/Sarah Makin",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://podcasts.apple.com/us/podcast/ep-81-russias-stolen-children-trumps-putin-deal-ukraines/id1798878241?i=1000797619541",
+   "note": "Sarah Makin Interview"
+  },
+  {
+   "date": "2026-10-13",
+   "outlet": "Newsmax",
+   "title": "Makin: A Year Later, 31 Children Are Not Enough Mr. Putin",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.newsmax.com/politics/children-melania-putin/2026/10/13/id/1272642/",
+   "note": "Sarah Makin Op-Ed"
   },
   {
    "date": "2026-10-12",
@@ -32,6 +113,15 @@
    "note": "Steven interview"
   },
   {
+   "date": "2026-10-11",
+   "outlet": "Kyiv Post",
+   "title": "ANALYSIS: Can Trump Sidestep Russia Sanctions as the Midterms Loom?",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kyivpost.com/analysis/86146",
+   "note": "Steven Interview"
+  },
+  {
    "date": "2026-10-09",
    "outlet": "The Marc Cox Morning Show",
    "title": "Colby Barrett: Ukrainian child abduction documentary",
@@ -39,6 +129,24 @@
    "language": "English",
    "url": "https://podcasts.apple.com/no/podcast/colby-barrett-ukrainian-child-abduction-documentary/id1213933085?i=1000793882357",
    "note": "The Stolen Children"
+  },
+  {
+   "date": "2026-10-08",
+   "outlet": "Fox St. Louis",
+   "title": "Colby Barrett on The Marc Cox Show",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=vi-a8u3P6cc",
+   "note": "Colby Interview"
+  },
+  {
+   "date": "2026-10-07",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Want to Stop Russia’s Jet-Powered Drone Attacks? Call the Belgian Embassy",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/86343",
+   "note": "Steven Op-Ed"
   },
   {
    "date": "2026-10-01",
@@ -52,7 +160,7 @@
   {
    "date": "2026-09-30",
    "outlet": "Washington Times",
-   "title": "Steven Op-Ed - Time for Trump to confront Putin",
+   "title": "Time for Trump to confront Putin",
    "type": "Op-ed",
    "language": "English",
    "url": "https://www.washingtontimes.com/news/2026/sep/30/time-trump-confront-putin/",
@@ -68,6 +176,15 @@
    "note": "Safe Ground; Colby quoted"
   },
   {
+   "date": "2026-09-21",
+   "outlet": "Christian Daily International",
+   "title": "The bombs are making Ukrainians stronger",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christiandaily.com/opinion/the-bombs-are-making-ukrainians-stronger",
+   "note": "Colby Op-Ed"
+  },
+  {
    "date": "2026-09-18",
    "outlet": "The Lars Larson Show",
    "title": "Colby Barrett: Will new Russia sanctions give Trump more leverage over Putin?",
@@ -75,6 +192,15 @@
    "language": "English",
    "url": "https://thelarslarsonshow.buzzsprout.com/2602482/episodes/19823177-colby-barrett-will-new-russia-sanctions-give-trump-more-leverage-over-putin",
    "note": "AFUS/Faith in War at 3:30"
+  },
+  {
+   "date": "2026-09-04",
+   "outlet": "United24 Media",
+   "title": "Russia Claims to Defend Christian Values. Here's What Its Army Is Doing to Christians in Ukraine",
+   "type": "Article",
+   "language": "English",
+   "url": "https://united24media.com/war-in-ukraine/russia-claims-to-defend-christian-values-heres-what-its-army-is-doing-to-christians-in-ukraine-22195",
+   "note": "Steven Interview"
   },
   {
    "date": "2026-09-03",
@@ -104,6 +230,15 @@
    "note": "Plugs Faith in War; headline to confirm"
   },
   {
+   "date": "2026-08-23",
+   "outlet": "United24 Media",
+   "title": "At Ukraine’s National Prayer Breakfast, Faith Meets the Reality of War",
+   "type": "Article",
+   "language": "English",
+   "url": "https://united24media.com/life-in-ukraine/at-ukraines-national-prayer-breakfast-faith-meets-the-reality-of-war-21914",
+   "note": "Steven Interview"
+  },
+  {
    "date": "2026-08-21",
    "outlet": "Intelligence Online",
    "title": "The influence network improving Kyiv's standing in Washington",
@@ -113,7 +248,7 @@
    "note": "Mentions Steven Moore"
   },
   {
-   "date": "2026-08-18",
+   "date": "2026-08-14",
    "outlet": "The Baptist Paper",
    "title": "New documentary series brings Ukraine war stories to global audience",
    "type": "Article",
@@ -127,7 +262,7 @@
    "title": "Steven on Scott Hennen Show",
    "type": "Radio & podcast",
    "language": "English",
-   "url": "https://podimo.com/dk/shows/whats-on-your-mind-10/episode/54749854-b825-590f-b9f8-87ea46e9036b",
+   "url": "https://www.am1100theflag.com/episode/boomer-meets-gen-z-from-screen-time-to-space-to-camp-8-13-26/",
    "note": "Steven Interiew"
   },
   {
@@ -138,6 +273,15 @@
    "language": "English",
    "url": "https://www.christiandaily.com/news/new-documentary-series-brings-ukraine-war-s-faith-stories-to-global-audience",
    "note": "Faith in War"
+  },
+  {
+   "date": "2026-08-10",
+   "outlet": "Kyiv Post",
+   "title": "ANALYSIS: Inside the Effort to Unseat Pro-Russia Congresswoman Anna Paulina Luna",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kyivpost.com/analysis/82077",
+   "note": "Steven Interview"
   },
   {
    "date": "2026-08-07",
@@ -156,6 +300,15 @@
    "language": "English",
    "url": "https://slate.com/news-and-politics/2026/08/ukraine-war-laura-loomer-twitter-trump-russia-drones.html",
    "note": "Mentioned Steven Moore"
+  },
+  {
+   "date": "2026-08-06",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Are Russia Sanctions in US Senate Going Sideways?",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/81834",
+   "note": "Steven Op-Ed"
   },
   {
    "date": "2026-08-04",
@@ -183,6 +336,15 @@
    "language": "English",
    "url": "https://open.spotify.com/episode/0fCORhuO8giENyFCR6lpSv",
    "note": "Steven Interiew"
+  },
+  {
+   "date": "2026-08-03",
+   "outlet": "Kyiv Post",
+   "title": "OPINION: Putin’s Continuing War on Ukraine’s Christians",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.kyivpost.com/opinion/81618",
+   "note": "Steven Op-Ed"
   },
   {
    "date": "2026-08-01",
@@ -218,6 +380,15 @@
    "type": "Article",
    "language": "English",
    "url": "https://www.thetimes.com/us/american-politics/article/laura-loomer-ukraine-russia-zelensky-maga-08zmzm87c",
+   "note": "Steven Interview"
+  },
+  {
+   "date": "2026-07-25",
+   "outlet": "Kyiv Post",
+   "title": "Inside Ukraine’s MAGA Breakthrough",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.kyivpost.com/post/81043",
    "note": "Steven Interview"
   },
   {
@@ -536,6 +707,15 @@
    "note": ""
   },
   {
+   "date": "2026-04-26",
+   "outlet": "ETWN News",
+   "title": "Ukraine monastery hit in Russian missile strike, ‘most historic church’ targeted so far",
+   "type": "Article",
+   "language": "English",
+   "url": "https://www.ewtnnews.com/world/europe/ukraine-monastery-hit-in-russian-missile-strike-most-historic-church-targeted-so-far",
+   "note": "None"
+  },
+  {
    "date": "2026-04-24",
    "outlet": "Daily Caller",
    "title": "New Bill Brings Light To All But One Church Under Russian Persecution",
@@ -565,7 +745,7 @@
   {
    "date": "2026-04-22",
    "outlet": "The Raid Revolution",
-   "title": "[title needed]",
+   "title": "Colby Barrett on Ukraine",
    "type": "TV & video",
    "language": "English",
    "url": "https://www.facebook.com/watch/?v=1551261163342606",
@@ -678,15 +858,6 @@
    "language": "English",
    "url": "https://igospelmagazine.com/2026/ukraine-un-verset-biblique-sur-une-eglise-baptiste-recemment-bombardee-signe-de-resilience/",
    "note": ""
-  },
-  {
-   "date": "2026-03-26",
-   "outlet": "ETWN News",
-   "title": "Ukraine monastery hit in Russian missile strike, ‘most historic church’ targeted so far",
-   "type": "Article",
-   "language": "English",
-   "url": "https://www.ewtnnews.com/world/europe/ukraine-monastery-hit-in-russian-missile-strike-most-historic-church-targeted-so-far",
-   "note": "None"
   },
   {
    "date": "2026-03-10",
@@ -2082,24 +2253,6 @@
    "language": "English",
    "url": "https://mbcpathway.com/2025/10/10/pastor-continues-to-serve-in-ukraine-after-losing-church-second-home-in-russias-war/",
    "note": "FG - Baptist Press Reprint"
-  },
-  {
-   "date": "",
-   "outlet": "Baptist Press",
-   "title": "Colby Barrett op-ed",
-   "type": "Op-ed",
-   "language": "English",
-   "url": "https://www.baptistpress.com/resource-library/news/ukraine-church-destroyed-in-russian-missile-strike-seeks-to-endure/",
-   "note": "Colby's op-ed for Karl"
-  },
-  {
-   "date": "",
-   "outlet": "Tulsa World",
-   "title": "Colby Barrett op-ed",
-   "type": "Op-ed",
-   "language": "English",
-   "url": "https://tulsaworld.com/opinion/column/article_d700ecde-a7db-47de-98b4-2ed4239452c3.html",
-   "note": "Colby's op-ed for Karl"
   }
  ],
  "featuredLogos": [
