@@ -343,6 +343,35 @@
    ]
   },
   {
+   "slug": "viktor",
+   "title": "Viktor",
+   "youtubeId": "GLSXq2Rv2y8",
+   "match": "VIKTOR",
+   "type": "short",
+   "topics": [
+    "clergy"
+   ],
+   "logline": "A Ukrainian Christian refuses to renounce the Gospel under Russian occupation.",
+   "synopsis": [
+    "When Russian forces targeted Ukrainian Christians, churches were destroyed, families were torn apart, and pastors faced persecution for their faith. But Viktor refused to renounce the Gospel.",
+    "Viktor tells the true story of a Ukrainian Christian whose faith is tested amid the brutality of Russia's invasion. Through his personal testimony, the film exposes a largely overlooked dimension of the war: the systematic persecution of Christians, the destruction of churches, and the targeting of religious leaders who refuse to surrender their beliefs."
+   ],
+   "year": "2026",
+   "runtime": "6 min",
+   "published": "2026-11-19",
+   "page": "/watch/film?v=GLSXq2Rv2y8",
+   "order": 87,
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=GLSXq2Rv2y8"
+    }
+   ],
+   "premiere": "2026-11-19",
+   "premiereLabel": "Nov 19",
+   "premiereImage": "https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/img/viktor-premiere.jpg"
+  },
+  {
    "slug": "nadiia",
    "title": "Nadiia",
    "youtubeId": "Gn3w3wwPWg8",
