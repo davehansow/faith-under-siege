@@ -372,6 +372,35 @@
    "premiereImage": "https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/img/viktor-premiere.jpg"
   },
   {
+   "slug": "serhii",
+   "title": "Serhii",
+   "youtubeId": "ULCSUHPHqDg",
+   "match": "SERHII",
+   "type": "short",
+   "topics": [
+    "front"
+   ],
+   "logline": "A Ukrainian father loses his wife and infant son to a drone strike and chooses faith over hatred.",
+   "synopsis": [
+    "When an Iranian-made drone struck his home, Ukrainian Christian Serhii lost his wife and infant son. Faced with unimaginable grief, he made a remarkable choice: faith instead of hatred.",
+    "Serhii tells the true story of a Ukrainian father whose family was torn apart by Russia's war. Through his personal testimony, the film reveals the devastating human cost of Russia's use of Iranian-made drones against Ukrainian civilians and the resilience of those left behind."
+   ],
+   "year": "2026",
+   "runtime": "6 min",
+   "published": "2026-11-25",
+   "page": "/watch/film?v=ULCSUHPHqDg",
+   "order": 86.5,
+   "watchOn": [
+    {
+     "label": "YouTube, free",
+     "url": "https://www.youtube.com/watch?v=ULCSUHPHqDg"
+    }
+   ],
+   "premiere": "2026-11-25",
+   "premiereLabel": "Nov 25",
+   "premiereImage": "https://cdn.jsdelivr.net/gh/davehansow/faith-under-siege@main/img/serhii-premiere.jpg"
+  },
+  {
    "slug": "nadiia",
    "title": "Nadiia",
    "youtubeId": "Gn3w3wwPWg8",
