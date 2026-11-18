@@ -13,7 +13,7 @@ Custom code needs a Squarespace plan that allows it: **Core or higher** (the old
 | `snippets/footer-injection.html` | Loads the site script | **Code Injection › Footer** |
 | `js/fus.js` | The site script (no dependencies) | Hosted file, or pasted into the footer injection |
 | `data/films.json` | Curated film catalog: titles, loglines, topics, where to watch | Hosted file |
-| `data/press.json` | 249 press items with links, typed and dated | Hosted file |
+| `data/press.json` | 254 press items with links, typed and dated | Hosted file |
 | `data/laurels.json` | 25 festival honors | Hosted file |
 | `data/youtube.json` | Snapshot of every channel video, refreshed daily | Hosted file (auto) |
 | `scripts/refresh-youtube.mjs`, `.github/workflows/` | Daily YouTube refresh | GitHub only |
