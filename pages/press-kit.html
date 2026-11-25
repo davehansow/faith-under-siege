@@ -1,0 +1,322 @@
+<!-- PRESS KIT (/press-kit) · paste this whole file into ONE Code Block, in ONE full-width section at the top of the page,
+     then delete the page's old sections. Download links point at files already in your Squarespace file library (/s/...).
+     To change a download: edit its <a href>. To change a person: edit their <li> in "Cast & crew". -->
+<style>
+.fus-pk-hero .fus-hero__media::after { background: linear-gradient(to top, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.6) 45%, rgba(10,10,10,0.3) 100%); }
+.fus-pk-jump { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+.fus .fus-pk-jump a { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-muted); border-bottom: 1px solid transparent; }
+.fus .fus-pk-jump a:hover { color: var(--fus-fg) !important; border-bottom-color: var(--fus-red-text); }
+.fus-pk-bar { background: var(--fus-bg); border-bottom: 1px solid var(--fus-line); }
+.fus-pk-bar .fus-wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding-top: 16px; padding-bottom: 16px; }
+.fus-pk-bar strong { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-fg); }
+.fus-pk-anchor { scroll-margin-top: 90px; }
+.fus-pk-overview { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; align-items: start; }
+.fus-pk-logline { margin: 18px 0 0; font-size: clamp(22px, 2.3vw, 30px); line-height: 1.32; font-weight: 500; letter-spacing: -0.015em; }
+.fus-pk-copy h3 { margin: 44px 0 12px; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-red-on-light); }
+.fus-pk-copy p { margin: 0 0 16px; font-size: 17px; line-height: 1.65; color: #3A3733; max-width: 720px; }
+.fus-pk-facts { position: sticky; top: 90px; }
+.fus-pk-facts .fus-eyebrow { margin-bottom: 14px; }
+.fus-pk-facts .fus-dl { grid-template-columns: 132px minmax(0, 1fr); }
+.fus-pk-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.fus-pk-video { position: relative; padding-top: 56.25%; background: #000; border-bottom: 3px solid var(--fus-red); }
+.fus-pk-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.fus-pk-cap { margin: 14px 0 0; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-muted); }
+.fus-pk-screener { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; margin-top: 48px; padding: 28px 0; border-top: 2px solid var(--fus-red); border-bottom: 1px solid var(--fus-line-strong); }
+.fus-pk-screener h3 { margin: 0 0 6px; font-size: 24px; font-weight: 500; letter-spacing: -0.015em; }
+.fus-pk-screener p { margin: 0; font-size: 16px; color: var(--fus-soft); max-width: 620px; }
+.fus-pk-bonus { margin-top: 72px; }
+.fus-pk-bonus .fus-grid { gap: 44px 24px; }
+.fus-pk-bonus .fus-card__thumb--plain { display: flex; align-items: flex-end; padding: 16px; background: #1A1A1A; }
+.fus-pk-bonus .fus-card__thumb--plain span { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-muted); }
+.fus-pk-dl { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--fus-light-fg); }
+.fus-pk-dl li { display: grid; grid-template-columns: 56px minmax(0, 1fr) auto; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--fus-light-line); }
+.fus-pk-dl__n { font-size: 13px; font-weight: 500; letter-spacing: 0.12em; color: var(--fus-red-on-light); }
+.fus-pk-dl h3 { margin: 0 0 4px; font-size: 20px; font-weight: 500; letter-spacing: -0.01em; }
+.fus-pk-dl p { margin: 0; font-size: 14px; color: var(--fus-light-muted); }
+.fus-pk-dl .fus-btn { white-space: nowrap; }
+.fus-pk-mat { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; align-items: start; }
+.fus-pk-mat__art { display: flex; flex-direction: column; gap: 20px; }
+.fus-pk-mat__art img { display: block; width: 100%; height: auto; background: #0A0A0A; }
+.fus-pk-contact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: start; }
+.fus-pk-person { border-top: 2px solid var(--fus-red); padding-top: 22px; display: flex; flex-direction: column; gap: 8px; }
+.fus-pk-person__role { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-red-text); margin: 0; }
+.fus-pk-person h3 { margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.02em; }
+.fus .fus-pk-person a.fus-pk-mail { font-size: 18px; color: var(--fus-fg); text-decoration: underline; text-decoration-color: var(--fus-red); text-underline-offset: 4px; word-break: break-all; }
+.fus-pk-social { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fus-line-strong); }
+.fus-pk-social li { border-bottom: 1px solid var(--fus-line-strong); }
+.fus .fus-pk-social a { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 18px 0; color: var(--fus-fg); }
+.fus-pk-social small { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-muted); }
+.fus-pk-social span { font-size: 17px; }
+.fus .fus-pk-social a:hover span { color: var(--fus-red-text); }
+.fus-pk-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.fus-pk-tags span { font-size: 14px; padding: 9px 14px; box-shadow: inset 0 0 0 1px var(--fus-line-strong); color: var(--fus-soft); }
+.fus-pk-cast .fus-team { margin-top: 8px; }
+.fus-pk-cast .fus-team { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 56px 28px; }
+.fus .fus-pk-cast .fus-team__role { color: var(--fus-red-on-light); }
+.fus .fus-pk-cast .fus-team__name { font-size: 21px; color: var(--fus-light-fg); }
+.fus .fus-pk-cast .fus-team__bio { color: #3A3733; }
+@media (max-width: 1100px) { .fus-pk-cast .fus-team { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 800px) { .fus-pk-cast .fus-team { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 20px; } }
+@media (max-width: 520px) { .fus-pk-cast .fus-team { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .fus-pk-overview, .fus-pk-mat, .fus-pk-contact { grid-template-columns: 1fr; gap: 40px; }
+  .fus-pk-facts { position: static; }
+  .fus-pk-videos { grid-template-columns: 1fr; }
+  .fus-pk-mat__art { flex-direction: row; }
+  .fus-pk-mat__art img { width: calc(50% - 10px); }
+}
+@media (max-width: 600px) {
+  .fus-pk-bar { position: static; }
+  .fus-pk-dl li { grid-template-columns: 1fr; gap: 10px; }
+  .fus-pk-dl__n { display: none; }
+  .fus-pk-dl .fus-btn { justify-self: start; }
+  .fus-pk-social { grid-template-columns: 1fr; }
+}
+</style>
+
+<!-- 1. Hero -->
+<section class="fus fus-hero fus-pk-hero" id="fus-pk-top">
+  <div class="fus-hero__media"><img src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/1737476421214-K3OGX6QP6P1UOQK188MT/Faith+Under+Siege+-+trailer+Thumb.jpg?format=2500w" alt="Still from A Faith Under Siege"></div>
+  <div class="fus-wrap fus-hero__body">
+    <p class="fus-eyebrow">Digital press kit · For media &amp; programmers</p>
+    <h1 class="fus-h1">A Faith Under Siege press kit</h1>
+    <p class="fus-lede">Everything you need to cover the film: trailer, synopsis, cast and crew bios, high-resolution assets, stills and screener access. Please send press inquiries to the contact below.</p>
+    <div class="fus-hero__ctas">
+      <a class="fus-btn fus-btn--red" href="#materials">Download assets</a>
+      <a class="fus-btn" href="#media">Watch the trailer</a>
+      <a class="fus-btn" href="#contact">Press contact</a>
+    </div>
+    <div class="fus-stream"><strong>Documentary · 60 min</strong><span>4K</span><span>English &amp; Ukrainian</span><span>USA / Ukraine</span><span>Premiered May 2025 on CBN</span></div>
+  </div>
+</section>
+
+<!-- Jump bar -->
+<nav class="fus fus-pk-bar" aria-label="Press kit sections"><div class="fus-wrap">
+  <strong>Press kit</strong>
+  <ul class="fus-pk-jump">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#media">Trailer &amp; screener</a></li>
+    <li><a href="#bonus">Short films</a></li>
+    <li><a href="#materials">Downloads</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#cast">Cast &amp; crew</a></li>
+  </ul>
+</div></nav>
+
+<!-- 2. Overview (light) -->
+<section class="fus fus-section fus-light fus-pk-anchor" id="overview"><div class="fus-wrap">
+  <div class="fus-pk-overview">
+    <div class="fus-pk-copy">
+      <p class="fus-eyebrow">Film overview · Logline</p>
+      <p class="fus-pk-logline">In a region once celebrated as the post-Soviet “Bible Belt,” a rapidly growing community of Evangelical and Protestant believers becomes a prime target under Russia’s expanding occupation, enduring seized churches, tortured pastors and abducted children as they struggle to keep their faith alive in secret.</p>
+
+      <h3>Short synopsis</h3>
+      <p><em>A Faith Under Siege</em> dives into the harrowing reality facing Ukraine’s Christian communities under Russian occupation. As Russia seeks to absorb Ukraine’s population to restore its former empire status, Evangelical and Protestant believers, viewed as apostates by the Kremlin-aligned Russian Orthodox Church, are singled out for persecution. Churches are destroyed or seized, pastors tortured or killed, and families torn apart through abductions, all in an effort to erase dissenting faiths. Yet even amid these horrors (extrajudicial killings, secret worship services, and tens of thousands of children taken to militarized Russian “summer camps”) a steadfast unity emerges. Christians across denominations stand shoulder to shoulder, aided by international allies who refuse to let their plight go unseen.</p>
+
+      <h3>Full synopsis</h3>
+      <p><em>A Faith Under Siege</em> is a haunting and urgent film that chronicles the spiritual and human cost of Russia’s war against Ukraine, focusing on the evangelical community’s resilience and the heartbreaking crisis of abducted children. Before the end of the Cold War, Ukraine was known as the “Bible Belt” of the Soviet Union, and the home of the largest evangelical Baptist community in Europe. As missiles fall and cities are reduced to rubble, Ukraine’s vibrant evangelical churches have emerged as frontline responders, offering aid, shelter and hope amid chaos. Yet they, too, are under threat.</p>
+      <p>Through gripping personal testimonies and on-the-ground reporting, the film exposes how Russia’s invasion has not only targeted territory but also sought to extinguish Ukraine’s religious and cultural identity. Evangelical pastors have been arrested, worship banned in occupied territories, and church buildings seized or destroyed. In tandem, the Kremlin has orchestrated the mass abduction of over 20,000 Ukrainian children, many from Christian families, removing them to Russia in a campaign critics say amounts to cultural genocide. Featuring survivors, church leaders and international experts, <em>A Faith Under Siege</em> reveals a lesser-told story of the war: how faith communities are resisting both spiritual erasure and the systematic dismantling of family and future. This is a story of courage, conscience, and the struggle to hold on to faith when even the children are being taken.</p>
+    </div>
+    <aside class="fus-pk-facts">
+      <p class="fus-eyebrow">Quick facts</p>
+      <dl class="fus-dl">
+        <dt>Runtime</dt><dd>60 minutes</dd>
+        <dt>Bonus films</dt><dd>6+</dd>
+        <dt>Genre</dt><dd>Documentary, Faith, Human Rights</dd>
+        <dt>Aspect ratio</dt><dd>16:9</dd>
+        <dt>Languages</dt><dd>English, Ukrainian (English subtitles)</dd>
+        <dt>Format</dt><dd class="fus-dl__stack"><span>Shot in 4K</span><span>1080p or 4K deliverables</span></dd>
+        <dt>Country</dt><dd>USA / Ukraine</dd>
+        <dt>Premiere</dt><dd>May 10–12, 2025 (CBN)</dd>
+        <dt>Director</dt><dd>Yaroslav Lodygin</dd>
+      </dl>
+      <p style="margin:28px 0 0"><a class="fus-btn" href="/watch/a-faith-under-siege">Film page</a></p>
+    </aside>
+  </div>
+</div></section>
+
+<!-- 3. Trailer & screener -->
+<section class="fus fus-section fus-pk-anchor" id="media"><div class="fus-wrap">
+  <div class="fus-head"><div><p class="fus-eyebrow">Media</p><h2 class="fus-h2">Trailer and teaser</h2></div></div>
+  <div class="fus-pk-videos">
+    <div>
+      <div class="fus-pk-video"><iframe src="https://player.vimeo.com/video/1080594712?h=b84dc021e4&amp;badge=0&amp;autopause=0&amp;dnt=1" title="A Faith Under Siege, full trailer" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" loading="lazy" allowfullscreen></iframe></div>
+      <p class="fus-pk-cap">Full trailer</p>
+    </div>
+    <div>
+      <div class="fus-pk-video"><iframe src="https://player.vimeo.com/video/1080594941?h=8c6afa8d54&amp;badge=0&amp;autopause=0&amp;dnt=1" title="A Faith Under Siege, 30-second teaser" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" loading="lazy" allowfullscreen></iframe></div>
+      <p class="fus-pk-cap">30-second teaser</p>
+    </div>
+  </div>
+  <div class="fus-pk-screener">
+    <div><h3>Private screener</h3><p>The full feature and bonus films for press and programming review.</p></div>
+    <a class="fus-btn fus-btn--red" href="https://vimeo.com/showcase/11690687" target="_blank" rel="noopener">Open the screener</a>
+  </div>
+
+  <!-- Bonus features -->
+  <div class="fus-pk-bonus fus-pk-anchor" id="bonus">
+    <div class="fus-head"><div><p class="fus-eyebrow">Bonus features</p><h2 class="fus-h2">Short films</h2></div></div>
+    <div class="fus-grid">
+      <a class="fus-card" href="https://www.youtube.com/watch?v=GLSXq2Rv2y8" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/GLSXq2Rv2y8/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__time">6:03</span></div>
+        <p class="fus-card__meta">Russia tortures Christians</p>
+        <h3 class="fus-card__title">Viktor</h3>
+        <p class="fus-card__line">Captured while helping civilians, Viktor was brutally tortured under the watch of an Orthodox priest. His wife’s relentless prayers, and God’s providence, led to a miraculous escape.</p>
+      </a>
+      <a class="fus-card" href="https://www.youtube.com/watch?v=Gn3w3wwPWg8" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/Gn3w3wwPWg8/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__time">6:36</span></div>
+        <p class="fus-card__meta">Russia is abducting children</p>
+        <h3 class="fus-card__title">Nadiia</h3>
+        <p class="fus-card__line">A mother’s faith helps her defy Russian occupiers and rescue her children, but thousands of others remain behind.</p>
+      </a>
+      <a class="fus-card" href="https://www.youtube.com/watch?v=Ykw40K3Mmxs" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/Ykw40K3Mmxs/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__badge">Award winner</span><span class="fus-card__time">11:33</span></div>
+        <p class="fus-card__meta">Russia is hunting Christians</p>
+        <h3 class="fus-card__title">Pastor of Kherson</h3>
+        <p class="fus-card__line">A pastor’s growing church in Kherson became a beacon of hope during the occupation, until drone strikes began targeting his family.</p>
+      </a>
+      <a class="fus-card" href="https://www.youtube.com/watch?v=ULCSUHPHqDg" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/ULCSUHPHqDg/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__time">5:36</span></div>
+        <p class="fus-card__meta">Iranian drones, Christian families</p>
+        <h3 class="fus-card__title">Serhii</h3>
+        <p class="fus-card__line">When an Iranian drone killed his wife and infant son, Serhii turned to his faith instead of hatred. Now he speaks for those Russia tried to silence.</p>
+      </a>
+      <a class="fus-card" href="https://www.youtube.com/watch?v=g9vKyw6ADFU" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/g9vKyw6ADFU/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__time">10:07</span></div>
+        <p class="fus-card__meta">Meet the filmmakers</p>
+        <h3 class="fus-card__title">Behind the Scenes</h3>
+        <p class="fus-card__line">Meet the filmmakers who traveled across Ukraine to capture untold stories of courage, grief and unshakable faith.</p>
+      </a>
+      <a class="fus-card" href="https://www.youtube.com/watch?v=FHjUc-035uI" target="_blank" rel="noopener">
+        <div class="fus-card__thumb"><img src="https://i.ytimg.com/vi/FHjUc-035uI/hqdefault.jpg" alt="" loading="lazy"><span class="fus-card__time">9:09</span></div>
+        <p class="fus-card__meta">The latest</p>
+        <h3 class="fus-card__title">Update From the Front</h3>
+        <p class="fus-card__line">The cast and crew come together over FaceTime for a real-time snapshot of what’s happening on the ground in Ukraine.</p>
+      </a>
+      <a class="fus-card" href="https://vimeo.com/showcase/11690687" target="_blank" rel="noopener">
+        <div class="fus-card__thumb fus-card__thumb--plain"><span>In the screener</span></div>
+        <p class="fus-card__meta">A father’s grief, a nation’s plea</p>
+        <h3 class="fus-card__title">Don’t Forget Me, I Pray</h3>
+        <p class="fus-card__line">The story of one Ukrainian family killed in a Russian missile strike, and the father who now pleads for the world to let Ukraine defend itself.</p>
+      </a>
+      <a class="fus-card" href="https://vimeo.com/showcase/11690687" target="_blank" rel="noopener">
+        <div class="fus-card__thumb fus-card__thumb--plain"><span>In the screener</span></div>
+        <p class="fus-card__meta">Bonus feature</p>
+        <h3 class="fus-card__title">Faith in Ukraine</h3>
+        <p class="fus-card__line">How faith not only survives but strengthens in the midst of war, as Ukrainian believers hold fast to hope, prayer and the promise of peace.</p>
+      </a>
+    </div>
+  </div>
+</div></section>
+
+<!-- 4. Press materials (light) -->
+<section class="fus fus-section fus-light fus-pk-anchor" id="materials"><div class="fus-wrap">
+  <div class="fus-head"><div><p class="fus-eyebrow">Press materials</p><h2 class="fus-h2">Downloads</h2></div></div>
+  <div class="fus-pk-mat">
+    <div class="fus-pk-mat__art">
+      <img src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/8f985031-ed49-467b-9c69-f10e4ab454e2/AFUS_White.png?format=1000w" alt="A Faith Under Siege title treatment" loading="lazy">
+      <img src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/273a3808-d89e-4538-86b1-43096f5a1af3/Faith+Under+Siege+-+Pitch+Deck_Page.jpg?format=1000w" alt="Page from the A Faith Under Siege feature film deck" loading="lazy">
+    </div>
+    <ol class="fus-pk-dl">
+      <li><span class="fus-pk-dl__n">01</span><div><h3>Official press release</h3><p>Word document</p></div><a class="fus-btn fus-btn--red" href="/s/AFUS-Press-Release-CBN-Launch_429.docx">Download</a></li>
+      <li><span class="fus-pk-dl__n">02</span><div><h3>Feature film deck</h3><p>PDF</p></div><a class="fus-btn" href="/s/Faith-Under-Seige-Documentary-Digital.pdf" target="_blank" rel="noopener">Download</a></li>
+      <li><span class="fus-pk-dl__n">03</span><div><h3>Official poster</h3><p>JPG</p></div><a class="fus-btn" href="/s/FaithUnderSiegedigital.jpg" target="_blank" rel="noopener">Download</a></li>
+      <li><span class="fus-pk-dl__n">04</span><div><h3>Logo and title treatment</h3><p>PNG</p></div><a class="fus-btn" href="/s/AFaithUnderSeigeLogo.png" target="_blank" rel="noopener">Download</a></li>
+      <li><span class="fus-pk-dl__n">05</span><div><h3>Behind-the-scenes stills</h3><p>ZIP of images</p></div><a class="fus-btn" href="/s/BTS-Stills-FaithUnderSiege.zip">Download</a></li>
+      <li><span class="fus-pk-dl__n">06</span><div><h3>Social media assets</h3><p>ZIP</p></div><a class="fus-btn" href="/s/Social-Media-Faith-Under-Siege.zip">Download</a></li>
+      <li><span class="fus-pk-dl__n">07</span><div><h3>Christianity in Ukraine stats</h3><p>PDF</p></div><a class="fus-btn" href="/s/Christianity-in-Ukraine.pdf" target="_blank" rel="noopener">Open</a></li>
+      <li><span class="fus-pk-dl__n">08</span><div><h3>Call to action information</h3><p>How audiences can help</p></div><a class="fus-btn" href="/how-to-help-press-kit-1">Open</a></li>
+    </ol>
+  </div>
+</div></section>
+
+<!-- 5. Contact & social -->
+<section class="fus fus-section fus-pk-anchor" id="contact"><div class="fus-wrap">
+  <div class="fus-head"><div><p class="fus-eyebrow">Press contact</p><h2 class="fus-h2">Get in touch</h2></div><a class="fus-btn" href="/press">See press coverage</a></div>
+  <div class="fus-pk-contact">
+    <div class="fus-pk-person">
+      <p class="fus-pk-person__role">PR + media contact</p>
+      <h3>Omri Rahmil</h3>
+      <a class="fus-pk-mail" href="mailto:omri.rahmil@forwardglobal.com?subject=Faith%20Under%20Siege%20-%20Press%20Inquiry">omri.rahmil@forwardglobal.com</a>
+      <p style="margin:20px 0 0"><a class="fus-btn fus-btn--red" href="mailto:omri.rahmil@forwardglobal.com?subject=Faith%20Under%20Siege%20-%20Press%20Inquiry">Email a press inquiry</a></p>
+    </div>
+    <div>
+      <ul class="fus-pk-social">
+        <li><a href="https://www.instagram.com/faithundersiege" target="_blank" rel="noopener"><small>Instagram</small><span>@faithundersiege</span></a></li>
+        <li><a href="https://www.facebook.com/afaithundersiege" target="_blank" rel="noopener"><small>Facebook</small><span>afaithundersiege</span></a></li>
+        <li><a href="https://www.youtube.com/@AFaithUnderSiege" target="_blank" rel="noopener"><small>YouTube</small><span>@AFaithUnderSiege</span></a></li>
+        <li><a href="https://x.com/FaithUnderSiege" target="_blank" rel="noopener"><small>X</small><span>@FaithUnderSiege</span></a></li>
+      </ul>
+      <p class="fus-eyebrow" style="margin-top:32px">Tag &amp; hashtags</p>
+      <div class="fus-pk-tags"><span>@FaithUnderSiege</span><span>@afaithundersiege</span><span>#AFaithUnderSiege</span><span>#PrayForUkraine</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 6. Cast & crew (light) -->
+<section class="fus fus-section fus-light fus-pk-cast fus-pk-anchor" id="cast"><div class="fus-wrap">
+  <div class="fus-head"><div><p class="fus-eyebrow">Cast &amp; crew</p><h2 class="fus-h2">The people behind the film</h2></div></div>
+  <ul class="fus-team">
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/878064d7-dbbb-43db-b26f-6546008552b7/Yaroslav+Lodygin.jpg?format=750w" alt="Yaroslav Lodygin" loading="lazy">
+      <p class="fus-team__role">Film Director</p>
+      <h3 class="fus-team__name">Yaroslav Lodygin</h3>
+      <p class="fus-team__bio">Yaroslav Lodygin is a Ukrainian film director, producer, and screenwriter best known for his award-winning debut feature, <em>The Wild Fields</em> (2018).</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/6466494d-7df7-45f0-9aec-de93fd671b92/Colby+Barret.jpg?format=750w" alt="Colby Barrett" loading="lazy">
+      <p class="fus-team__role">Producer · Exec. Producer</p>
+      <h3 class="fus-team__name">Colby Barrett, JD, PE</h3>
+      <p class="fus-team__bio">Colby Barrett is an entrepreneur, filmmaker, and former U.S. Marine Corps Captain who led infantry and scout/sniper platoons in the Pacific Rim and Middle East.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/803f2c91-de58-4d25-9201-560c2c4a410e/Steven+E+Moore.jpg?format=750w" alt="Steven E. Moore" loading="lazy">
+      <p class="fus-team__role">Executive Producer</p>
+      <h3 class="fus-team__name">Steven E. Moore</h3>
+      <p class="fus-team__bio">Former chief of staff in the U.S. House of Representatives who has spent most of his time in Ukraine since day five of the war. He leads the Ukraine Freedom Project (UFP), which has delivered 250 tons of food, medical supplies, body armor, and other critical aid to the front.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/1d73822c-71a7-4a63-b770-2d035c7c8934/IMG_6541.JPG?format=750w" alt="Anna Shvetsova" loading="lazy">
+      <p class="fus-team__role">Executive Producer</p>
+      <h3 class="fus-team__name">Anna Shvetsova</h3>
+      <p class="fus-team__bio">Anna Shvetsova is the COO of the Ukraine Freedom Project. Raised near the Russian border, she frequently visits the front lines and has engaged with over 100 Congressional offices as an expert on U.S. policy in Ukraine.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/4847180d-1a56-4abf-9c7e-687b453d8e0d/Charlie+Sadoff.jpg?format=750w" alt="Charlie Sadoff" loading="lazy">
+      <p class="fus-team__role">Producer</p>
+      <h3 class="fus-team__name">Charlie Sadoff</h3>
+      <p class="fus-team__bio">Charlie Sadoff is a producer, director, and editor whose most recent film <em>Against All Enemies</em> premiered to critical acclaim at the 2023 Tribeca Film Festival.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/824d4d18-3fa1-49e5-a856-8cba8066d77b/Sarah+Makin.jpeg?format=750w" alt="Sarah Makin" loading="lazy">
+      <p class="fus-team__role">Impact Producer</p>
+      <h3 class="fus-team__name">Sarah Makin</h3>
+      <p class="fus-team__bio">Makin served as Deputy Assistant to President Trump, Senior Director on the National Security Council, and the President’s Senior Advisor on International Religious Freedom. She also served Vice President Mike Pence as Director of Strategic Engagement and External Affairs, and continues to advocate on behalf of persecuted religious minorities around the world.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/9067987d-5010-442f-bcba-a1ad339f8248/Christian+Hickey.jpg?format=750w" alt="Christian Hickey" loading="lazy">
+      <p class="fus-team__role">Special Forces Veteran</p>
+      <h3 class="fus-team__name">Christian Hickey</h3>
+      <p class="fus-team__bio">Founder and CEO of Triple A Authority Foundation and a 15-year veteran of both the U.S. military, serving as a Marine and Green Beret, and law enforcement. He now applies his tactical and community service experience to global missions, serving on the front lines in Ukraine.</p>
+    </li>
+    <li class="fus-team__card">
+      <img class="fus-team__photo" src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/f91931d3-94f0-47cd-86a9-a21cf80ec956/Karl.jpg?format=750w" alt="Karl Ahlgren" loading="lazy">
+      <p class="fus-team__role">Chaplain</p>
+      <h3 class="fus-team__name">Karl Ahlgren</h3>
+      <p class="fus-team__bio">Karl Ahlgren is a licensed chaplain in Ukraine and a veteran political advisor with over 40 years of experience in government and advocacy. Since 2023, he has made multiple trips to Ukraine to provide humanitarian support and amplify the voices of persecuted believers.</p>
+    </li>
+  </ul>
+</div></section>
+
+<script>
+(function () {
+  /* Hide any old sections left empty on the page (skipped inside the Squarespace editor). */
+  var me = document.currentScript, block = me && me.closest('.sqs-block');
+  function tidy() {
+    if (window.top !== window.self) return;
+    var main = document.querySelector('main') || document.body;
+    [].forEach.call(main.querySelectorAll('.page-section'), function (s) { if (block && s.contains(block)) return; if (!s.querySelector('.sqs-block')) s.style.display = 'none'; });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tidy); else tidy();
+})();
+</script>

@@ -1,0 +1,162 @@
+<!-- SHARE THE FILM (/share-the-film) · ONE Code Block at the top of the page, in a full-width section.
+     Keep your existing Form block on the page: this block moves it into the "Get the film" spot automatically,
+     so sign-ups, the post-submit message and the downloads keep working exactly as now.
+     Delete the old blocks (logo, titles, Step One text, video, FAQ accordion, Step Two text) and the old top banner section. -->
+<style>
+.fus-sf-why { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+.fus-sf-why__intro { display: flex; flex-direction: column; gap: 20px; }
+.fus-sf-why__intro p.fus-sf-body { margin: 0; font-size: 17px; line-height: 1.6; color: var(--fus-soft); max-width: 520px; }
+.fus-sf-close { margin: 28px 0 0; font-size: 20px; line-height: 1.45; font-weight: 500; max-width: 640px; }
+.fus-sf-close span { color: var(--fus-red-text); }
+.fus-sf-how { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 56px; align-items: start; }
+.fus-sf-video { position: relative; padding-top: 64.36%; background: #000; border-bottom: 3px solid var(--fus-red); }
+.fus-sf-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.fus-sf-video__cap { margin: 14px 0 0; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-light-muted); }
+.fus-sf-steps { list-style: none; margin: 28px 0 0; padding: 0; border-top: 2px solid var(--fus-light-fg); }
+.fus-sf-steps li { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--fus-light-line); }
+.fus-sf-steps__n { font-size: 40px; line-height: 1; font-weight: 500; letter-spacing: -0.03em; color: var(--fus-red-on-light); }
+.fus-sf-steps h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; letter-spacing: -0.015em; }
+.fus-sf-steps p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--fus-light-muted); }
+.fus-sf-license { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 40px; }
+.fus-sf-how .fus-h2 { font-size: clamp(32px, 3.4vw, 44px); }
+.fus-sf-faqhead { display: flex; flex-direction: column; gap: 12px; }
+.fus-sf-term { border-top: 2px solid var(--fus-line-strong); padding-top: 22px; display: flex; flex-direction: column; gap: 10px; }
+.fus-sf-term--yes { border-top-color: var(--fus-red); }
+.fus-sf-term__tag { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fus-muted); }
+.fus-sf-term--yes .fus-sf-term__tag { color: var(--fus-red-text); }
+.fus-sf-term h3 { margin: 0; font-size: 24px; font-weight: 500; letter-spacing: -0.015em; }
+.fus-sf-term p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--fus-soft); }
+.fus-sf-term a, .fus-sf-legal a { text-decoration: underline !important; text-underline-offset: 3px; text-decoration-color: var(--fus-red) !important; }
+.fus-sf-legal { margin: 32px 0 0; font-size: 14px; line-height: 1.55; color: var(--fus-muted); max-width: 760px; }
+.sqs-block-code .fus.fus-sf-get, .fus-sf-get { max-width: 760px; width: 100%; margin: 0 auto; padding: 96px var(--fus-gutter) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px; }
+.fus-sf-get__recap { list-style: none; margin: 8px 0 0; padding: 18px 0 0; border-top: 1px solid var(--fus-line-strong); display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.fus-sf-get__recap li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--fus-soft); }
+.fus-sf-get__recap li::before { content: ""; width: 8px; height: 8px; background: var(--fus-red); flex: none; }
+.fus .fus-sf-formslot .sqs-block-form { max-width: none !important; width: 100% !important; margin: 16px 0 24px !important; padding: 0 !important; }
+.fus-sf-help { margin: 0 0 96px; font-size: 15px; color: var(--fus-muted); }
+.fus-sf-help a { color: var(--fus-fg) !important; text-decoration: underline !important; text-decoration-color: var(--fus-red) !important; text-underline-offset: 3px; }
+.fus .fus-sf-formslot .sqs-block-form .option { margin: 0 8px 8px 0 !important; }
+.fus .fus-sf-formslot .sqs-block-form .option label { padding: 0 !important; cursor: pointer; }
+.fus .fus-sf-formslot .sqs-block-form .option label span { display: inline-block; background: transparent !important; border: 0 !important; box-shadow: inset 0 0 0 1px #4A4A4A !important; border-radius: 0 !important; padding: 11px 16px !important; font-size: 14px !important; line-height: 1.2 !important; transition: box-shadow .15s, background .15s; }
+.fus .fus-sf-formslot .sqs-block-form .option label span::before, .fus .fus-sf-formslot .sqs-block-form .option label span::after { display: none !important; }
+.fus .fus-sf-formslot .sqs-block-form .option label:hover span { box-shadow: inset 0 0 0 1px #F5F3EF !important; }
+.fus .fus-sf-formslot .sqs-block-form .option input:checked + span { background: #E3242B !important; box-shadow: inset 0 0 0 1px #E3242B !important; color: #fff !important; }
+.fus .fus-sf-formslot .sqs-block-form .option input:focus-visible + span { outline: 2px solid #FF4A4A; outline-offset: 2px; }
+@media (max-width: 1000px) { .fus-sf-license { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 800px) {
+  .fus-sf-why, .fus-sf-how { grid-template-columns: 1fr; gap: 36px; }
+}
+@media (max-width: 560px) { .fus-sf-license { grid-template-columns: 1fr; } }
+</style>
+
+<!-- 1. Hero -->
+<section class="fus fus-hero fus-sc-hero" id="fus-sf-top">
+  <div class="fus-hero__media"><img src="https://images.squarespace-cdn.com/content/v1/67855d6ea32c2d2b45267848/427fa9d9-9011-4b8a-aeb5-0c683f8cf979/AFUS_Church_Screening.jpg?format=2500w" alt="A congregation watching A Faith Under Siege at a church screening"></div>
+  <div class="fus-wrap fus-hero__body">
+    <p class="fus-eyebrow">Share the film · Free to download</p>
+    <h1 class="fus-h1">Host <em>A Faith Under Siege</em> on your own channel</h1>
+    <p class="fus-lede">Download the full film for free and share it on your YouTube channel, website or social media. It's licensed under Creative Commons, so ministries and outlets everywhere can carry the story.</p>
+    <div class="fus-hero__ctas">
+      <a class="fus-btn fus-btn--red" href="#get">Get the film</a>
+      <a class="fus-btn" href="#how">Watch how it works</a>
+    </div>
+    <div class="fus-stream"><strong>License: CC BY-ND 4.0</strong><span>YouTube</span><span>Websites</span><span>Social media</span><span>Church screenings</span></div>
+  </div>
+</section>
+
+<!-- 2. Why share it -->
+<section class="fus fus-section"><div class="fus-wrap">
+  <div class="fus-sf-why">
+    <div class="fus-sf-why__intro">
+      <p class="fus-eyebrow">Why share it</p>
+      <h2 class="fus-h2">Bring the story to your community</h2>
+      <p class="fus-sf-body"><em>A Faith Under Siege</em> tells the true story of Christians in Ukraine who face violent persecution for their faith. We're making the film free to download so organizations and outlets everywhere can spread its message of courage, prayer and unshakable hope.</p>
+      <p class="fus-sf-body">This isn't just about watching a film. It's about using your voice and your platform to:</p>
+    </div>
+    <ol class="fus-sc-list">
+      <li><span class="fus-sc-list__n">01</span><div><h3>Shine light on the suffering</h3></div></li>
+      <li><span class="fus-sc-list__n">02</span><div><h3>Strengthen and encourage others</h3></div></li>
+      <li><span class="fus-sc-list__n">03</span><div><h3>Call others to deeper faith, prayer and action</h3></div></li>
+      <li><span class="fus-sc-list__n">04</span><div><h3>Proclaim the power of the Gospel in a world in crisis</h3></div></li>
+    </ol>
+  </div>
+  <p class="fus-sf-close">By sharing this documentary, you join a growing movement to stand with the persecuted. <span>Let's not just hear the story. Let's carry it forward.</span></p>
+</div></section>
+
+<!-- 3. How it works (light band) -->
+<section class="fus fus-section fus-light" id="how" style="scroll-margin-top:80px"><div class="fus-wrap">
+  <div class="fus-sf-how">
+    <div>
+      <div class="fus-sf-video"><iframe src="https://player.vimeo.com/video/1107189589?h=115639ca0a&amp;badge=0&amp;autopause=0&amp;dnt=1" title="How to host A Faith Under Siege on your channel" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" loading="lazy" allowfullscreen></iframe></div>
+      <p class="fus-sf-video__cap">Video · How to host the film</p>
+    </div>
+    <div>
+      <p class="fus-eyebrow">How it works</p>
+      <h2 class="fus-h2" style="margin-top:12px">Two steps to share it</h2>
+      <ol class="fus-sf-steps">
+        <li><span class="fus-sf-steps__n">1</span><div><h3>Agree to the license</h3><p>The film is free to share under Creative Commons. Read the short terms below: credit the creators, and don't alter the film.</p></div></li>
+        <li><span class="fus-sf-steps__n">2</span><div><h3>Download the film and assets</h3><p>Fill out the short form to get the downloadable files and promotional materials.</p></div></li>
+      </ol>
+      <p style="margin:32px 0 0"><a class="fus-btn fus-btn--red" href="#get">Get the film</a></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 4. The license -->
+<section class="fus fus-section" id="license" style="scroll-margin-top:80px"><div class="fus-wrap">
+  <div class="fus-head"><div><p class="fus-eyebrow">Step one · Creative Commons</p><h2 class="fus-h2">What you're agreeing to</h2></div></div>
+  <p class="fus-lede"><em>A Faith Under Siege</em> is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0).</p>
+  <div class="fus-sf-license">
+    <div class="fus-sf-term fus-sf-term--yes"><span class="fus-sf-term__tag">You are free to</span><h3>Share</h3><p>Copy and redistribute the film in any medium or format, for any purpose, even commercially.</p></div>
+    <div class="fus-sf-term"><span class="fus-sf-term__tag">You must</span><h3>Give credit</h3><p>Credit the original creators and link to the film's official website, <a href="https://www.faithundersiege.com">faithundersiege.com</a>.</p></div>
+    <div class="fus-sf-term"><span class="fus-sf-term__tag">You may not</span><h3>Change the film</h3><p>No remixing, transforming or building on it. You may use clips to promote it, but altering the film or making derivative works needs separate written permission.</p></div>
+    <div class="fus-sf-term"><span class="fus-sf-term__tag">You may not</span><h3>Add restrictions</h3><p>Don't apply legal terms or technical measures that stop others from doing anything the license allows.</p></div>
+  </div>
+  <p class="fus-sf-legal">Read the full license at <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noopener">creativecommons.org</a>.</p>
+</div></section>
+
+<!-- 5. FAQ -->
+<section class="fus fus-section" style="padding-top:0"><div class="fus-wrap fus-sc-faq">
+  <div class="fus-sf-faqhead"><p class="fus-eyebrow">Questions</p><h2 class="fus-h2">Why host it yourself?</h2></div>
+  <div class="fus-sc-faq__list">
+    <details><summary>Why host the film on my own website or channel instead of sharing a link?</summary><p>Hosting gives you full ownership of the message. Your audience sees the film directly from a trusted source aligned with your mission, not through a third-party link, which builds deeper trust and engagement.</p></details>
+    <details><summary>Can I customize how the film is presented?</summary><p>Yes. You can add introductions, calls to action, prayer and discussion guides and other materials as links on your <em>A Faith Under Siege</em> player page. If you schedule a screening for your audience, you can host a follow-up discussion and Q&amp;A on Zoom or another video call service.</p></details>
+    <details><summary>How does hosting improve audience connection?</summary><p>When content lives within your trusted community, people engage more fully, with longer watch times, richer conversations and stronger responses.</p></details>
+    <details><summary>How does hosting affect my ministry's role?</summary><p>Hosting makes you an active leader in the movement supporting persecuted Ukrainian believers, and shows your commitment in a visible, meaningful way.</p></details>
+    <details><summary>Would you rather show it to a group in person?</summary><p>We can help with that too. <a href="/general-screening">Sign up to host a screening</a> and we'll send a free screening kit.</p></details>
+  </div>
+</div></section>
+
+<!-- 6. Get the film: your Form block is moved in here -->
+<section class="fus fus-sf-getwrap">
+  <div class="fus fus-sf-get" id="get">
+    <p class="fus-eyebrow">Step two · Download</p>
+    <h2 class="fus-h2">Get the film and assets</h2>
+    <p class="fus-lede">Fill out this short form to access the downloadable film files and promotional materials.</p>
+    <ul class="fus-sf-get__recap">
+      <li>Full film, free to share</li>
+      <li>Promotional materials</li>
+      <li>CC BY-ND 4.0 license</li>
+    </ul>
+    <div class="fus-sf-formslot" data-sf-form></div>
+    <p class="fus-sf-help">Questions about sharing the film? Email <a href="mailto:hello@faithundersiege.com?subject=Sharing%20A%20Faith%20Under%20Siege">hello@faithundersiege.com</a>.</p>
+  </div>
+</section>
+
+<script>
+(function () {
+  /* Move the page's own Form block into the "Get the film" spot (skipped inside the Squarespace editor),
+     then hide any section left empty. */
+  var me = document.currentScript, block = me && me.closest('.sqs-block');
+  function place() {
+    if (window.top !== window.self) return true;
+    var main = document.querySelector('main') || document.body, slot = document.querySelector('[data-sf-form]');
+    if (!slot) return true;
+    var form = [].filter.call(main.querySelectorAll('.sqs-block-form'), function (b) { return !slot.contains(b); })[0];
+    if (form) slot.appendChild(form);
+    [].forEach.call(main.querySelectorAll('.page-section'), function (s) { if (block && s.contains(block)) return; if (!s.querySelector('.sqs-block')) s.style.display = 'none'; });
+    return !!form || !!slot.children.length;
+  }
+  if (!place()) { document.addEventListener('DOMContentLoaded', place); window.addEventListener('load', place); setTimeout(place, 1500); }
+})();
+</script>
