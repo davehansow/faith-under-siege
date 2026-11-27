@@ -14,6 +14,33 @@
  ],
  "items": [
   {
+   "date": "2026-11-23",
+   "outlet": "The Lars Larson Show",
+   "title": "Colby Barrett: Was Trump’s Summit With Xi and Putin a Win for America?",
+   "type": "Radio & podcast",
+   "language": "English",
+   "url": "https://thelarslarsonshow.buzzsprout.com/2602482/episodes/20170862-colby-barrett-was-trump-s-summit-with-xi-and-putin-a-win-for-america",
+   "note": "Colby interview"
+  },
+  {
+   "date": "2026-11-10",
+   "outlet": "Providence",
+   "title": "It Was Never About Family: Putin’s Fodder Doctrine",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://providencemag.com/2026/11/it-was-never-about-family-putins-fodder-doctrine/",
+   "note": "Colby op-ed"
+  },
+  {
+   "date": "2026-11-05",
+   "outlet": "Christian Daily International",
+   "title": "Sustained pressure could bring more than a pause in the war for Ukraine",
+   "type": "Op-ed",
+   "language": "English",
+   "url": "https://www.christiandaily.com/opinion/sustained-pressure-could-bring-more-than-a-pause-in-the-war-for-ukraine",
+   "note": "Colby op-ed"
+  },
+  {
    "date": "2026-10-29",
    "outlet": "Christian Post",
    "title": "Colby Barrett: Why is faith growing in Ukraine, even as Russia destroys its churches?",
@@ -518,12 +545,12 @@
    "note": "Mentions Steven Moore & Ukraine Freedom Project"
   },
   {
-   "date": "2026-06-18",
+   "date": "2026-06-17",
    "outlet": "Real Talk with Riggin",
-   "title": "Colby Barrett on Ukraine",
+   "title": "Ukraine War May Be Entering Its Endgame, with Colby Barrett",
    "type": "Radio & podcast",
    "language": "English",
-   "url": "https://www.iheart.com/podcast/1323-real-talk-with-riggin-293384476/",
+   "url": "https://www.iheart.com/podcast/1323-real-talk-with-riggin-293384476/episode/ukraine-war-may-be-entering-its-endgame-with-spokesman-at-the-ukraine-freedom-project-former-marine-captain-and-co-executive-producer-colby-barrett-337045255/",
    "note": ""
   },
   {
@@ -543,6 +570,15 @@
    "language": "English",
    "url": "https://www.youtube.com/watch?v=XQ-3J2QUSu4",
    "note": ""
+  },
+  {
+   "date": "2026-06-15",
+   "outlet": "EWTN News",
+   "title": "Russia Targets 975-Year-Old Kyiv Pechersk Lavra: Steven Moore on EWTN",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=kLeLToAKuc0",
+   "note": "Steven interview"
   },
   {
    "date": "2026-06-14",
@@ -858,6 +894,15 @@
    "language": "English",
    "url": "https://igospelmagazine.com/2026/ukraine-un-verset-biblique-sur-une-eglise-baptiste-recemment-bombardee-signe-de-resilience/",
    "note": ""
+  },
+  {
+   "date": "2026-03-25",
+   "outlet": "EWTN News",
+   "title": "EWTN News Nightly, March 25, 2026",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=nXFhGwANzAw",
+   "note": "From publications list"
   },
   {
    "date": "2026-03-10",
@@ -1830,6 +1875,15 @@
    "language": "English",
    "url": "https://bristolpress.pressreader.com/the-bristol-press/20250610",
    "note": "Forward Global Repost"
+  },
+  {
+   "date": "2025-06-09",
+   "outlet": "EWTN",
+   "title": "EWTN News Nightly, June 9, 2025",
+   "type": "TV & video",
+   "language": "English",
+   "url": "https://www.youtube.com/watch?v=vhHW3HeaD_4",
+   "note": "From publications list"
   },
   {
    "date": "2025-06-08",
